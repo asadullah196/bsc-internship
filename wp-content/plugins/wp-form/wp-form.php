@@ -14,4 +14,26 @@ Text Domain: wpform
 */
 
 // Only "Plugin Name" is required and the rest options are optional.
+
+if ( ! defined( 'ABSPATH' ) )
+	exit;
+
+// Register settings using the Settings API 
+function add_custom_menu(){
+    add_menu_page(
+        'custom plugin',
+        'Custom Plugin',
+        'manage_options',
+        'custom-plugin',
+        'custom_plugin_func',
+        'dashicons-share-alt',
+        9
+    );
+}
+add_action('admin_menu','add_custom_menu');
+
+function custom_plugin_func(){
+    echo "Hello baby";
+}
+
 ?>
