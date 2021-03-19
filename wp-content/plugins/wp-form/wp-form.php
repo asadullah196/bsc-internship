@@ -40,7 +40,7 @@ function custom_plugin_func(){
     include_once PLUGIN_DIR_PATH.'/view/form.php';
 }
 
-function custom_plugin_createe_table(){
+function custom_plugin_create_table(){
     global $wpdb;
     require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
 
@@ -55,6 +55,19 @@ function custom_plugin_createe_table(){
     dbDelta( $sql );
 }
 
-register_activation_hook( __FILE__, 'custom_plugin_createe_table' );
+register_activation_hook( __FILE__, 'custom_plugin_create_table' );
+
+register_deactivation_hook( __FILE__, 'custom_plugin_deactivation_table' );
+
+register_uninstall_hook( __FILE__, 'custom_plugin_delete_table' );
+
+function custom_plugin_deactivation_table(){
+    global $wpdb;
+    $wpdb -> query("DROP table IF Exists wp_custom_table1");
+}
+function custom_plugin_delete_table(){
+    global $wpdb;
+    $wpdb -> query("DROP table IF Exists wp_custom_table1");
+}
 
 ?>
