@@ -40,6 +40,21 @@ function custom_plugin_func(){
     include_once PLUGIN_DIR_PATH.'/view/form.php';
 }
 
+function custom_plugin_createe_table(){
+    global $wpdb;
+    require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
 
+    $sql = "CREATE TABLE `wp_custom_table1` (
+        `Id` int(11) NOT NULL AUTO_INCREMENT,
+        `fnam` varchar(255) NOT NULL,
+        `lnam` varchar(255) NOT NULL,
+        PRIMARY KEY (`Id`)
+       ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
+       ";
+
+    dbDelta( $sql );
+}
+
+register_activation_hook( __FILE__, 'custom_plugin_createe_table' );
 
 ?>
