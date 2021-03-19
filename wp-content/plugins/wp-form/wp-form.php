@@ -15,6 +15,10 @@ Text Domain: wpform
 
 // Only "Plugin Name" is required and the rest options are optional.
 
+// Define the PATH
+define("PLUGIN_DIR_PATH",plugin_dir_path(__FILE__));
+define("PLUGINS_URL",plugins_url(__FILE__));
+
 if ( ! defined( 'ABSPATH' ) )
 	exit;
 
@@ -33,7 +37,9 @@ function add_custom_menu(){
 add_action('admin_menu','add_custom_menu');
 
 function custom_plugin_func(){
-    echo "Hello baby";
+    include_once PLUGIN_DIR_PATH.'/view/form.php';
 }
+
+
 
 ?>
