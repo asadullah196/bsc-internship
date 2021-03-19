@@ -4,28 +4,17 @@
 <html>
     <head>
          <!-- INSERT INTO `wp_custom_table1` (`Id`, `fnam`, `lnam`) VALUES (NULL, 'asad', 'ullah'); -->
+        <?php 
+            global $wpdb;
 
-    <?php
-    global $wpdb;
-
-    if(isset($_POST['SubmitButton'])){
-        $namef = $_POST['firstname'];
-        $namel = $_POST['lastname'];
-                
-        echo $namef." == first name<br><br>";
-        echo $namel." == name last";
-
-        $table_name = $wpdb->prefix . 'wp_custom_table1';
-
-        $wpdb->insert( 
-            $table_name, 
-            array( 
-                'fnam' => $namef, 
-                'lnam' => $namel,
-            )
-        );
-    }
-    ?>
+            $wpdb->insert(
+                "wp_custom_table1",
+                array(
+                    "fnam"=> "sakib",
+                    "lnam"=> "Rakib"
+                )
+            );
+        ?>
     </head>            
     <body>
         <section class="body-area">
