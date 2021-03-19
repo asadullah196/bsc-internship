@@ -1,19 +1,26 @@
-<br><br><br><br>
+<br><br>
 
 <!DOCTYPE html>
 <html>
     <head>
-         <!-- INSERT INTO `wp_custom_table1` (`Id`, `fnam`, `lnam`) VALUES (NULL, 'asad', 'ullah'); -->
         <?php 
             global $wpdb;
 
-            $wpdb->insert(
-                "wp_custom_table1",
-                array(
-                    "fnam"=> "sakib",
-                    "lnam"=> "Rakib"
-                )
-            );
+            if(isset($_POST['SubmitButton'])){
+                $namef = $_POST['firstname'];
+                $namel = $_POST['lastname'];
+
+                echo "First Name == " . $namef . "<br><br>";
+                echo "Last Name == " . $namel . "<br><br>";
+
+                $wpdb->insert(
+                    "wp_custom_table1",
+                    array(
+                        'fnam'=> $namef,
+                        'lnam'=> $namel
+                    )
+                );
+            }
         ?>
     </head>            
     <body>
@@ -21,10 +28,9 @@
             <div class="registration-form">
                 <div class="registration-input">
                     <form action="" method="post">
-
-                        <label>Enter your name</label><br>
-                        <input type="text" id="fname" name="firstname" placeholder="First Name">
-                        <input type="text" id="lname" name="lastname" placeholder="Last Name"><br><br>
+                        <label>Enter Your Name:</label><br><br>
+                        <input type="text" id="fname" name="firstname" placeholder="First Name" required>
+                        <input type="text" id="lname" name="lastname" placeholder="Last Name" required><br><br>
 
                         <input type="submit" value="Submit" name="SubmitButton">
                     </form> 
