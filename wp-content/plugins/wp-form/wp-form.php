@@ -56,9 +56,7 @@ function custom_plugin_create_table(){
 }
 
 register_activation_hook( __FILE__, 'custom_plugin_create_table' );
-
 register_deactivation_hook( __FILE__, 'custom_plugin_deactivation_table' );
-
 register_uninstall_hook( __FILE__, 'custom_plugin_delete_table' );
 
 function custom_plugin_deactivation_table(){

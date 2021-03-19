@@ -1,17 +1,46 @@
 <br><br><br><br>
 
+<!DOCTYPE html>
+<html>
+    <head>
+         <!-- INSERT INTO `wp_custom_table1` (`Id`, `fnam`, `lnam`) VALUES (NULL, 'asad', 'ullah'); -->
 
-<section class="body-area">
-    <div class="registration-form">
-        <div class="registration-input">
-            <form action="/action_page.php">
+    <?php
+    global $wpdb;
 
-                <label>Enter your name</label><br>
-                <input type="text" id="fname" name="fname" placeholder="First Name">
-                <input type="text" id="lname" name="lname" placeholder="Last Name"><br><br>
+    if(isset($_POST['SubmitButton'])){
+        $namef = $_POST['firstname'];
+        $namel = $_POST['lastname'];
+                
+        echo $namef." == first name<br><br>";
+        echo $namel." == name last";
 
-                <input type="submit" value="Submit">
-            </form> 
-        </div>
-    </div>
-</section>
+        $table_name = $wpdb->prefix . 'wp_custom_table1';
+
+        $wpdb->insert( 
+            $table_name, 
+            array( 
+                'fnam' => $namef, 
+                'lnam' => $namel,
+            )
+        );
+    }
+    ?>
+    </head>            
+    <body>
+        <section class="body-area">
+            <div class="registration-form">
+                <div class="registration-input">
+                    <form action="" method="post">
+
+                        <label>Enter your name</label><br>
+                        <input type="text" id="fname" name="firstname" placeholder="First Name">
+                        <input type="text" id="lname" name="lastname" placeholder="Last Name"><br><br>
+
+                        <input type="submit" value="Submit" name="SubmitButton">
+                    </form> 
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
