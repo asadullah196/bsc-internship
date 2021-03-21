@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <?php 
+        <?php
             global $wpdb;
 
             if(isset($_POST['SubmitButton'])){

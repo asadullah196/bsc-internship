@@ -38,6 +38,7 @@ add_action('admin_menu','add_custom_menu');
 
 function custom_plugin_func(){
     include_once PLUGIN_DIR_PATH.'/view/form.php';
+    include_once PLUGIN_DIR_PATH.'/view/styles.css';
 }
 
 function custom_plugin_create_table(){
@@ -56,13 +57,16 @@ function custom_plugin_create_table(){
 }
 
 register_activation_hook( __FILE__, 'custom_plugin_create_table' );
-register_deactivation_hook( __FILE__, 'custom_plugin_deactivation_table' );
+//register_deactivation_hook( __FILE__, 'custom_plugin_deactivation_table' );
 register_uninstall_hook( __FILE__, 'custom_plugin_delete_table' );
 
+/*
 function custom_plugin_deactivation_table(){
     global $wpdb;
     $wpdb -> query("DROP table IF Exists wp_custom_table1");
 }
+*/
+
 function custom_plugin_delete_table(){
     global $wpdb;
     $wpdb -> query("DROP table IF Exists wp_custom_table1");
