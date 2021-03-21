@@ -4,6 +4,7 @@
 <html>
     <head>
         <?php
+
             global $wpdb;
 
             if(isset($_POST['SubmitButton'])){

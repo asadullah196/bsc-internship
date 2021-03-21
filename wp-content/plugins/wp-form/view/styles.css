@@ -1,3 +1,6 @@
+body{
+    float: center;
+}
 #fname{
     padding: 50px;
 }

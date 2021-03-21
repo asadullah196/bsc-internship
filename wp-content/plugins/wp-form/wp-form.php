@@ -38,7 +38,8 @@ add_action('admin_menu','add_custom_menu');
 
 function custom_plugin_func(){
     include_once PLUGIN_DIR_PATH.'/view/form.php';
-    include_once PLUGIN_DIR_PATH.'/view/styles.css';
+    echo "<h2>Hello Dhaka</h2>";
+    //include_once PLUGIN_DIR_PATH.'/view/styles.css';
 }
 
 function custom_plugin_create_table(){
@@ -71,5 +72,14 @@ function custom_plugin_delete_table(){
     global $wpdb;
     $wpdb -> query("DROP table IF Exists wp_custom_table1");
 }
+
+/**
+ * Proper way to enqueue styles
+ */
+function custom_plugin_assets() {
+    wp_enqueue_style( 'style-name', '/wp-content/plugins/wp-form/view/styles.css','','1.0' );
+    //wp_enqueue_script( 'script-name', get_template_directory_uri() . '/js/example.js', array(), '1.0.0', true );
+}
+add_action( 'admin_enqueue_scripts', 'custom_plugin_assets' );
 
 ?>
