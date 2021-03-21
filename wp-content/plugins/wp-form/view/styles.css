@@ -1,6 +1,4 @@
-body{
-    float: center;
-}
-#fname{
-    padding: 50px;
+.body-area{
+    margin: auto;
+    width: 1920px;
 }

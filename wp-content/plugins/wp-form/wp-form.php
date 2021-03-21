@@ -38,8 +38,6 @@ add_action('admin_menu','add_custom_menu');
 
 function custom_plugin_func(){
     include_once PLUGIN_DIR_PATH.'/view/form.php';
-    echo "<h2>Hello Dhaka</h2>";
-    //include_once PLUGIN_DIR_PATH.'/view/styles.css';
 }
 
 function custom_plugin_create_table(){
