@@ -11,8 +11,32 @@
                 $namef = $_POST['firstname'];
                 $namel = $_POST['lastname'];
 
+                $userPhone = $_POST['phone'];
+                $userEmail = $_POST['email'];
+
+                $userAddress1 = $_POST['address1'];
+                $userAddress2 = $_POST['address2'];
+
+                $zipCode = $_POST['zipcode'];
+                $userCity = $_POST['city'];
+
+                $userState = $_POST['state'];
+                $userCountry = $_POST['country'];
+
                 echo "First Name == " . $namef . "<br><br>";
                 echo "Last Name == " . $namel . "<br><br>";
+
+                echo "Phone Number == " . $userPhone . "<br><br>";
+                echo "Email Address == " . $userEmail . "<br><br>";
+
+                echo "Address Line 1 == " . $userAddress1. "<br><br>";
+                echo "Address Line 2 == " . $userAddress2 . "<br><br>";
+
+                echo "Zip Code == " . $zipCode . "<br><br>";
+                echo "User City == " . $userCity . "<br><br>";
+
+                echo "State Name == " . $userState . "<br><br>";
+                echo "Country Name == " . $userCountry . "<br><br>";
 
                 $wpdb->insert(
                     "wp_custom_table1",
