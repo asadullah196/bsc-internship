@@ -26,7 +26,7 @@ if ( ! defined( 'ABSPATH' ) )
 function add_custom_menu(){
     add_menu_page(
         'custom plugin',
-        'Custom Plugin',
+        'Form Plugin',
         'manage_options',
         'custom-plugin',
         'custom_plugin_func',

@@ -11,6 +11,9 @@
                 $namef = $_POST['firstname'];
                 $namel = $_POST['lastname'];
 
+                $userPassword = $_POST['password'];
+                $userPasswordRe = $_POST['re-password'];
+
                 $userPhone = $_POST['phone'];
                 $userEmail = $_POST['email'];
 
@@ -23,20 +26,9 @@
                 $userState = $_POST['state'];
                 $userCountry = $_POST['country'];
 
-                echo "First Name == " . $namef . "<br><br>";
-                echo "Last Name == " . $namel . "<br><br>";
-
-                echo "Phone Number == " . $userPhone . "<br><br>";
-                echo "Email Address == " . $userEmail . "<br><br>";
-
-                echo "Address Line 1 == " . $userAddress1. "<br><br>";
-                echo "Address Line 2 == " . $userAddress2 . "<br><br>";
-
-                echo "Zip Code == " . $zipCode . "<br><br>";
-                echo "User City == " . $userCity . "<br><br>";
-
-                echo "State Name == " . $userState . "<br><br>";
-                echo "Country Name == " . $userCountry . "<br><br>";
+                // Check the variable value
+                //echo "First Name == " . $namef . "<br><br>";
+                //echo "Last Name == " . $namel . "<br><br>";
 
                 $wpdb->insert(
                     "wp_custom_table1",
@@ -57,17 +49,23 @@
                     <form action="" method="post">
                         <label>Enter Your Name:</label><br><br>
                         <input type="text" id="fname" name="firstname" placeholder="First Name" required>
-                        <input type="text" id="lname" name="lastname" placeholder="Last Name" required><br><br>
+                        <input type="text" id="lname" name="lastname" placeholder="Last Name"><br><br>
 
                         <label>Enter your phone and email</label><br>
-                        <input type="text" id="phone" name="phone" placeholder="Phone number">
-                        <input type="text" id="email" name="email" placeholder="Email address"><br><br>
+                        <input type="password" id="password" name="password" placeholder="Password" required>
+                        <input type="password" id="re-password" name="re-password" placeholder="Confirm Password" required><br><br>
+
+                        <label>Enter your phone and email</label><br>
+                        <input type="number" id="phone" name="phone" placeholder="Phone number">
+                        <input type="email" id="email" name="email" placeholder="Email address" required><br><br>
 
                         <label>Enter your address</label><br>
                         <input type="text" id="address1" name="address1" placeholder="Address line 1">
                         <input type="text" id="address2" name="address2" placeholder="Address line 2"><br><br>
+
                         <input type="text" id="zipcode" name="zipcode" placeholder="zip code">
                         <input type="text" id="city" name="city" placeholder="City"><br><br>
+
                         <input type="text" id="state" name="state" placeholder="State">
                         <input type="text" id="country" name="country" placeholder="Country"><br><br>
 
