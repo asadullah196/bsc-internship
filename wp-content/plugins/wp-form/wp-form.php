@@ -75,7 +75,7 @@ function custom_plugin_delete_table(){
  * Proper way to enqueue styles
  */
 function custom_plugin_assets() {
-    wp_enqueue_style( 'style-name', '/wp-content/plugins/wp-form/view/styles.css','','1.0' );
+    wp_enqueue_style( 'style-name', '/wp-content/plugins/wp-form/view/styles.css','','' );
     //wp_enqueue_script( 'script-name', get_template_directory_uri() . '/js/example.js', array(), '1.0.0', true );
 }
 add_action( 'admin_enqueue_scripts', 'custom_plugin_assets' );

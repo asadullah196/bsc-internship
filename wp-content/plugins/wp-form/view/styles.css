@@ -1,2 +1,10 @@
+body{
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
 .body-area{
+    margin: auto;
+    background-color: #fff;
+    width: 600px;
 }
