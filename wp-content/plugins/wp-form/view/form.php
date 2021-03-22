@@ -42,6 +42,14 @@
     </head>            
     <body>
         <section class="body-area">
+            <div class="form-btn">
+                
+                <h1><?php echo PLUGIN_DIR_PATH.'view/form.php';?></h1><br/>
+
+                <a href="/wordpressform/wp-content/plugins/wp-form/view/form2.php">
+                    <button type="button">Registration</button>
+                </a>
+            </div>
             <div class="registration-form">
                 <h4>Registration Form</h4>
 				<p>Please eneter your personal details below</p><hr>
