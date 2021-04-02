@@ -15,7 +15,7 @@
  * Domain Path:       /languages
  */
 
- if (! define('ABSPATH')){
+ if ( ! defined('ABSPATH')){
      exit; 
  }
 
@@ -25,10 +25,17 @@
   final class Hello_Ollzo{
 
     /**
+     * plugin version
+     * 
+     * @var string
+     */
+    //const $version = '1.0';
+    const version = '1.0';
+    /**
      * Class constructor
      */
       private function __construct(){
-
+            $this -> define_constants();
       }
 
       /**
@@ -45,6 +52,14 @@
 
           return $instance;
       }
+
+      public function define_constants(){
+          define('OLLZO_CRUDE_VERSION',self::version);
+          define('OLLZO_CRUDE_FILE', __FILE__ );
+          define('OLLZO_CRUDE_PATH', __DIR__ );
+          define('OLLZO_CRUDE_URL', plugins_url('',OLLZO_CRUDE_FILE) );
+          define('OLLZO_CRUDE_ASSETS', OLLZO_CRUDE_URL . '/ASSETS' );
+      }
   }
 
   /**
@@ -55,3 +70,6 @@
   function hello_ollzo(){
       return Hello_Ollzo::init();
   }
+
+  // Kick-off the plugin
+  hello_ollzo();
