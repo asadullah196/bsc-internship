@@ -19,6 +19,8 @@
      exit; 
  }
 
+ require_once __DIR__ . '/vendor/autoload.php';
+
  /**
   * The main plugin class
   */
@@ -36,6 +38,9 @@
      */
       private function __construct(){
             $this -> define_constants();
+
+            register_activation_hook( __FILE__, [$this,'activate']);
+            add_action('plugin_loaded', [$this, 'init_plugin']);
       }
 
       /**
@@ -58,7 +63,21 @@
           define('OLLZO_CRUDE_FILE', __FILE__ );
           define('OLLZO_CRUDE_PATH', __DIR__ );
           define('OLLZO_CRUDE_URL', plugins_url('',OLLZO_CRUDE_FILE) );
-          define('OLLZO_CRUDE_ASSETS', OLLZO_CRUDE_URL . '/ASSETS' );
+          define('OLLZO_CRUDE_ASSETS', OLLZO_CRUDE_URL . '/asset' );
+      }
+
+      public function init_plugin(){
+
+      }
+
+      public function activate(){
+        $installed = get_option('ollzo_slider_installed');
+
+        if(! $installed){
+            updatee_option('ollzo_slider_installed',time());
+        }
+
+          updatee_option('ollzo_slider_version',OLLZO_CRUDE_VERSION);
       }
   }
 

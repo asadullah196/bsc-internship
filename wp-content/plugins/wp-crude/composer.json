@@ -1,0 +1,20 @@
+{
+    "name": "galib/wp-crude",
+    "description": "A test json installation for the first time",
+    "type": "wordpress-plugin",
+    "license": "GPLb2",
+    "authors": [
+        {
+            "name": "Galib",
+            "email": "md.asadullah196@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "ollzo\\slider\\": "includes/"
+        },
+        "files": []
+    }
+}
