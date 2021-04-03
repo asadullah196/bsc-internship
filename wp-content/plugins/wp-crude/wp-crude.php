@@ -40,7 +40,7 @@
             $this -> define_constants();
 
             register_activation_hook( __FILE__, [$this,'activate']);
-            add_action('plugin_loaded', [$this, 'init_plugin']);
+            add_action('plugins_loaded', [$this, 'init_plugin']);
       }
 
       /**
@@ -66,8 +66,13 @@
           define('OLLZO_CRUDE_ASSETS', OLLZO_CRUDE_URL . '/asset' );
       }
 
+      /**
+       * Initialize the plugin
+       * 
+       * @return void
+       */
       public function init_plugin(){
-
+            new ollzo\slider\Admin\Menu();
       }
 
       public function activate(){
@@ -77,7 +82,7 @@
             updatee_option('ollzo_slider_installed',time());
         }
 
-          updatee_option('ollzo_slider_version',OLLZO_CRUDE_VERSION);
+          updatee_option( 'ollzo_slider_version', OLLZO_CRUDE_VERSION );
       }
   }
 
