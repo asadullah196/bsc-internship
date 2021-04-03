@@ -2,11 +2,8 @@
 
 namespace ollzo\slider;
 
-/**
- * The admin class
- */
-class Admin{
+class Frontend{
     function __construct(){
-        new Admin\Menu();
+        new Frontend\Shortcode();
     }
 }

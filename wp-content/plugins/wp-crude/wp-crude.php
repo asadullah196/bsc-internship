@@ -72,7 +72,11 @@
        * @return void
        */
       public function init_plugin(){
-            new ollzo\slider\Admin\Menu();
+          if( is_admin() ){
+            new ollzo\slider\Admin();
+          }else{
+              new ollzo\slider\Frontend();
+          }
       }
 
       public function activate(){

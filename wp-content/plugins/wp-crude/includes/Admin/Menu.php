@@ -30,6 +30,6 @@ class Menu {
     }
 
     public function plugin_page(){
-        echo 'Hello Ollzo dhaka  ';
+        echo 'Hello Ollzo dhaka';
     }
 }
