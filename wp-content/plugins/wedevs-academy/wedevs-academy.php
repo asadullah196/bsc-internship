@@ -39,6 +39,8 @@
 
      /**
       * Initializes a singleton instance
+      *
+      * @return \weDevs_Academy
       */
      public static function init(){
         static $instance = false;
@@ -50,3 +52,15 @@
         return $instance;
      }
  }
+
+ /**
+  * Initializes the main plugin
+  *
+  * @return \weDevs_Academy
+  */
+ function wedevs_academy() {
+    return weDevs_academy::init();
+ }
+
+ // kick-off the plugin
+ wedevs_academy();
