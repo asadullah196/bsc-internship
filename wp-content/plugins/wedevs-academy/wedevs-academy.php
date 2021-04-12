@@ -25,3 +25,28 @@
  if ( ! defined('ABSPATH')){
      exit;
  }
+
+ /**
+  * The main plugin class
+  */
+ final class weDevs_Academy {
+     /**
+      * Class constructor
+      */
+     private function __construct(){
+         
+     }
+
+     /**
+      * Initializes a singleton instance
+      */
+     public static function init(){
+        static $instance = false;
+
+        if( ! $instance ){
+            $instance = new self();
+        }
+
+        return $instance;
+     }
+ }
