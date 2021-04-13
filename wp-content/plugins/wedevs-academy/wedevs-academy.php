@@ -42,6 +42,8 @@
       */
      private function __construct(){
          $this -> define_constants();
+
+         register_activation_hook( __FILE__, [$this,'activate'] );
      }
 
      /**
@@ -59,12 +61,32 @@
         return $instance;
      }
 
+     /**
+      * Define the required plugin constants
+      *
+      *@return void
+      */
      public function define_constants(){
          define( 'WD_ACADEMY_VERSION', self::version );
          define( 'WD_ACADEMY_FILE', __FILE__ );
          define( 'WD_ACADEMY_PATH', __DIR__ );
          define( 'WD_ACADEMY_URL', plugins_url( '', WD_ACADEMY_FILEW) );
          define('WD_ACADEMY_ASSETS', WD_ACADEMY_URL . '/assets');
+     }
+
+     /**
+      * Do stuff plugin activation 
+      *
+      * @return void
+      */
+     public function activate(){
+        $installed = get_option( 'wd_academy_installed');
+
+        if (! $installed ){
+            update_option ( 'wd_academy_installed', time() );
+        }
+
+        update_option( 'wd_academy_version', WD_ACADEMY_VERSION);
      }
  }
 
