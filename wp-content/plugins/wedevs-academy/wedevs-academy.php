@@ -44,6 +44,7 @@
          $this -> define_constants();
 
          register_activation_hook( __FILE__, [$this,'activate'] );
+         add_action( 'plugins_loaded', [$this,'init_plugin'] );
      }
 
      /**
@@ -75,6 +76,14 @@
      }
 
      /**
+      * Initialize the plugin
+      *
+      * @return void
+      */
+     public function init_plugin(){
+        
+     }
+     /**
       * Do stuff plugin activation 
       *
       * @return void
@@ -86,7 +95,7 @@
             update_option ( 'wd_academy_installed', time() );
         }
 
-        update_option( 'wd_academy_version', WD_ACADEMY_VERSION);
+        update_option( 'wd_academy_version', WD_ACADEMY_VERSION );
      }
  }
 
