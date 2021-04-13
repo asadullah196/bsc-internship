@@ -30,6 +30,13 @@
   * The main plugin class
   */
  final class weDevs_Academy {
+
+    /**
+     * Plugin version
+     * 
+     * @var
+     */
+    const version = '1.0';
      /**
       * Class constructor
       */
@@ -50,6 +57,14 @@
         }
 
         return $instance;
+     }
+
+     public function define_constants(){
+         define( 'WD_ACADEMY_VERSION', self::version );
+         define( 'WD_ACADEMY_FILE', __FILE__ );
+         define( 'WD_ACADEMY_PATH', __DIR__ );
+         define( 'WD_ACADEMY_URL', plugins_url( '', WD_ACADEMY_FILEW) );
+         define('WD_ACADEMY_ASSETS', WD_ACADEMY_URL . '/assets');
      }
  }
 
