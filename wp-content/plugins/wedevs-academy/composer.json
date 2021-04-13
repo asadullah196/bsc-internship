@@ -1,0 +1,20 @@
+{
+    "name": "galib1996/wedevs-academy",
+    "description": "A tutorial plugin for weDevs academy. It's a test plugin by galib.",
+    "type": "wordpress-plugin",
+    "license": "GPLv2",
+    "authors": [
+        {
+            "name": "Galib",
+            "email": "md.asadullah196@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "weDevs\\Academy\\": "includes/"
+        },
+        "files": []
+    }
+}
