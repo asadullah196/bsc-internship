@@ -41,7 +41,7 @@
       * Class constructor
       */
      private function __construct(){
-         
+         $this -> define_constants();
      }
 
      /**
