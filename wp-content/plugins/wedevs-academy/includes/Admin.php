@@ -6,7 +6,7 @@ namespace weDevs\Academy;
  * The admin class
  */
 class Admin {
-    public function __construct() {
+    function __construct() {
         new Admin\Menu();
     }
 }
