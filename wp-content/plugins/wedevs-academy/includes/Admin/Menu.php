@@ -27,10 +27,14 @@ class Menu{
             __( 'Address Book', 'wedevs-academy'),
             __( 'Address Book', 'wedevs-academy'),
             $capability,
-            
+            'wedevs-academy-addressbook',
+            [ $this, 'addressbook_page']
         );
     }
     public function plugin_page(){
         echo 'Hello Galib';
+    }
+    public function addressbook_page(){
+        echo 'Hello Address of Galib';
     }
 }
