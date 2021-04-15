@@ -83,7 +83,7 @@
       * @return void
       */
      public function init_plugin(){
-        
+        new weDevs\Academy\Admin\Menu();
      }
      /**
       * Do stuff plugin activation 
