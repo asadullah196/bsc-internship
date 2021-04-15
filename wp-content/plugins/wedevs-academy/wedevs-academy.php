@@ -83,7 +83,11 @@
       * @return void
       */
      public function init_plugin(){
-        new weDevs\Academy\Admin\Menu();
+         if( is_admin() ){
+            new weDevs\Academy\Admin();
+         }else {
+             
+         }
      }
      /**
       * Do stuff plugin activation 
