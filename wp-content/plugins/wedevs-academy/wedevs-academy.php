@@ -86,7 +86,7 @@
          if( is_admin() ){
             new weDevs\Academy\Admin();
          }else {
-             
+            new weDevs\Academy\Frontend();
          }
      }
      /**
