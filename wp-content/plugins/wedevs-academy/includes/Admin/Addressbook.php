@@ -37,7 +37,7 @@ class Addressbook {
      * 
      * @return void
      */
-    public function form__handler(){
+    public function form_handler(){
         if( ! isset( $_POST['submit_address'] ) ) {
             return;
         }
@@ -49,5 +49,9 @@ class Addressbook {
         if( ! current_user_can( 'manage_options' ) ) {
             wp_die( 'Fu** Are you cheating?' );
         }
+
+        var_dump( $_POST);
+        exit;
+
     }
 }
