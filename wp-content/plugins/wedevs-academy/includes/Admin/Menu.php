@@ -19,22 +19,43 @@ class Menu{
             __( 'Academy', 'wedevs-academy'),
             $capability,
             $parent_slug,
-            [ $this, 'plugin_page'],
-            'dashicons-admin-tools'
+            [ $this, 'addressbook_page'],
+            'dashicons-admin-tools',
+            '2'
         );
+
+        /**
+         * add_submenu_page( 
+         * string $parent_slug, 
+         * string $page_title, 
+         * string $menu_title, 
+         * string $capability, 
+         * string $menu_slug, 
+         * callable $function = '', 
+         * int $position = null 
+         * );
+         */
         add_submenu_page (
             $parent_slug,
             __( 'Address Book', 'wedevs-academy'),
             __( 'Address Book', 'wedevs-academy'),
             $capability,
-            'wedevs-academy-addressbook',
+            $parent_slug,
             [ $this, 'addressbook_page']
         );
-    }
-    public function plugin_page(){
-        echo 'Hello Galib';
+        add_submenu_page (
+            $parent_slug,
+            __( 'Address Book', 'wedevs-academy'),
+            __( 'Settings', 'wedevs-academy'),
+            $capability,
+            'wedevs-academy-settings',
+            [ $this, 'settings_page']
+        );
     }
     public function addressbook_page(){
+        echo 'Hello Galib';
+    }
+    public function settings_page(){
         echo 'Hello Address of Galib';
     }
 }
