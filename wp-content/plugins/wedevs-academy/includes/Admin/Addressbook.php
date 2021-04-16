@@ -7,6 +7,6 @@ namespace weDevs\Academy\Admin;
  */
 class Addressbook {
     public function plugin_page() {
-        echo "Hello Baby, It's your address book";
+        $action = isset( $_GET['action'] ) ? $_GET['action'] : 'list';
     }
 }
