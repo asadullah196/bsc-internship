@@ -34,6 +34,6 @@
         </table>
 
         <?php wp_nonce_field( 'new-address' ); ?>
-        <?php submit_button( __( 'Add Address', 'wedevs-academy' ), 'primary', 'submit_-address'); ?>
+        <?php submit_button( __( 'Add Address', 'wedevs-academy' ), 'primary', 'submit_address'); ?>
     </form>
 </div>

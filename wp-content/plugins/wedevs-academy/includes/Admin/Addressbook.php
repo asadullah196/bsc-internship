@@ -38,8 +38,11 @@ class Addressbook {
      * @return void
      */
     public function form__handler(){
-        if( ! isset( $_-POST['submit_address'] ) ) {
+        if( ! isset( $_POST['submit_address'] ) ) {
             return;
+        }
+        if( ! wp_verify_nonce( $_POST['_wpnonce'],'new-address' ) ) {
+            wp_die( 'Fu** Are you cheating?' );
         }
     }
 }
