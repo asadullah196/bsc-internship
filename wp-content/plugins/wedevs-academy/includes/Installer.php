@@ -26,8 +26,15 @@ class Installer {
         update_option( 'wd_academy_version', WD_ACADEMY_VERSION );
     }
 
+    /**
+     * Create necessary database table
+     * 
+     * @return void
+     */
     public function create_tables() {
         global $wpdb;
+
+        $charset_collate = $wpdb->get_charset_collate();
 
         $schema = "CREATE TABLE IF NOT EXISTS `{$wpdb->prefix}wp_ac_address` (
             `id` int(20) NOT NULL AUTO_INCREMENT,
@@ -37,6 +44,12 @@ class Installer {
             `created_by` binary(20) NOT NULL,
             `created_at` datetime NOT NULL,
             PRIMARY KEY (`id`)
-           ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4";
+           ) $charset_collate";
+
+           if ( ! function_exists( 'dbDelta' ) ) {
+               require_once ABSPATH . 'wp-admin/includes/upgrade.php';
+           }
+
+           dbDelta( $schema );
     }
 }
