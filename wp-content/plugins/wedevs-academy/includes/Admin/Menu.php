@@ -53,9 +53,10 @@ class Menu{
         );
     }
     public function addressbook_page(){
-        echo 'Hello Galib';
+        $addressbook = new Addressbook();
+        $addressbook -> plugin_page();
     }
     public function settings_page(){
-        echo 'Hello Address of Galib';
+        echo 'Hello Settings Page';
     }
 }
