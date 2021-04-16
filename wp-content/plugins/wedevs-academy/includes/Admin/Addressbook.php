@@ -32,7 +32,14 @@ class Addressbook {
         }
     }
 
+    /**
+     * Handle the form
+     * 
+     * @return void
+     */
     public function form__handler(){
-        
+        if( ! isset( $_-POST['submit_address'] ) ) {
+            return;
+        }
     }
 }
