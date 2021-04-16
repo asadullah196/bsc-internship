@@ -32,5 +32,6 @@
                 </tr>
             </tbody>
         </table>
+        <?php submit_button( __( 'Add Address', 'wedevs-academy' ), 'primary', 'submit_-address'); ?>
     </form>
 </div>
