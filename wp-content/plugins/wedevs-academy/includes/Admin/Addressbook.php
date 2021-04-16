@@ -31,4 +31,8 @@ class Addressbook {
             include $template;
         }
     }
+
+    public function form__handler(){
+        
+    }
 }
