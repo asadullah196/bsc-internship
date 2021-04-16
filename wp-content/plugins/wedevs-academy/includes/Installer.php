@@ -6,6 +6,11 @@ namespace weDevs\Academy;
  * Installer class
  */
 class Installer {
+    /**
+     * Run the installer
+     * 
+     * @return void
+     */
     public function run() {
         $this -> add_version();
         $this -> create_tables();
@@ -22,6 +27,6 @@ class Installer {
     }
 
     public function create_tables() {
-
+        global $wpdb;
     }
 }
