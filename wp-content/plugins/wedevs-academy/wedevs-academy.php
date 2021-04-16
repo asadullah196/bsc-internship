@@ -95,7 +95,7 @@
       * @return void
       */
      public function activate(){
-       $insaller = new weDevs\Academy\Installer();
+       $installer = new weDevs\Academy\Installer();
        $installer -> run();
      }
  }
