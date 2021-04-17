@@ -61,8 +61,10 @@ class Addressbook {
         ]);
 
         if( ! is_wp_error( $insert_id ) ) {
-            
+            wp_die( $insert_id->get_error_message() );
         }
+
+        
         var_dump( $_POST);
         exit;
 
