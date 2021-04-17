@@ -1,6 +1,8 @@
 <div class="wrap">
     <h1><?php _e( 'Add New Address', 'wedevs-academy' ); ?></h1>
 
+    <?php var_dump( $this->errors ); ?>
+    
     <form action="" method="post">
         <table class="form-table">
             <tbody>
