@@ -7,13 +7,14 @@ namespace weDevs\Academy;
  */
 class Admin {
     function __construct() {
-        $this->dispatch_action();
+        $addressbook = new Admin\Addressbook();
 
-        new Admin\Menu();
+        $this->dispatch_action( $addressbook );
+
+        new Admin\Menu( $addressbook );
     }
 
-    public function dispatch_action() {
-        $addressbook = new Admin\Addressbook();
+    public function dispatch_action( $addressbook ) {
         add_action( 'admin_init', [$addressbook, 'form_handler' ] );
     }
 }
