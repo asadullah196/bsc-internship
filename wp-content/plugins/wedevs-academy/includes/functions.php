@@ -13,9 +13,21 @@ function wd_ac_insert_address( $args = [] ) {
 
      $data = wp_parse_args ( $args, $defults ); 
 
-     $wpdb->insert(
+     $inserted = $wpdb->insert(
          "{$wpdb->prefix}ac_addresses",
          $data,
-         $format
+         [
+             '%s',
+             '%s',
+             '%s',
+             '%d',
+             '%s'
+         ]
      );
+
+     if( ! $inserted ) {
+         return new \WP_Error( 'failed-to-insert', __('Failed to insert data', 'wedevs-academy') );
+     }
+
+     return $wpdb->insert_id;
 }
