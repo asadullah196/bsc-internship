@@ -58,35 +58,34 @@ class Addressbook {
             wp_die( 'Fu** Are you cheating?' );
         }
 
-        $name = isset( $_POST['name'] ) ? sanitize_text_field( $_POST['name'] ) : '';
-        $address = isset( $_POST['namaddresse'] ) ? sanitize_textarea_field( $_POST['address'] ) : '';
-        $phone = isset( $_POST['phone'] ) ? sanitize_text_field( $_POST['phone'] ) : '';
+        $name    = isset( $_POST['name'] ) ? sanitize_text_field( $_POST['name'] ) : '';
+        $address = isset( $_POST['address'] ) ? sanitize_textarea_field( $_POST['address'] ) : '';
+        $phone   = isset( $_POST['phone'] ) ? sanitize_text_field( $_POST['phone'] ) : '';
 
-        if( empty( $name ) ) {
-            $this->errors['name'] = __('Please provide a name','wedevs-academy' );
+        if ( empty( $name ) ) {
+            $this->errors['name'] = __( 'Please provide a name', 'wedevs-academy' );
         }
 
-        if( empty( $phone ) ) {
-            $this->errors['phone'] = __('Please provide a phone number','wedevs-academy' );
+        if ( empty( $phone ) ) {
+            $this->errors['phone'] = __( 'Please provide a phone number.', 'wedevs-academy' );
         }
 
-        if( ! empty( $this->errors ) ) {
+        if ( ! empty( $this->errors ) ) {
             return;
         }
 
-        $insert_id = wd_ac_insert_address([
-            'name' => $name,
+        $insert_id = wd_ac_insert_address( [
+            'name'    => $name,
             'address' => $address,
-            'phone' => $phone
-        ]);
+            'phone'   => $phone
+        ] );
 
-        if( is_wp_error( $insert_id ) ) {
+        if ( is_wp_error( $insert_id ) ) {
             wp_die( $insert_id->get_error_message() );
         }
 
-        $redirect_to = admin_url( 'admin.php?page=wedevs-academy&inserted=true' );
-        wp_redirect( $redirect_to );
+        $redirected_to = admin_url( 'admin.php?page=wedevs-academy&inserted=true' );
+        wp_redirect( $redirected_to );
         exit;
-
     }
 }

@@ -22,10 +22,10 @@ function wd_ac_insert_address( $args = [] ) {
          'created_at' => current_time( 'mysql' ),
      ];
 
-     $data = wp_parse_args ( $args, $defults ); 
+     $data = wp_parse_args( $args, $defults ); 
 
      $inserted = $wpdb->insert(
-         "{$wpdb->prefix}ac_addresses",
+         $wpdb->prefix . 'ac_addresses',
          $data,
          [
              '%s',
@@ -36,9 +36,9 @@ function wd_ac_insert_address( $args = [] ) {
          ]
      );
 
-     if( ! $inserted ) {
-         return new \WP_Error( 'failed-to-insert', __('Failed to insert data', 'wedevs-academy') );
-     }
+    if ( ! $inserted ) {
+        return new \WP_Error( 'failed-to-insert', __( 'Failed to insert data', 'wedevs-academy' ) );
+    }
 
-     return $wpdb->insert_id;
+    return $wpdb->insert_id;
 }

@@ -39,7 +39,7 @@ class Installer {
         $schema = "CREATE TABLE IF NOT EXISTS `{$wpdb->prefix}ac_address` (
             `id` int(20) NOT NULL AUTO_INCREMENT,
             `name` varchar(100) NOT NULL,
-            `email` varchar(255) NOT NULL,
+            `address` varchar(255) NOT NULL,
             `phone` varchar(30) NOT NULL,
             `created_by` binary(20) NOT NULL,
             `created_at` datetime NOT NULL,
