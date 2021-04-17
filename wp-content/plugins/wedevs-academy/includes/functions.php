@@ -1,5 +1,12 @@
 <?php
 
+/**
+ * Insert a new address 
+ * 
+ * @param array $args
+ * 
+ * @return int/WP_Error
+ */
 function wd_ac_insert_address( $args = [] ) {
      global $wpdb;
 
