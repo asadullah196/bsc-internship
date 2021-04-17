@@ -50,8 +50,19 @@ class Addressbook {
             wp_die( 'Fu** Are you cheating?' );
         }
 
-        var_dump( wd_ac_insert_address() );
+        $name = isset( $_POST['name'] ) ? sanitize_text_field( $_POST['name'] ) : '';
+        $address = isset( $_POST['namaddresse'] ) ? sanitize_textarea_field( $_POST['address'] ) : '';
+        $phone = isset( $_POST['phone'] ) ? sanitize_text_field( $_POST['phone'] ) : '';
 
+        $insert_id = wd_ac_insert_address([
+            'name' => $name,
+            'address' => $address,
+            'phone' => $phone
+        ]);
+
+        if( ! is_wp_error( $insert_id ) ) {
+            
+        }
         var_dump( $_POST);
         exit;
 
