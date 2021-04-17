@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => 'fb0bbfc1f7f843f73123c56fdf24ab31a55e6ac7',
+    'reference' => 'c91d8d8084a6f8f8671216f52e9b2b5308fea9d5',
     'name' => 'galib1996/wedevs-academy',
   ),
   'versions' => 
@@ -18,7 +18,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => 'fb0bbfc1f7f843f73123c56fdf24ab31a55e6ac7',
+      'reference' => 'c91d8d8084a6f8f8671216f52e9b2b5308fea9d5',
     ),
   ),
 );

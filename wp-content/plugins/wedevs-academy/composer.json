@@ -15,6 +15,6 @@
         "psr-4": {
             "weDevs\\Academy\\": "includes/"
         },
-        "files": []
+        "files": [ "includes/functions.php" ]
     }
 }
