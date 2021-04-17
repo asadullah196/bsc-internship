@@ -50,6 +50,8 @@ class Addressbook {
             wp_die( 'Fu** Are you cheating?' );
         }
 
+        var_dump( wd_ac_insert_address() );
+
         var_dump( $_POST);
         exit;
 

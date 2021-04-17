@@ -10,6 +10,10 @@
 function wd_ac_insert_address( $args = [] ) {
      global $wpdb;
 
+     if( empty( $data['name'] ) ) {
+        return new \WP_Error( 'no-name', __('You must provide a name', 'wedevs-academy' ) );
+     }
+
      $defults = [
          'name' => '',
          'address' => '',
