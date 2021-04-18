@@ -42,3 +42,20 @@ function wd_ac_insert_address( $args = [] ) {
 
     return $wpdb->insert_id;
 }
+
+function wd_ac_get_addresses( $args = [] ) {
+    global $wpdb;
+
+    $defults = [
+        'number' => 20,
+        'offset' => 0,
+        'orderby' => 'id',
+        'order' => 'ASC'
+    ];
+
+    $args = wp_parse_args( $args, $defults );
+
+    $items = $wpdb->get_results(
+        $wpdb -> prepare();
+    );
+}
