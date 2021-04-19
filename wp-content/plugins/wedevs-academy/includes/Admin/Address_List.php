@@ -29,6 +29,8 @@ class Address_List extends \WP_List_Table {
         $hidden = [];
         $sortable = $this->get_sortable_columns();
 
-        $this->column_headers = [ $column, $hidden, $sortable ];
+        $this->_column_headers = [ $column, $hidden, $sortable  ];
+
+
     }
 }
