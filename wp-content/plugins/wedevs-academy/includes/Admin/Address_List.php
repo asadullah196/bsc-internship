@@ -25,6 +25,10 @@ class Address_List extends \WP_List_Table {
         ];
     }
     public function prepare_items() {
+        $column = $this->get_columns();
+        $hidden = [];
+        $sortable = $this->get_sortable_columns();
 
+        $this->column_headers = [ $column, $hidden, $sortable ];
     }
 }
