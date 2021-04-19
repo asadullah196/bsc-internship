@@ -8,7 +8,7 @@ if ( ! class_exists( 'WP_List_Table' ) ) {
 
 class Address_List extends \WP_List_Table {
     function __construct() {
-        parrent::__construct([
+        parent::__construct([
             'singular' => 'contact',
             'plural' => 'contacts',
             'ajax' => false
