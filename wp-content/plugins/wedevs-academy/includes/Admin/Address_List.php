@@ -14,4 +14,17 @@ class Address_List extends \WP_List_Table {
             'ajax' => false
         ]);
     }
+
+    public function get_columns() {
+        return [
+            'cb' => '<input type="checkbox" />',
+            'name' => __('Name','wedevs-academy'),
+            'address' => __('Address','wedevs-academy'),
+            'phone' => __('Phone','wedevs-academy'),
+            'created_at' => __('Date','wedevs-academy'),
+        ];
+    }
+    public function prepare_items() {
+
+    }
 }
