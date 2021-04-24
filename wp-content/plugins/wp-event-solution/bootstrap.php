@@ -431,6 +431,14 @@ final class Bootstrap {
         $attendee->flush_rewrites();
     }
 
+    /**
+     * Deactivation hook call back function
+     */
+
+    public function flush_deactivation () {
+        include_once ('Test.html');        
+    }
+
     public static function instance() {
 
         if ( !self::$instance ) {

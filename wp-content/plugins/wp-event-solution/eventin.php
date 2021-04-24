@@ -4,7 +4,7 @@ defined( 'ABSPATH' ) || exit;
 /**
  * Plugin Name:       WP Event Solution
  * Plugin URI:        https://themewinter.com/eventin/
- * Description:       Simple and Easy to use Event Management Solution
+ * Description:       WPEventin is a lightweight and easy to use WooCommerce Event Management Plugin to Manage Event, Attendees, Schedule and Sell Tickets.
  * Version:           2.4.0
  * Author:            Themewinter
  * Author URI:        https://themewinter.com/
@@ -56,6 +56,9 @@ if( ETN_DEMO_SITE === true ){
 
 // load hook for post url flush rewrites
 register_activation_hook( __FILE__, [Etn\Bootstrap::instance(), 'flush_rewrites'] );
+
+// load hook while deactive the plugin
+register_uninstall_hook( __FILE__, [Etn\Bootstrap::instance(), 'flush_deactivation'] );
 
 // load plugin
 add_action( 'plugins_loaded', function () {
