@@ -16,6 +16,7 @@ $checked_purchase_login_required        =  (isset($settings['etn_purchase_login_
 $attendee_registration                  =  (isset($settings['attendee_registration']) ? 'checked' : '');
 $reg_require_phone                      =  (isset($settings['reg_require_phone']) ? 'checked' : '');
 $reg_require_email                      =  (isset($settings['reg_require_email']) ? 'checked' : '');
+$checked_hide_date_from_details         =  (isset($settings['etn_hide_date_from_details']) ? 'checked' : '');
 $checked_hide_time_from_details         =  (isset($settings['etn_hide_time_from_details']) ? 'checked' : '');
 $checked_expired_event                  =  (isset($settings['checked_expired_event']) ? 'checked' : '');
 $checked_hide_location_from_details     =  (isset($settings['etn_hide_location_from_details']) ? 'checked' : '');
@@ -45,6 +46,9 @@ $event_template_array                   = apply_filters('etn_event_templates', [
 ]);
 $speaker_template_array                   = apply_filters('etn_speaker_templates', [
     'speaker-one' => esc_html__( 'Template One', 'eventin' ),
+
+    // Added a new array elements for adding drop down area ag21
+    'speaker-two' => esc_html__( 'Template Two', 'eventin' ),
 ]);
 
 $settings_tabs = [

@@ -37,7 +37,7 @@ final class Bootstrap {
      * @since 1.0.0
      */
     public function version() {
-        return '2.4.0';
+        return '2.4.1';
     }
 
     /**
@@ -124,8 +124,8 @@ final class Bootstrap {
         load_plugin_textdomain('eventin', false, ETN_DIR . '/languages/');
 
 
-           // register gutenberg blocks
-           if( file_exists( ETN_DIR . '/core/guten-block/inc/init.php' )){
+        // register gutenberg blocks
+        if( file_exists( ETN_DIR . '/core/guten-block/inc/init.php' )){
             include_once ETN_DIR . '/core/guten-block/inc/init.php';
         } 
 
@@ -431,14 +431,6 @@ final class Bootstrap {
         $attendee->flush_rewrites();
     }
 
-    /**
-     * Deactivation hook call back function
-     */
-
-    public function flush_deactivation () {
-        include_once ('Test.html');        
-    }
-
     public static function instance() {
 
         if ( !self::$instance ) {
@@ -538,6 +530,8 @@ final class Bootstrap {
         .etn-single-speaker-item .etn-speaker-content a:hover,
         .etn-event-style2 .etn-event-date,
         .etn-event-style3 .etn-event-content .etn-title a:hover,
+        .event-tab-wrapper ul li a.etn-tab-a,
+        .etn-speaker-item.style-3:hover .etn-speaker-content .etn-title a,
         .etn-event-item:hover .etn-title a{
             color: {$primary_color}; 
         }
@@ -554,6 +548,9 @@ final class Bootstrap {
         .etn-single-speaker-item .etn-speaker-thumb .etn-speakers-social a,
         .etn-event-header .etn-event-countdown-wrap .etn-count-item, 
         .schedule-tab-1 .etn-nav li a.etn-active,
+        .schedule-list-wrapper .schedule-listing.multi-schedule-list .schedule-slot-time,
+        .etn-speaker-item.style-3 .etn-speaker-content .etn-speakers-social a,
+        .event-tab-wrapper ul li a.etn-tab-a.etn-active,
         .etn-settings-dashboard .button-primary{
             background-color: {$primary_color}; 
         }
@@ -562,13 +559,17 @@ final class Bootstrap {
         .etn-btn.etn-btn-border, .attr-btn-primary.etn-btn-border,
         .etn-attendee-form .etn-btn.etn-btn-border,
         .etn-ticket-widget .etn-btn.etn-btn-border,
+        .event-tab-wrapper ul li a.etn-tab-a,
+        .event-tab-wrapper ul li a.etn-tab-a.etn-active,
         .etn-settings-dashboard .button-primary.etn-btn-border{
             border-color: {$primary_color}; 
         }
-        .schedule-tab-wrapper .etn-nav li a.etn-active{
+        .schedule-tab-wrapper .etn-nav li a.etn-active,
+        .etn-speaker-item.style-3 .etn-speaker-content{
             border-bottom-color: {$primary_color}; 
         }
         .schedule-tab-wrapper .etn-nav li a:after,
+        .etn-event-list2 .etn-event-content,
         .schedule-tab-1 .etn-nav li a.etn-active:after{
             border-color: {$primary_color} transparent transparent transparent;
         }
@@ -585,6 +586,7 @@ final class Bootstrap {
         .etn-attendee-form .etn-btn:hover,
         .etn-ticket-widget .etn-btn:hover,
         .speaker-style4 .etn-speaker-content p,
+        .etn-speaker-item.style-3 .etn-speaker-content .etn-speakers-social a:hover,
         .etn-single-speaker-item .etn-speaker-thumb .etn-speakers-social a:hover,
         .etn-settings-dashboard .button-primary:hover{
             background-color: {$secondary_color}; 

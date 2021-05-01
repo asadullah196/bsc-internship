@@ -1,0 +1,36 @@
+@charset "UTF-8";
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+$white-color    : #fff;
+$primary-color  : #FF057C;
+$gray-color     : #f1f5f8;
+$secondary-color: #09C4B7;
+$gradient-color : linear-gradient(80deg, #45137B 0%, #FF057C 100%);
+
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform    : $property;
+  transform        : $property;
+}
+
+@mixin border-radius($radius) {
+  border-radius        : $radius;
+  -webkit-border-radius: $radius;
+  -ms-border-radius    : $radius;
+}
+
+//usage: @include shift([property],[duration],[easing]);
+@mixin transition($property: all, $duration: 0.4s, $ease: ease) {
+  transition        : $property $duration $ease;
+  -webkit-transition: $property $duration $ease;
+  -moz-transition   : $property $duration $ease;
+  -ms-transition    : $property $duration $ease;
+}
+
+@mixin flex-position($display, $contet, $items) {
+  display        : $display;
+  justify-content: $contet;
+  align-items    : $items;
+}

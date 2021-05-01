@@ -1,0 +1,32 @@
+2021-04-29T14:01:15+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($function) must be a valid callback, function "etn_single_speaker_template_select" not found or invalid function name in C:\xampp\htdocs\wordpressform\wp-includes\class-wp-hook.php:292
+Stack trace:
+#0 C:\xampp\htdocs\wordpressform\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 C:\xampp\htdocs\wordpressform\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\wordpressform\wp-content\plugins\wp-event-solution\templates\single-speaker.php(31): do_action('etn_single_spea...', NULL)
+#3 C:\xampp\htdocs\wordpressform\wp-content\plugins\wp-event-solution\core\speaker\views\single\speaker-single-page.php(10): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpressform\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\wordpressform\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\wordpressform\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\wordpressform\wp-includes\class-wp-hook.php on line 292
+
+2021-04-29T19:06:57+00:00 CRITICAL Unclosed '{' on line 190 does not match ']' in C:\xampp\htdocs\wordpressform\wp-content\plugins\wp-event-solution\bootstrap.php on line 226
+
+2021-04-29T19:28:12+00:00 CRITICAL Uncaught Error: Call to undefined method Etn\Bootstrap::handle_get_help_and_upgrade_men() in C:\xampp\htdocs\wordpressform\wp-content\plugins\wp-event-solution\bootstrap.php:181
+Stack trace:
+#0 C:\xampp\htdocs\wordpressform\wp-content\plugins\wp-event-solution\bootstrap.php(72): Etn\Bootstrap->handle_buy_pro_module()
+#1 C:\xampp\htdocs\wordpressform\wp-content\plugins\wp-event-solution\eventin.php(69): Etn\Bootstrap->init()
+#2 C:\xampp\htdocs\wordpressform\wp-includes\class-wp-hook.php(292): {closure}('')
+#3 C:\xampp\htdocs\wordpressform\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#4 C:\xampp\htdocs\wordpressform\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#5 C:\xampp\htdocs\wordpressform\wp-settings.php(423): do_action('plugins_loaded')
+#6 C:\xampp\htdocs\wordpressform\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\wordpressform\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\wordpressform\wp-admin\admin.php(34): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+  thrown in C:\xampp\htdocs\wordpressform\wp-content\plugins\wp-event-solution\bootstrap.php on line 181
+
+2021-04-29T19:30:52+00:00 CRITICAL syntax error, unexpected token "->" in C:\xampp\htdocs\wordpressform\wp-content\plugins\wp-event-solution\bootstrap.php on line 194
+
+2021-04-29T20:47:29+00:00 CRITICAL syntax error, unexpected token "->" in C:\xampp\htdocs\wordpressform\wp-content\plugins\wp-event-solution\bootstrap.php on line 194
+

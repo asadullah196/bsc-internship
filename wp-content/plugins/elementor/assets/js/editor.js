@@ -1,4 +1,4 @@
-/*! elementor - v3.2.1 - 21-04-2021 */
+/*! elementor - v3.2.2 - 26-04-2021 */
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
@@ -17204,10 +17204,12 @@ var EditorBase = /*#__PURE__*/function (_Marionette$Applicati) {
             right: '0',
             left: '0',
             top: '0',
-            bottom: '0',
-            '--e-editor-preview-width': ui.size.width + 'px',
-            '--e-editor-preview-height': ui.size.height + 'px'
-          });
+            bottom: '0'
+          }); // Old versions of jQuery don't support custom properties
+
+          var style = $responsiveWrapper[0].style;
+          style.setProperty('--e-editor-preview-width', ui.size.width + 'px');
+          style.setProperty('--e-editor-preview-height', ui.size.height + 'px');
         }
       });
     }
@@ -17270,11 +17272,11 @@ var EditorBase = /*#__PURE__*/function (_Marionette$Applicati) {
           currentBreakpoint = elementor.channels.deviceMode.request('currentMode');
 
       if ('desktop' === currentBreakpoint) {
-        this.destroyPreviewResizable();
-        $responsiveWrapper.css({
-          '--e-editor-preview-width': '',
-          '--e-editor-preview-height': ''
-        });
+        this.destroyPreviewResizable(); // Old versions of jQuery don't support custom properties
+
+        var style = $responsiveWrapper[0].style;
+        style.setProperty('--e-editor-preview-width', '');
+        style.setProperty('--e-editor-preview-height', '');
       } else {
         this.activatePreviewResizable();
         var breakpointResizeOptions = this.getBreakpointResizeOptions(currentBreakpoint);
@@ -17290,10 +17292,13 @@ var EditorBase = /*#__PURE__*/function (_Marionette$Applicati) {
           }
         }
 
-        $responsiveWrapper.resizable('option', (0, _objectSpread2.default)({}, breakpointResizeOptions)).css({
-          '--e-editor-preview-width': widthToShow + 'px',
-          '--e-editor-preview-height': breakpointResizeOptions.height + 'px'
-        });
+        $responsiveWrapper.resizable('option', (0, _objectSpread2.default)({}, breakpointResizeOptions)); // Old versions of jQuery don't support custom properties
+
+        var _style = $responsiveWrapper[0].style;
+
+        _style.setProperty('--e-editor-preview-width', widthToShow + 'px');
+
+        _style.setProperty('--e-editor-preview-height', breakpointResizeOptions.height + 'px');
       }
     }
   }, {
@@ -17457,10 +17462,10 @@ var EditorBase = /*#__PURE__*/function (_Marionette$Applicati) {
   }, {
     key: "updatePreviewSize",
     value: function updatePreviewSize(size) {
-      this.$previewResponsiveWrapper.css({
-        '--e-editor-preview-width': size.width + 'px',
-        '--e-editor-preview-height': size.height + 'px'
-      });
+      // Old versions of jQuery don't support custom properties
+      var style = this.$previewResponsiveWrapper[0].style;
+      style.setProperty('--e-editor-preview-width', size.width + 'px');
+      style.setProperty('--e-editor-preview-height', size.height + 'px');
     }
   }, {
     key: "enterPreviewMode",

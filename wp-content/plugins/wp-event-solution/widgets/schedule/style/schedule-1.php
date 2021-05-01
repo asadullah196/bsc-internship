@@ -13,7 +13,7 @@ if ( is_array( $data ) && !empty( $data ) ) {
 $i = -1;
 ?>
 <!-- schedule tab start -->
-<div class="schedule-tab-wrapper">
+<div class="schedule-tab-wrapper etn-tab-wrapper">
     <ul class='etn-nav'>
         <?php
         $i = -1;

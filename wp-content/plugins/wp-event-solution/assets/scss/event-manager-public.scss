@@ -111,6 +111,82 @@ $secondary-color: #FF007A;
             bottom : 30px;
         }
     }
+    // speaker style 3
+    &.style-3{
+
+        .etn-speaker-thumb{
+            img{
+                -webkit-transform: scale(1);
+                -ms-transform: scale(1);
+                transform: scale(1);
+                -o-transition: all 0.4s ease;
+                transition: all 0.4s ease;
+                -webkit-transition: all 0.4s ease;
+                -moz-transition: all 0.4s ease;
+                -ms-transition: all 0.4s ease;
+            }
+        }
+
+        .etn-speaker-content{
+            position: absolute;
+            right: 0;
+            bottom: -13px;
+            background: $white-color;
+            z-index: 1;
+            width: 90%;
+            padding: 20px 0 25px;
+            .etn-title{
+                margin: 0 0 10px;
+            }
+            p{
+                margin-bottom: 15px;
+            }
+
+            .etn-speakers-social {
+                a {
+                    display         : inline-block;
+                    width           : 40px;
+                    height          : 40px;
+                    background-color: $primary-color;
+                    line-height     : 40px;
+                    color           : #fff;
+                    margin          : 0 2px;
+                    font-size       : 14px;
+
+                    &:hover {
+                        background-color: rgba($primary-color, 0.8);
+                    }
+                }
+            }
+        }
+
+        &:hover{
+            .etn-speaker-thumb{
+                img{
+                    -webkit-transform: scale(1.2);
+                    -ms-transform: scale(1.2);
+                    transform: scale(1.2);
+                }
+            }
+
+            .etn-speaker-content{
+                .etn-title{
+                    a{
+                        color: $secondary-color;
+                    }
+                }
+                p{
+                    color: #000000
+                }
+              
+                .etn-speakers-social {
+                    @include transform(scale(1));
+                    opacity: 1;
+                    bottom : 30px;
+                }
+            }
+        }
+    }
 }
 
 /*================================
@@ -188,7 +264,6 @@ $secondary-color: #FF007A;
             float      : left;
             font-size  : 15px;
             font-weight: 700;
-
             i {
                 padding-right: 5px;
             }
@@ -229,6 +304,58 @@ $secondary-color: #FF007A;
 
 }
 
+// event list style 2
+.etn-event-list2{
+    .etn-event-item{
+        padding: 0;
+        box-shadow: none;
+    }
+    .etn-event-content{
+        border-top: 4px solid $primary-color;
+        margin: -60px 20px 0;
+        background: #fff;
+        position: relative;
+        padding: 24px;
+        @include border-radius(6px);
+    }
+  
+    .etn-ticket-price,
+    .etn-event-location{
+        margin: 0px 15px 15px 0;
+    }
+    .event-top-meta{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+/*==================================
+  event tab wrapper
+=================================*/
+.event-tab-wrapper{
+	ul{
+		margin-bottom: 30px;
+		padding: 0;
+		text-align: center;
+		li{
+			display: inline-block;
+			a.etn-tab-a {
+				padding: 8px 20px;
+				color: #fff;
+				display: block;
+				margin: 0 2px;
+				border: 1px solid $primary-color;
+				color: $primary-color;
+				@include border-radius(36px);
+				&.etn-active{
+					background-color: $primary-color;
+					color: #fff;
+				}
+			}
+		}
+	}
+}
 
 
 /*=======================
@@ -359,6 +486,137 @@ speaker single page
         }
     }
 }
+
+
+
+//event schedule wrapper
+.schedule-list-wrapper{
+
+    .schedule-listing {
+
+        &.multi-schedule-list{
+            display: flex;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            flex-direction: row;
+
+            .schedule-slot-time {
+                color: #fff;
+                background: $primary-color;
+                padding: 60px 20px;
+                font-size: 15px;
+                font-weight: 700;
+                -ms-flex: 0 0 18%;
+                flex: 0 0 18%;
+                max-width: 18%;
+                display: flex;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+
+                span {
+                    display: block;
+                    line-height: 26px;
+                }
+            }
+
+            .schedule-slot-info {
+                padding: 35px 40px;
+                border: 1px dashed #e5e5e5;
+                border-left: none;
+                width: 100%;
+
+                .schedule-slot-title {
+                    margin: 0;
+                    line-height: 1;
+                }
+
+                .schedule-slot-details {
+                    margin-bottom: 0;
+                }
+
+                .multi-speaker {
+
+                    .speaker-content {
+                        margin: 30px 15px 0 0;
+                        display: inline-block;
+                        text-align: center;
+
+                        .schedule-slot-speakers {
+                            width: 50px;
+                            height: 50px;
+                            border-radius: 50%;
+                            -webkit-border-radius: 50%;
+                            -ms-border-radius: 50%;
+                        }
+                        .schedule-speaker{
+                            margin: 0;
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+                a{
+                    outline: none;
+                }
+            }
+
+            &:nth-of-type(even){
+                .schedule-slot-time {
+                    opacity: 0.8;
+                }
+            }
+            @media (max-width: 767px) {
+                flex-direction: column;
+                .schedule-slot-time{
+                    -webkit-box-flex: 0;
+                    -ms-flex: 0 0 100%;
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                    padding: 20px 35px;
+                }
+                .schedule-slot-info{
+                    -webkit-box-flex: 0;
+                    -ms-flex: 0 0 100%;
+                    flex: 0 0 100%;
+                    padding: 35px 40px 35px 35px;
+                    border-left: 1px dashed #e5e5e5;
+                }
+            }
+        }
+    }
+}
+
+@-webkit-keyframes fadeUp {
+    from {
+        opacity          : 0;
+        -webkit-transform: translate3d(0, 3%, 0);
+        transform        : translate3d(0, 3%, 0);
+    }
+
+    to {
+        opacity          : 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform        : translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity          : 0;
+        -webkit-transform: translate3d(0, 3%, 0);
+        transform        : translate3d(0, 3%, 0);
+    }
+
+    to {
+        opacity          : 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform        : translate3d(0, 0, 0);
+    }
+}
+
 
 // schedule wrapper
 .etn-schedule-wrap {
@@ -560,26 +818,6 @@ speaker single page
         }
     }
 
-    // tab animation
-    .etn-tab-content {
-        .etn-tab {
-            display: none;
-
-            &.tab-active {
-                display: block;
-            }
-        }
-
-        .etn-tab.tab-active {
-            -webkit-animation-name     : fadeUp;
-            animation-name             : fadeUp;
-            -webkit-animation-duration : 1.5s;
-            animation-duration         : 1.5s;
-            -webkit-animation-fill-mode: both;
-            animation-fill-mode        : both;
-        }
-    }
-
     &.schedule-style-1 {
         .etn-nav {
             li {
@@ -620,6 +858,26 @@ speaker single page
     }
 }
 
+// tab animation
+.etn-tab-content {
+    .etn-tab {
+        display: none;
+
+        &.tab-active {
+            display: block;
+        }
+    }
+
+    .etn-tab.tab-active {
+        -webkit-animation-name     : fadeUp;
+        animation-name             : fadeUp;
+        -webkit-animation-duration : 1.5s;
+        animation-duration         : 1.5s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode        : both;
+    }
+}
+
 @-webkit-keyframes fadeUp {
     from {
         opacity          : 0;
@@ -647,6 +905,8 @@ speaker single page
         transform        : translate3d(0, 0, 0);
     }
 }
+
+
 
 /*=======================
 event  single page
@@ -927,6 +1187,17 @@ Etn event sidebar
 
             .attr-form-control {
                 border: 1px solid #eaeaea;
+            }
+        }
+        .etn-price-field{
+            input[type=number]::-webkit-outer-spin-button,
+            input[type=number]::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+            
+            input[type=number] {
+                -moz-appearance:textfield;
             }
         }
 

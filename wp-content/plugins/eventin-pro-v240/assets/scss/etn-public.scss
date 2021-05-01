@@ -1,0 +1,1286 @@
+@import '_base';
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+/*==================================
+  accordion
+=================================*/
+.etn-accordion-wrap {
+	.etn-faq-heading {
+		font-size: 36px;
+		text-transform: capitalize;
+		margin-bottom: 30px;
+
+		@media (max-width: 767px) {
+			font-size: 28px;
+		}
+	}
+
+	.etn-content-item {
+		.etn-accordion-heading {
+			font-size: 22px;
+			cursor: pointer;
+			padding-right: 40px;
+			position: relative;
+			margin: 0 0 15px;
+
+			@media (max-width: 767px) {
+				font-size: 18px;
+			}
+
+			i {
+				position: absolute;
+				right: 0;
+				top: 8px;
+				font-size: 16px;
+			}
+
+			&.active {
+				i {
+					&:before {
+						content: "\f068";
+					}
+				}
+			}
+		}
+
+
+	}
+
+	.etn-acccordion-contents {
+		display: none;
+
+		&.active {
+			display: block;
+		}
+	}
+}
+
+/*==================================
+  organizer
+=================================*/
+.etn-organizer-item {
+	padding: 40px;
+	border: 1px solid #eaeaea;
+	border-radius: 8px;
+	margin-bottom: 30px;
+
+	.etn-organizer-company-logo {
+		margin-bottom: 30px;
+		padding-bottom: 30px;
+		border-bottom: 1px solid #eaeaea;
+	}
+
+	.etn-organizer-content {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+
+		li {
+			line-height: 30px;
+
+			strong {
+				margin-right: 20px;
+			}
+
+			.etn-organizer-social {
+				display: inline-block;
+
+				a {
+					margin-right: 10px;
+					font-size: 14px;
+
+					i.fa-facebook,
+					i.fa-facebook-f {
+						color: #3b5999;
+					}
+
+					i.fa-twitter {
+						color: #55acee;
+					}
+
+					i.fa-pinterest-p {
+						color: #bd081c;
+					}
+
+					i.fa-linkedin {
+						color: #0077B5;
+					}
+
+					i.fa-instagram {
+						color: #e4405f;
+					}
+
+					i.fa-wordpress {
+						color: #21759b;
+					}
+
+					i.fa-dribble {
+						color: #ea4c89;
+					}
+				}
+			}
+		}
+	}
+}
+
+/*==================================
+  event style 2
+=================================*/
+.etn-event-style2 {
+	.etn-event-item {
+		padding: 0;
+		box-shadow: none;
+	}
+
+	.etn-event-date {
+		color: $primary-color;
+	}
+
+	.etn-atend-btn {
+		position: absolute;
+		right: 15px;
+		top: 15px;
+
+		.etn-btn {
+			line-height: 20px;
+		}
+	}
+
+}
+
+/*==================================
+  event style 3
+=================================*/
+.etn-event-style3 {
+	.etn-event-item {
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		min-height: 370px;
+
+		&:before {
+			position: absolute;
+			content: "";
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: 0;
+			background: linear-gradient(to bottom, transparent 28%, rgba(0, 0, 0, 0.6) 100%);
+			@include transition();
+			@include border-radius(12px);
+		}
+
+		&:hover {
+			background-position: 40%;
+		}
+	}
+
+	.etn-event-location {
+		margin-bottom: 15px;
+	}
+
+	.etn-atend-btn {
+		position: absolute;
+		right: 20px;
+		top: 20px;
+
+		.etn.btn {
+			line-height: 22px;
+		}
+	}
+
+	.etn-event-content {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		padding: 30px;
+
+		.etn-event-date {
+			margin-bottom: 15px;
+		}
+
+		.etn-event-date,
+		.etn-title a,
+		.etn-event-location,
+		.etn-event-attendee-count {
+			color: #fff;
+		}
+
+		.etn-title a:hover {
+			color: $primary-color;
+		}
+		p{
+			color: #fff;
+		}
+
+	}
+}
+
+/*==================================
+  event style 4
+=================================*/
+.etn-event-style4 {
+	.etn-event-footer {
+		.etn-event-attendee-count {
+			float: left;
+		}
+	}
+}
+
+/*==================================
+  event slider
+=================================*/
+.event-slider-shortcode{
+	position: relative;
+}
+.etn-event-slider,
+.etn-speaker-slider {
+	overflow: hidden;
+
+	.swiper-pagination-bullet {
+		background-color: $primary-color;
+		width: 10px;
+		height: 10px;
+
+	}
+
+	.swiper-button-next,
+	.swiper-button-prev {
+		background-image: none;
+		background-color: $primary-color;
+		color: #fff;
+		line-height: 40px;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		-webkit-border-radius: 50%;
+		-ms-border-radius: 50%;
+		text-align: center;
+		font-size: 14px;
+		@include transition();
+		@include transform(scale(0));
+		&:after{
+			display: none;
+		}
+	}
+
+
+	&:hover {
+
+		.swiper-button-next,
+		.swiper-button-prev {
+			@include transform(scale(1));
+		}
+
+		.swiper-button-next {
+			right: -45px;
+		}
+
+		.swiper-button-prev {
+			left: -45px;
+		}
+	}
+}
+
+
+/*==================================
+  event speaker
+=================================*/
+.etn-single-speaker-item {
+	position: relative;
+	margin-bottom: 30px;
+	.etn-speakers-social {
+		a {
+			display: inline-block;
+			@include transition();
+			font-size: 14px;
+			margin: 0 2px;
+
+			.fa-facebook,
+			.fa-facebook-f {
+				color: #3b5999;
+			}
+
+			.fa-twitter {
+				color: #55acee;
+			}
+
+			.fa-linkedin,
+			.fa-linkedin-in {
+				color: #0077B5;
+			}
+
+			.fa-instagram {
+				color: #e4405f;
+			}
+
+			.fa-wordpress {
+				color: #21759b;
+			}
+
+			.fa-vimeo {
+				color: #1ab7ea;
+			}
+
+			.fa-youtube {
+				color: #cd201f;
+			}
+
+			.fa-whatsapp {
+				color: #25D366;
+			}
+		}
+	}
+
+	.etn-speaker-thumb {
+		margin-bottom: 15px;
+		position: relative;
+		overflow: hidden;
+
+		img {
+			width: 100%;
+			@include transition();
+		}
+
+		.etn-speakers-social {
+			position: absolute;
+			left: 0;
+			top: 50%;
+			right: 0;
+			margin: auto;
+			@include transform(translateY(-50%) scale(0));
+			@include transition();
+
+			a {
+				width: 40px;
+				height: 40px;
+				background-color: $primary-color;
+				color: #fff;
+				line-height: 40px;
+				text-align: center;
+
+				@include border-radius(4px);
+
+
+				&:hover {
+					background-color: $secondary-color;
+				}
+			}
+		}
+	}
+
+	.etn-img-link {
+		display: block;
+		line-height: 0;
+	}
+
+	.etn-speaker-content {
+		.etn-title {
+			margin: 0 0 10px;
+		}
+
+		a {
+			color: #222;
+			@include transition();
+
+			&:hover {
+				color: $primary-color;
+			}
+		}
+	}
+	p{
+		margin-bottom: 12px;
+	}
+
+	&:hover {
+		.etn-speaker-thumb {
+			img {
+				@include transform(scale(1.1));
+			}
+
+			.etn-speakers-social {
+				@include transform(translateY(-50%) scale(1));
+			}
+		}
+	}
+}
+
+
+/*==================================
+   speaker style 2
+=================================*/
+.speaker-style2 {
+
+	.etn-single-speaker-item {
+		.etn-speakers-social {
+			@include transition();
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		&:hover {
+			.etn-speakers-social {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+}
+
+/*==================================
+   speaker style 3
+=================================*/
+.speaker-style3 {
+
+	.etn-speaker-thumb {
+		width: 200px;
+		height: 200px;
+		margin-left: auto !important;
+		margin-right: auto !important;
+		@include border-radius(50%);
+
+		img {
+			object-fit: cover;
+		}
+	}
+
+	.etn-single-speaker-item {
+		margin-bottom: 30px;
+		text-align: center;
+	}
+}
+
+/*==================================
+   speaker style 4
+=================================*/
+.speaker-style4,
+.speaker-style5 {
+	.etn-speaker-content {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		@include transition();
+		width: 100%;
+	
+	}
+	
+}
+
+.speaker-style4 {
+	.etn-speaker-content {
+		.etn-title a {
+			background-color: $primary-color;
+			color: #fff;
+			display: inline-block;
+			padding: 10px 30px;
+		}
+
+		p {
+			background: #440E34;
+			padding: 5px 30px;
+			display: inline-block;
+			color: #fff;
+		}
+
+	}
+
+	.etn-speaker-thumb {
+		min-height: 150px;
+		.etn-speakers-social {
+			left: auto;
+			right: 15px;
+
+			a {
+				display: block;
+				@include border-radius(50%);
+				margin: 5px 0;
+
+				i {
+					color: #fff;
+				}
+			}
+		}
+	}
+
+	.etn-single-speaker-item {
+
+		&:hover {
+			.etn-speaker-content {
+				left: -100%;
+			}
+		}
+	}
+
+}
+
+/*==================================
+   speaker style 5
+=================================*/
+.speaker-style5 {
+
+	.etn-speaker-content {
+		z-index: 2;
+		padding: 20px;
+		bottom: -30px;
+
+		.etn-title a,
+		p {
+			color: #fff;
+		}
+
+		p {
+			margin: 0;
+		}
+	}
+
+	.etn-speaker-thumb {
+		min-height: 100px;
+		&:before {
+			position: absolute;
+			left: 0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.5);
+			content: '';
+			@include transition();
+			z-index: 1;
+		}
+
+		.etn-speakers-social {
+			position: relative;
+			top: 0;
+			left: 0;
+			opacity: 0;
+			visibility: hidden;
+			@include transform(translateY(0%) scale(1));
+
+			a {
+				width: auto;
+				height: auto;
+				padding: 0;
+				background-color: transparent;
+
+				&:hover {
+					background-color: transparent;
+				}
+			}
+		}
+	}
+
+	.etn-single-speaker-item {
+		&:hover {
+			.etn-speaker-content {
+				bottom: 0;
+			}
+
+			.etn-speaker-thumb .etn-speakers-social {
+				transform: translateY(0%) scale(1);
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+}
+
+/*==================================
+   speaker slider style 1
+=================================*/
+.speaker_shortcode_slider{
+	position: relative;
+}
+.speaker-slider-style1 {
+	.etn-speaker-content {
+		position: absolute;
+		right: 0;
+		bottom: -13px;
+		background: #fff;
+		z-index: 1;
+		width: 90%;
+		padding: 20px 10px 25px;
+		text-align: center;
+		p{
+			margin-bottom: 10px;
+		}
+	}
+}
+
+/*==================================
+   countdown style
+=================================*/
+.etn-event-countdown-wrap {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 40px;
+	align-items: center;
+	flex-wrap: wrap;
+
+	.etn-count-item {
+		font-size: 30px;
+		line-height: 35px;
+		font-weight: 700;
+		text-transform: uppercase;
+		padding: 10px 30px;
+		border: 1px dashed #eaeaea;
+		margin: 0px 18px;
+		@include border-radius(5px);
+
+		@media (max-width: 767px) {
+			margin-bottom: 15px;
+		}
+
+		.text {
+			display: block;
+			font-size: 20px;
+			font-weight: 400;
+		}
+
+	}
+
+	.date-seperate {
+		font-size: 36px;
+		font-weight: 700;
+	}
+
+}
+
+
+/*==================================
+   Schedule style 1
+=================================*/
+
+.schedule-tab-1 {
+	.etn-nav {
+		li {
+			margin: 0 10px;
+			a {
+				@include border-radius(10px);
+
+				&.etn-active {
+					background-color: $primary-color;
+					color: #fff;
+					border-bottom-color: $primary-color;
+
+					.etn-day {
+						color: #fff;
+					}
+					&:after{
+						border-color: $primary-color transparent transparent transparent;
+					}
+				}
+			}
+		}
+	}
+
+}
+
+/*==================================
+   Schedule style 2
+=================================*/
+.schedule-tab-2 {
+
+
+	.etn-accordion-heading i {
+		padding: 8px 10px;
+		background: #FFEFF5;
+		color: $primary-color;
+		@include border-radius(5px);
+	}
+
+	.etn-schedule-single-speaker {
+		margin-right: 20px;
+		display: inline-block;
+		text-align: center;
+
+		img {
+			@include border-radius(5px);
+			width: 50px;
+			height: 50px;
+			object-fit: cover;
+		}
+
+		span {
+			display: block;
+		}
+	}
+
+	.etn-schedule-content p {
+		margin-bottom: 15px;
+	}
+
+	.etn-schedule-speaker-title {
+		font-size: 13px;
+		font-weight: 500;
+		line-height: 16px;
+	}
+
+	.etn-schedule-speaker-designation {
+		font-size: 12px;
+		line-height: 14px;
+	}
+}
+
+/*====================
+  Schedule list style 1
+=====================*/
+.schedule-list-1 {
+	.schedule-header {
+		background-color: $primary-color;
+		padding: 15px;
+
+		box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.04) span {
+			display: inline-block;
+		}
+
+		@include border-radius(8px);
+		text-align: center;
+		box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.05);
+		color : #fff;
+
+		.schedule-head-title {
+			font-size: 32px;
+			font-weight: 700;
+			padding-right: 20px;
+			margin-right: 20px;
+			border-right: 1px solid rgba(255, 255, 255, 0.4);
+		}
+
+		.schedule-head-date {
+			font-size: 16px;
+		}
+	}
+
+	.etn-schedule-wrap {
+		padding: 0 30px;
+		@include border-radius(12px);
+		box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.05);
+	}
+
+	.etn-schedule-location {
+		margin-bottom: 10px;
+		display: block;
+	}
+
+	.etn-schedule-content {
+		p {
+			margin-bottom: 20px;
+		}
+	}
+
+	.etn-schedule-speaker {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.etn-schedule-single-speaker {
+		display: flex;
+		margin-right: 15px;
+
+		img {
+			width: 50px;
+			height: 50px;
+			object-fit: cover;
+		}
+
+	}
+
+	.speaker-info {
+		margin: 0 0 15px 15px;
+		color: #101010;
+
+		.etn-schedule-speaker-title {
+			display: block;
+			font-size: 13px;
+			font-weight: 500;
+			line-height: 14px;
+		}
+
+		.etn-schedule-speaker-designation {
+			font-size: 12px;
+			line-height: 14px;
+		}
+	}
+}
+
+
+
+
+/*===========================
+// event single page style 2
+=============================*/
+.etn-es-events-page-container{
+	&.event-three,
+	&.event-two{
+		padding-top: 0;
+	}
+}
+
+.etn-event-single2.etn-event-single-wrap .etn-event-single-content-wrap,
+.etn-event-single2.etn-event-single-wrap .schedule-tab-wrapper {
+	padding: 30px;
+}
+
+.etn-event-single2.etn-event-single-wrap .schedule-tab-wrapper,
+.etn-event-single2.etn-event-single-wrap .etn-tag-wrapper {
+	padding: 0;
+}
+
+.etn-event-banner-wrap {
+	padding: 70px 0;
+	background-color: $primary-color;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	.etn-event-meta,
+	.etn-event-entry-title {
+		color: #fff;
+	}
+
+	.etn-event-entry-title {
+		font-size: 46px;
+	}
+
+	@media (max-width: 767px) {
+		.etn-event-entry-title {
+			font-size: 30px;
+		}
+	}
+}
+
+.etn-event-single2 {
+
+	// banner
+	.etn-event-banner-content {
+		display: flex;
+		align-items: flex-start;
+
+		.etn-banner-content {
+			align-self: center;
+		}
+
+		.etn-event-logo {
+			max-width: 30%;
+			margin: 0 30px 20px;
+		}
+	}
+
+	ul.etn-event-date-meta {
+		padding: 0;
+	}
+
+	// sidebar
+	.etn-widget {
+		.etn-social {
+			a {
+				&.share-icon {
+					margin-right: 10px;
+					padding-right: 30px;
+					color: #232323;
+					pointer-events: none;
+					position: relative;
+
+					&:after {
+						content: '';
+						width: 20px;
+						height: 2px;
+						position: absolute;
+						right: 0;
+						background: #9a9a9a;
+						top: 0;
+						bottom: 0;
+						margin: auto;
+					}
+				}
+			}
+		}
+	}
+
+	.etn-widget-title {
+		&.etn-title {
+			margin-bottom: 0;
+		}
+	}
+
+	// related post
+
+	.etn-event-related-post {
+		display: flex;
+		-ms-flex-direction: column;
+		flex-direction: column;
+
+		.etn-event-item {
+			padding: 30px 0 15px;
+			box-shadow: none;
+			margin-bottom: 0;
+			border-radius: 0;
+			display: flex;
+			align-items: flex-start;
+
+			&:not(:last-child) {
+				border-bottom: 1px solid #EAEAEA;
+			}
+		}
+
+		.etn-event-date {
+			background: #F5F5F5;
+			@include border-radius(6px);
+			margin-right: 16px;
+			font-size: 14px;
+			font-weight: 500;
+			// color         : #fff;
+			padding: 15px 10px;
+			line-height: 20px;
+			text-align: center;
+			text-transform: uppercase;
+			max-width: 30%;
+		}
+
+		.etn-event-content {
+			flex: 1;
+
+			.etn-title {
+				font-size: 16px;
+				line-height: 22px;
+				margin-bottom: 5px;
+				color: #101010;
+			}
+
+			.etn-event-location {
+				font-size: 14px;
+				color: #777777;
+			}
+		}
+	}
+
+	// shcedule
+
+	.etn-single-schedule-item {
+		padding: 20px 0;
+
+		.etn-content-item {
+			.etn-accordion-heading {
+				font-size: 18px;
+			}
+		}
+	}
+
+
+}
+
+
+
+// etn-event-header 
+
+.etn-event-header {
+	background-color: $white-color;
+	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.03);
+	padding: 15px 0;
+	margin-bottom: 30px;
+
+	ul {
+		margin: 0;
+
+		li {
+			display: inline-block;
+			font-weight: 700;
+			font-size: 18px;
+			color: #101010;
+			margin-right: 30px;
+
+			i {
+				color: #5D78FF;
+				margin-right: 5px;
+			}
+		}
+	}
+
+	.etn-event-countdown-wrap {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+		margin-bottom: 0;
+		@media (max-width: 992px) {
+			justify-content: flex-start;
+			margin-top: 20px;
+		}
+
+		.etn-count-item {
+			width: 52px;
+			height: 52px;
+			background: #FF057C;
+			border-radius: 6px;
+			text-align: center;
+			padding: 10px;
+			margin: 0px 12px;
+			border: none;
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			span {
+				font-size: 16px;
+				line-height: 16px;
+				font-weight: 600;
+				display: block;
+				color: $white-color;
+			}
+
+			.text {
+				font-size: 12px;
+				font-weight: 400;
+				text-transform: uppercase;
+			}
+		}
+		.date-seperate{
+			font-size: 20px;
+		}
+	}
+}
+
+
+/*=================================
+
+  event single style 3
+============================*/
+.etn-event-single3 {
+
+	// banner area
+	.etn-event-banner-content {
+		text-align: center;
+
+		.etn-event-entry-title {
+			margin-bottom: 30px;
+		}
+
+		.etn-event-date-meta {
+			padding: 0;
+			list-style-type: none;
+			margin-bottom: 40px;
+
+			li {
+				display: inline-block;
+				font-size: 18px;
+				color: #fff;
+				margin: 0 10px;
+			}
+		}
+
+	}
+
+	.etn-event-countdown-wrap {
+		margin-bottom: 0;
+
+		span {
+			color: #fff;
+		}
+	}
+	&.etn-event-single-wrap{
+		.etn-accordion-wrap.etn-event-single-content-wrap{
+			padding-bottom: 40px;
+			border-bottom: 1px solid #eaeaea
+		}
+	}
+
+}
+
+.etn-event-single-wrap {
+	&.etn-event-single3 {
+		padding: 40px 15px 0;
+
+		.etn-content-wrap {
+			box-shadow: none;
+		}
+
+		.etn-event-single-content-wrap,
+		.schedule-tab-wrapper,
+		.etn-organizer-style-1 {
+			padding: 0;
+			box-shadow: none;
+		}
+	}
+}
+
+/*=================================
+  speaker details style 2
+============================*/
+.etn-speaker-details2,
+.etn-speaker-details3 {
+	@media (max-width: 767px) {
+		.etn-speaker-thumb {
+			margin-bottom: 30px;
+		}
+	}
+
+	.etn-speaker-logo {
+		margin-bottom: 15px;
+
+		img {
+			max-width: 200px;
+		}
+	}
+
+	.etn-speaker-details-meta {
+		padding: 0;
+		margin: 0 0 30px;
+
+		li {
+			display: inline-block;
+			margin-right: 15px;
+		}
+	}
+
+	.etn-speaker-details-info-wrap {
+		padding-bottom: 30px;
+		margin-bottom: 30px;
+		border-bottom: 1px solid #eaeaea;
+	}
+
+	.etn-schedule-wrap-title {
+		font-size: 26px;
+		margin-bottom: 30px;
+	}
+
+	.etn-schedule-wrap {
+		margin-bottom: 30px;
+	}
+
+	.schedule-header {
+		padding: 8px 15px;
+
+		.schedule-head-title {
+			font-size: 22px;
+		}
+	}
+
+	.etn-speaker-info {
+		text-align: left;
+		padding: 0;
+		box-shadow: none;
+	}
+
+	.etn-speaker-entry-header {
+		display: flex;
+		flex-wrap: wrap;
+		border-bottom: 1px solid #eaeaea;
+		margin-bottom: 30px;
+		justify-content: space-between;
+	}
+
+	.etn-speaker-designation {
+		padding: 0;
+		border-bottom: none;
+		margin-bottom: 15px;
+	}
+
+	.etn-social {
+		@media (max-width: 767px) {
+			margin-bottom: 20px;
+		}
+
+		a {
+			text-align: center;
+			@include border-radius(50%);
+		}
+	}
+}
+
+/*=================================
+  speaker details style 3
+============================*/
+.etn-speaker-details3 {
+
+	.speaker-summery p{
+		margin-bottom: 20px;
+	}
+
+	.etn-speaker-details-info-wrap {
+		padding: 0;
+		margin: 0;
+		border-bottom: none;
+	}
+
+	.etn-speaker-info,
+	.speaker-title-info {
+		text-align: center;
+	}
+
+	.speaker-title-info {
+		background-color: $primary-color;
+		padding: 10px 15px 5px;
+		@include transform(translateY(-10px));
+
+		.etn-speaker-name {
+			font-size: 28px;
+			color: #fff;
+			margin-bottom: 10px;
+		}
+
+		.etn-speaker-designation {
+			color: #fff;
+		}
+	}
+
+	.etn-speaker-details-meta {
+		margin-bottom: 20px;
+
+		li {
+			display: block;
+			line-height: 32px;
+		}
+	}
+}
+
+// attende shortcode/ widget
+.etn-attendee-list-widget,
+.etn-attendee-widget{
+	.etn-event-attendee-single{
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-align: start;
+		align-items: flex-start;
+		margin-bottom: 30px;
+
+	}
+	.etn-attendee-avatar-wrap{
+		margin-right: 15px;
+	}
+	.etn-attendee-avatar {
+		width: 70px;
+		@include border-radius(5px);
+	}
+	.etn-attendee-content{
+		-ms-flex: 1;
+		flex: 1;
+		align-self: center;
+	}
+	.etn-attendee-title{
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 1.5;
+	}
+	.attende-meta{
+		margin: 0 0 0 ;
+		font-size: 15px;
+	}
+	.etn-attendee-email-label{
+		font-weight: 500;
+	}
+}
+.schedule-list-1 {
+	.etn-schedule-speaker a {
+		flex: 0 0 50%;
+		margin-bottom: 10px;
+	}
+}
+
+.etn-organizer-content  {
+	.etn-speaker-mail-anchor {
+		text-decoration: none;
+	  }
+}

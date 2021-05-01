@@ -60,6 +60,7 @@ class Etn_Speakers extends Widget_Base {
                 'options' => [
                     'speaker-1' => esc_html__( 'Speaker 1', 'eventin' ),
                     'speaker-2' => esc_html__( 'Speaker 2', 'eventin' ),
+                    'speaker-3' => esc_html__( 'Speaker 3', 'eventin' ),
 
                 ],
             ]
@@ -82,7 +83,7 @@ class Etn_Speakers extends Widget_Base {
                 'type'      => Controls_Manager::SELECT2,
                 'multiple'  => true,
                 'options'   => $this->get_speakers_category(),
-                'condition' => ['speaker_style' => ['speaker-2']],
+                'condition' => ['speaker_style' => ['speaker-2','speaker-3']],
             ]
         );
 
@@ -92,7 +93,7 @@ class Etn_Speakers extends Widget_Base {
                 'label'     => esc_html__( 'Speaker Count', 'eventin' ),
                 'type'      => Controls_Manager::NUMBER,
                 'default'   => '6',
-                'condition' => ['speaker_style' => ['speaker-2']],
+                'condition' => ['speaker_style' => ['speaker-2','speaker-3']],
             ]
         );
 
@@ -108,7 +109,7 @@ class Etn_Speakers extends Widget_Base {
                     '6' => esc_html__( '2 Column', 'eventin' ),
 
                 ],
-                'condition' => ['speaker_style' => ['speaker-2']],
+                'condition' => ['speaker_style' => ['speaker-2','speaker-3']],
             ]
         );
 
@@ -123,7 +124,7 @@ class Etn_Speakers extends Widget_Base {
                     'title'     => esc_html__( 'Title', 'eventin' ),
                     'post_date' => esc_html__( 'Post Date', 'eventin' ),
                 ],
-                'condition' => ['speaker_style' => ['speaker-2']],
+                'condition' => ['speaker_style' => ['speaker-2','speaker-3']],
             ]
         );
 
@@ -137,7 +138,7 @@ class Etn_Speakers extends Widget_Base {
                     'DESC' => esc_html__( 'Descending', 'eventin' ),
                     'ASC'  => esc_html__( 'Ascending', 'eventin' ),
                 ],
-                'condition' => ['speaker_style' => ['speaker-2']],
+                'condition' => ['speaker_style' => ['speaker-2','speaker-3']],
             ]
         );
 
@@ -347,6 +348,7 @@ class Etn_Speakers extends Widget_Base {
                 'type'      => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .etn-speaker-item .etn-speaker-thumb .etn-speakers-social a' => 'background-color: {{VALUE}};',
+                    '{{WRAPPER}} .etn-speaker-item.style-3 .etn-speaker-content .etn-speakers-social a' => 'background-color: {{VALUE}};',
                 ],
             ]
         );
@@ -368,6 +370,7 @@ class Etn_Speakers extends Widget_Base {
                 'type'      => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .etn-speaker-item .etn-speaker-thumb .etn-speakers-social a:hover' => 'background-color: {{VALUE}};',
+                    '{{WRAPPER}} .etn-speaker-item.style-3 .etn-speaker-content .etn-speakers-social a:hover' => 'background-color: {{VALUE}};',
                 ],
             ]
         );

@@ -1,0 +1,1082 @@
+@charset "UTF-8";
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+/*==================================
+  accordion
+=================================*/
+.etn-accordion-wrap .etn-faq-heading {
+  font-size: 36px;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+@media (max-width: 767px) {
+  .etn-accordion-wrap .etn-faq-heading {
+    font-size: 28px;
+  }
+}
+.etn-accordion-wrap .etn-content-item .etn-accordion-heading {
+  font-size: 22px;
+  cursor: pointer;
+  padding-right: 40px;
+  position: relative;
+  margin: 0 0 15px;
+}
+@media (max-width: 767px) {
+  .etn-accordion-wrap .etn-content-item .etn-accordion-heading {
+    font-size: 18px;
+  }
+}
+.etn-accordion-wrap .etn-content-item .etn-accordion-heading i {
+  position: absolute;
+  right: 0;
+  top: 8px;
+  font-size: 16px;
+}
+.etn-accordion-wrap .etn-content-item .etn-accordion-heading.active i:before {
+  content: "";
+}
+.etn-accordion-wrap .etn-acccordion-contents {
+  display: none;
+}
+.etn-accordion-wrap .etn-acccordion-contents.active {
+  display: block;
+}
+
+/*==================================
+  organizer
+=================================*/
+.etn-organizer-item {
+  padding: 40px;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+.etn-organizer-item .etn-organizer-company-logo {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #eaeaea;
+}
+.etn-organizer-item .etn-organizer-content {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.etn-organizer-item .etn-organizer-content li {
+  line-height: 30px;
+}
+.etn-organizer-item .etn-organizer-content li strong {
+  margin-right: 20px;
+}
+.etn-organizer-item .etn-organizer-content li .etn-organizer-social {
+  display: inline-block;
+}
+.etn-organizer-item .etn-organizer-content li .etn-organizer-social a {
+  margin-right: 10px;
+  font-size: 14px;
+}
+.etn-organizer-item .etn-organizer-content li .etn-organizer-social a i.fa-facebook,
+.etn-organizer-item .etn-organizer-content li .etn-organizer-social a i.fa-facebook-f {
+  color: #3b5999;
+}
+.etn-organizer-item .etn-organizer-content li .etn-organizer-social a i.fa-twitter {
+  color: #55acee;
+}
+.etn-organizer-item .etn-organizer-content li .etn-organizer-social a i.fa-pinterest-p {
+  color: #bd081c;
+}
+.etn-organizer-item .etn-organizer-content li .etn-organizer-social a i.fa-linkedin {
+  color: #0077B5;
+}
+.etn-organizer-item .etn-organizer-content li .etn-organizer-social a i.fa-instagram {
+  color: #e4405f;
+}
+.etn-organizer-item .etn-organizer-content li .etn-organizer-social a i.fa-wordpress {
+  color: #21759b;
+}
+.etn-organizer-item .etn-organizer-content li .etn-organizer-social a i.fa-dribble {
+  color: #ea4c89;
+}
+
+/*==================================
+  event style 2
+=================================*/
+.etn-event-style2 .etn-event-item {
+  padding: 0;
+  box-shadow: none;
+}
+.etn-event-style2 .etn-event-date {
+  color: #FF057C;
+}
+.etn-event-style2 .etn-atend-btn {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+.etn-event-style2 .etn-atend-btn .etn-btn {
+  line-height: 20px;
+}
+
+/*==================================
+  event style 3
+=================================*/
+.etn-event-style3 .etn-event-item {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 370px;
+}
+.etn-event-style3 .etn-event-item:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: linear-gradient(to bottom, transparent 28%, rgba(0, 0, 0, 0.6) 100%);
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -ms-border-radius: 12px;
+}
+.etn-event-style3 .etn-event-item:hover {
+  background-position: 40%;
+}
+.etn-event-style3 .etn-event-location {
+  margin-bottom: 15px;
+}
+.etn-event-style3 .etn-atend-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.etn-event-style3 .etn-atend-btn .etn.btn {
+  line-height: 22px;
+}
+.etn-event-style3 .etn-event-content {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 30px;
+}
+.etn-event-style3 .etn-event-content .etn-event-date {
+  margin-bottom: 15px;
+}
+.etn-event-style3 .etn-event-content .etn-event-date,
+.etn-event-style3 .etn-event-content .etn-title a,
+.etn-event-style3 .etn-event-content .etn-event-location,
+.etn-event-style3 .etn-event-content .etn-event-attendee-count {
+  color: #fff;
+}
+.etn-event-style3 .etn-event-content .etn-title a:hover {
+  color: #FF057C;
+}
+.etn-event-style3 .etn-event-content p {
+  color: #fff;
+}
+
+/*==================================
+  event style 4
+=================================*/
+.etn-event-style4 .etn-event-footer .etn-event-attendee-count {
+  float: left;
+}
+
+/*==================================
+  event slider
+=================================*/
+.event-slider-shortcode {
+  position: relative;
+}
+
+.etn-event-slider,
+.etn-speaker-slider {
+  overflow: hidden;
+}
+.etn-event-slider .swiper-pagination-bullet,
+.etn-speaker-slider .swiper-pagination-bullet {
+  background-color: #FF057C;
+  width: 10px;
+  height: 10px;
+}
+.etn-event-slider .swiper-button-next,
+.etn-event-slider .swiper-button-prev,
+.etn-speaker-slider .swiper-button-next,
+.etn-speaker-slider .swiper-button-prev {
+  background-image: none;
+  background-color: #FF057C;
+  color: #fff;
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -ms-border-radius: 50%;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  transform: scale(0);
+}
+.etn-event-slider .swiper-button-next:after,
+.etn-event-slider .swiper-button-prev:after,
+.etn-speaker-slider .swiper-button-next:after,
+.etn-speaker-slider .swiper-button-prev:after {
+  display: none;
+}
+.etn-event-slider:hover .swiper-button-next,
+.etn-event-slider:hover .swiper-button-prev,
+.etn-speaker-slider:hover .swiper-button-next,
+.etn-speaker-slider:hover .swiper-button-prev {
+  transform: scale(1);
+}
+.etn-event-slider:hover .swiper-button-next,
+.etn-speaker-slider:hover .swiper-button-next {
+  right: -45px;
+}
+.etn-event-slider:hover .swiper-button-prev,
+.etn-speaker-slider:hover .swiper-button-prev {
+  left: -45px;
+}
+
+/*==================================
+  event speaker
+=================================*/
+.etn-single-speaker-item {
+  position: relative;
+  margin-bottom: 30px;
+}
+.etn-single-speaker-item .etn-speakers-social a {
+  display: inline-block;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  font-size: 14px;
+  margin: 0 2px;
+}
+.etn-single-speaker-item .etn-speakers-social a .fa-facebook,
+.etn-single-speaker-item .etn-speakers-social a .fa-facebook-f {
+  color: #3b5999;
+}
+.etn-single-speaker-item .etn-speakers-social a .fa-twitter {
+  color: #55acee;
+}
+.etn-single-speaker-item .etn-speakers-social a .fa-linkedin,
+.etn-single-speaker-item .etn-speakers-social a .fa-linkedin-in {
+  color: #0077B5;
+}
+.etn-single-speaker-item .etn-speakers-social a .fa-instagram {
+  color: #e4405f;
+}
+.etn-single-speaker-item .etn-speakers-social a .fa-wordpress {
+  color: #21759b;
+}
+.etn-single-speaker-item .etn-speakers-social a .fa-vimeo {
+  color: #1ab7ea;
+}
+.etn-single-speaker-item .etn-speakers-social a .fa-youtube {
+  color: #cd201f;
+}
+.etn-single-speaker-item .etn-speakers-social a .fa-whatsapp {
+  color: #25D366;
+}
+.etn-single-speaker-item .etn-speaker-thumb {
+  margin-bottom: 15px;
+  position: relative;
+  overflow: hidden;
+}
+.etn-single-speaker-item .etn-speaker-thumb img {
+  width: 100%;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+}
+.etn-single-speaker-item .etn-speaker-thumb .etn-speakers-social {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  right: 0;
+  margin: auto;
+  transform: translateY(-50%) scale(0);
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+}
+.etn-single-speaker-item .etn-speaker-thumb .etn-speakers-social a {
+  width: 40px;
+  height: 40px;
+  background-color: #FF057C;
+  color: #fff;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -ms-border-radius: 4px;
+}
+.etn-single-speaker-item .etn-speaker-thumb .etn-speakers-social a:hover {
+  background-color: #09C4B7;
+}
+.etn-single-speaker-item .etn-img-link {
+  display: block;
+  line-height: 0;
+}
+.etn-single-speaker-item .etn-speaker-content .etn-title {
+  margin: 0 0 10px;
+}
+.etn-single-speaker-item .etn-speaker-content a {
+  color: #222;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+}
+.etn-single-speaker-item .etn-speaker-content a:hover {
+  color: #FF057C;
+}
+.etn-single-speaker-item p {
+  margin-bottom: 12px;
+}
+.etn-single-speaker-item:hover .etn-speaker-thumb img {
+  transform: scale(1.1);
+}
+.etn-single-speaker-item:hover .etn-speaker-thumb .etn-speakers-social {
+  transform: translateY(-50%) scale(1);
+}
+
+/*==================================
+   speaker style 2
+=================================*/
+.speaker-style2 .etn-single-speaker-item .etn-speakers-social {
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+.speaker-style2 .etn-single-speaker-item:hover .etn-speakers-social {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*==================================
+   speaker style 3
+=================================*/
+.speaker-style3 .etn-speaker-thumb {
+  width: 200px;
+  height: 200px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -ms-border-radius: 50%;
+}
+.speaker-style3 .etn-speaker-thumb img {
+  object-fit: cover;
+}
+.speaker-style3 .etn-single-speaker-item {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/*==================================
+   speaker style 4
+=================================*/
+.speaker-style4 .etn-speaker-content,
+.speaker-style5 .etn-speaker-content {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  width: 100%;
+}
+
+.speaker-style4 .etn-speaker-content .etn-title a {
+  background-color: #FF057C;
+  color: #fff;
+  display: inline-block;
+  padding: 10px 30px;
+}
+.speaker-style4 .etn-speaker-content p {
+  background: #440E34;
+  padding: 5px 30px;
+  display: inline-block;
+  color: #fff;
+}
+.speaker-style4 .etn-speaker-thumb {
+  min-height: 150px;
+}
+.speaker-style4 .etn-speaker-thumb .etn-speakers-social {
+  left: auto;
+  right: 15px;
+}
+.speaker-style4 .etn-speaker-thumb .etn-speakers-social a {
+  display: block;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -ms-border-radius: 50%;
+  margin: 5px 0;
+}
+.speaker-style4 .etn-speaker-thumb .etn-speakers-social a i {
+  color: #fff;
+}
+.speaker-style4 .etn-single-speaker-item:hover .etn-speaker-content {
+  left: -100%;
+}
+
+/*==================================
+   speaker style 5
+=================================*/
+.speaker-style5 .etn-speaker-content {
+  z-index: 2;
+  padding: 20px;
+  bottom: -30px;
+}
+.speaker-style5 .etn-speaker-content .etn-title a,
+.speaker-style5 .etn-speaker-content p {
+  color: #fff;
+}
+.speaker-style5 .etn-speaker-content p {
+  margin: 0;
+}
+.speaker-style5 .etn-speaker-thumb {
+  min-height: 100px;
+}
+.speaker-style5 .etn-speaker-thumb:before {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  content: "";
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  z-index: 1;
+}
+.speaker-style5 .etn-speaker-thumb .etn-speakers-social {
+  position: relative;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(0%) scale(1);
+}
+.speaker-style5 .etn-speaker-thumb .etn-speakers-social a {
+  width: auto;
+  height: auto;
+  padding: 0;
+  background-color: transparent;
+}
+.speaker-style5 .etn-speaker-thumb .etn-speakers-social a:hover {
+  background-color: transparent;
+}
+.speaker-style5 .etn-single-speaker-item:hover .etn-speaker-content {
+  bottom: 0;
+}
+.speaker-style5 .etn-single-speaker-item:hover .etn-speaker-thumb .etn-speakers-social {
+  transform: translateY(0%) scale(1);
+  opacity: 1;
+  visibility: visible;
+}
+
+/*==================================
+   speaker slider style 1
+=================================*/
+.speaker_shortcode_slider {
+  position: relative;
+}
+
+.speaker-slider-style1 .etn-speaker-content {
+  position: absolute;
+  right: 0;
+  bottom: -13px;
+  background: #fff;
+  z-index: 1;
+  width: 90%;
+  padding: 20px 10px 25px;
+  text-align: center;
+}
+.speaker-slider-style1 .etn-speaker-content p {
+  margin-bottom: 10px;
+}
+
+/*==================================
+   countdown style
+=================================*/
+.etn-event-countdown-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.etn-event-countdown-wrap .etn-count-item {
+  font-size: 30px;
+  line-height: 35px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 10px 30px;
+  border: 1px dashed #eaeaea;
+  margin: 0px 18px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -ms-border-radius: 5px;
+}
+@media (max-width: 767px) {
+  .etn-event-countdown-wrap .etn-count-item {
+    margin-bottom: 15px;
+  }
+}
+.etn-event-countdown-wrap .etn-count-item .text {
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+}
+.etn-event-countdown-wrap .date-seperate {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+/*==================================
+   Schedule style 1
+=================================*/
+.schedule-tab-1 .etn-nav li {
+  margin: 0 10px;
+}
+.schedule-tab-1 .etn-nav li a {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -ms-border-radius: 10px;
+}
+.schedule-tab-1 .etn-nav li a.etn-active {
+  background-color: #FF057C;
+  color: #fff;
+  border-bottom-color: #FF057C;
+}
+.schedule-tab-1 .etn-nav li a.etn-active .etn-day {
+  color: #fff;
+}
+.schedule-tab-1 .etn-nav li a.etn-active:after {
+  border-color: #FF057C transparent transparent transparent;
+}
+
+/*==================================
+   Schedule style 2
+=================================*/
+.schedule-tab-2 .etn-accordion-heading i {
+  padding: 8px 10px;
+  background: #FFEFF5;
+  color: #FF057C;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -ms-border-radius: 5px;
+}
+.schedule-tab-2 .etn-schedule-single-speaker {
+  margin-right: 20px;
+  display: inline-block;
+  text-align: center;
+}
+.schedule-tab-2 .etn-schedule-single-speaker img {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -ms-border-radius: 5px;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+.schedule-tab-2 .etn-schedule-single-speaker span {
+  display: block;
+}
+.schedule-tab-2 .etn-schedule-content p {
+  margin-bottom: 15px;
+}
+.schedule-tab-2 .etn-schedule-speaker-title {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16px;
+}
+.schedule-tab-2 .etn-schedule-speaker-designation {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+/*====================
+  Schedule list style 1
+=====================*/
+.schedule-list-1 .schedule-header {
+  background-color: #FF057C;
+  padding: 15px;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.04) span;
+  box-shadow-display: inline-block;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -ms-border-radius: 8px;
+  text-align: center;
+  box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.05);
+  color: #fff;
+}
+.schedule-list-1 .schedule-header .schedule-head-title {
+  font-size: 32px;
+  font-weight: 700;
+  padding-right: 20px;
+  margin-right: 20px;
+  border-right: 1px solid rgba(255, 255, 255, 0.4);
+}
+.schedule-list-1 .schedule-header .schedule-head-date {
+  font-size: 16px;
+}
+.schedule-list-1 .etn-schedule-wrap {
+  padding: 0 30px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -ms-border-radius: 12px;
+  box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.05);
+}
+.schedule-list-1 .etn-schedule-location {
+  margin-bottom: 10px;
+  display: block;
+}
+.schedule-list-1 .etn-schedule-content p {
+  margin-bottom: 20px;
+}
+.schedule-list-1 .etn-schedule-speaker {
+  display: flex;
+  flex-wrap: wrap;
+}
+.schedule-list-1 .etn-schedule-single-speaker {
+  display: flex;
+  margin-right: 15px;
+}
+.schedule-list-1 .etn-schedule-single-speaker img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+.schedule-list-1 .speaker-info {
+  margin: 0 0 15px 15px;
+  color: #101010;
+}
+.schedule-list-1 .speaker-info .etn-schedule-speaker-title {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 14px;
+}
+.schedule-list-1 .speaker-info .etn-schedule-speaker-designation {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+/*===========================
+// event single page style 2
+=============================*/
+.etn-es-events-page-container.event-three, .etn-es-events-page-container.event-two {
+  padding-top: 0;
+}
+
+.etn-event-single2.etn-event-single-wrap .etn-event-single-content-wrap,
+.etn-event-single2.etn-event-single-wrap .schedule-tab-wrapper {
+  padding: 30px;
+}
+
+.etn-event-single2.etn-event-single-wrap .schedule-tab-wrapper,
+.etn-event-single2.etn-event-single-wrap .etn-tag-wrapper {
+  padding: 0;
+}
+
+.etn-event-banner-wrap {
+  padding: 70px 0;
+  background-color: #FF057C;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.etn-event-banner-wrap .etn-event-meta,
+.etn-event-banner-wrap .etn-event-entry-title {
+  color: #fff;
+}
+.etn-event-banner-wrap .etn-event-entry-title {
+  font-size: 46px;
+}
+@media (max-width: 767px) {
+  .etn-event-banner-wrap .etn-event-entry-title {
+    font-size: 30px;
+  }
+}
+
+.etn-event-single2 .etn-event-banner-content {
+  display: flex;
+  align-items: flex-start;
+}
+.etn-event-single2 .etn-event-banner-content .etn-banner-content {
+  align-self: center;
+}
+.etn-event-single2 .etn-event-banner-content .etn-event-logo {
+  max-width: 30%;
+  margin: 0 30px 20px;
+}
+.etn-event-single2 ul.etn-event-date-meta {
+  padding: 0;
+}
+.etn-event-single2 .etn-widget .etn-social a.share-icon {
+  margin-right: 10px;
+  padding-right: 30px;
+  color: #232323;
+  pointer-events: none;
+  position: relative;
+}
+.etn-event-single2 .etn-widget .etn-social a.share-icon:after {
+  content: "";
+  width: 20px;
+  height: 2px;
+  position: absolute;
+  right: 0;
+  background: #9a9a9a;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.etn-event-single2 .etn-widget-title.etn-title {
+  margin-bottom: 0;
+}
+.etn-event-single2 .etn-event-related-post {
+  display: flex;
+  flex-direction: column;
+}
+.etn-event-single2 .etn-event-related-post .etn-event-item {
+  padding: 30px 0 15px;
+  box-shadow: none;
+  margin-bottom: 0;
+  border-radius: 0;
+  display: flex;
+  align-items: flex-start;
+}
+.etn-event-single2 .etn-event-related-post .etn-event-item:not(:last-child) {
+  border-bottom: 1px solid #EAEAEA;
+}
+.etn-event-single2 .etn-event-related-post .etn-event-date {
+  background: #F5F5F5;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -ms-border-radius: 6px;
+  margin-right: 16px;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 15px 10px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  max-width: 30%;
+}
+.etn-event-single2 .etn-event-related-post .etn-event-content {
+  flex: 1;
+}
+.etn-event-single2 .etn-event-related-post .etn-event-content .etn-title {
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 5px;
+  color: #101010;
+}
+.etn-event-single2 .etn-event-related-post .etn-event-content .etn-event-location {
+  font-size: 14px;
+  color: #777777;
+}
+.etn-event-single2 .etn-single-schedule-item {
+  padding: 20px 0;
+}
+.etn-event-single2 .etn-single-schedule-item .etn-content-item .etn-accordion-heading {
+  font-size: 18px;
+}
+
+.etn-event-header {
+  background-color: #fff;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.03);
+  padding: 15px 0;
+  margin-bottom: 30px;
+}
+.etn-event-header ul {
+  margin: 0;
+}
+.etn-event-header ul li {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 18px;
+  color: #101010;
+  margin-right: 30px;
+}
+.etn-event-header ul li i {
+  color: #5D78FF;
+  margin-right: 5px;
+}
+.etn-event-header .etn-event-countdown-wrap {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin-bottom: 0;
+}
+@media (max-width: 992px) {
+  .etn-event-header .etn-event-countdown-wrap {
+    justify-content: flex-start;
+    margin-top: 20px;
+  }
+}
+.etn-event-header .etn-event-countdown-wrap .etn-count-item {
+  width: 52px;
+  height: 52px;
+  background: #FF057C;
+  border-radius: 6px;
+  text-align: center;
+  padding: 10px;
+  margin: 0px 12px;
+  border: none;
+}
+.etn-event-header .etn-event-countdown-wrap .etn-count-item:last-child {
+  margin-right: 0;
+}
+.etn-event-header .etn-event-countdown-wrap .etn-count-item span {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 600;
+  display: block;
+  color: #fff;
+}
+.etn-event-header .etn-event-countdown-wrap .etn-count-item .text {
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.etn-event-header .etn-event-countdown-wrap .date-seperate {
+  font-size: 20px;
+}
+
+/*=================================
+
+  event single style 3
+============================*/
+.etn-event-single3 .etn-event-banner-content {
+  text-align: center;
+}
+.etn-event-single3 .etn-event-banner-content .etn-event-entry-title {
+  margin-bottom: 30px;
+}
+.etn-event-single3 .etn-event-banner-content .etn-event-date-meta {
+  padding: 0;
+  list-style-type: none;
+  margin-bottom: 40px;
+}
+.etn-event-single3 .etn-event-banner-content .etn-event-date-meta li {
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  margin: 0 10px;
+}
+.etn-event-single3 .etn-event-countdown-wrap {
+  margin-bottom: 0;
+}
+.etn-event-single3 .etn-event-countdown-wrap span {
+  color: #fff;
+}
+.etn-event-single3.etn-event-single-wrap .etn-accordion-wrap.etn-event-single-content-wrap {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.etn-event-single-wrap.etn-event-single3 {
+  padding: 40px 15px 0;
+}
+.etn-event-single-wrap.etn-event-single3 .etn-content-wrap {
+  box-shadow: none;
+}
+.etn-event-single-wrap.etn-event-single3 .etn-event-single-content-wrap,
+.etn-event-single-wrap.etn-event-single3 .schedule-tab-wrapper,
+.etn-event-single-wrap.etn-event-single3 .etn-organizer-style-1 {
+  padding: 0;
+  box-shadow: none;
+}
+
+/*=================================
+  speaker details style 2
+============================*/
+@media (max-width: 767px) {
+  .etn-speaker-details2 .etn-speaker-thumb,
+.etn-speaker-details3 .etn-speaker-thumb {
+    margin-bottom: 30px;
+  }
+}
+.etn-speaker-details2 .etn-speaker-logo,
+.etn-speaker-details3 .etn-speaker-logo {
+  margin-bottom: 15px;
+}
+.etn-speaker-details2 .etn-speaker-logo img,
+.etn-speaker-details3 .etn-speaker-logo img {
+  max-width: 200px;
+}
+.etn-speaker-details2 .etn-speaker-details-meta,
+.etn-speaker-details3 .etn-speaker-details-meta {
+  padding: 0;
+  margin: 0 0 30px;
+}
+.etn-speaker-details2 .etn-speaker-details-meta li,
+.etn-speaker-details3 .etn-speaker-details-meta li {
+  display: inline-block;
+  margin-right: 15px;
+}
+.etn-speaker-details2 .etn-speaker-details-info-wrap,
+.etn-speaker-details3 .etn-speaker-details-info-wrap {
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #eaeaea;
+}
+.etn-speaker-details2 .etn-schedule-wrap-title,
+.etn-speaker-details3 .etn-schedule-wrap-title {
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+.etn-speaker-details2 .etn-schedule-wrap,
+.etn-speaker-details3 .etn-schedule-wrap {
+  margin-bottom: 30px;
+}
+.etn-speaker-details2 .schedule-header,
+.etn-speaker-details3 .schedule-header {
+  padding: 8px 15px;
+}
+.etn-speaker-details2 .schedule-header .schedule-head-title,
+.etn-speaker-details3 .schedule-header .schedule-head-title {
+  font-size: 22px;
+}
+.etn-speaker-details2 .etn-speaker-info,
+.etn-speaker-details3 .etn-speaker-info {
+  text-align: left;
+  padding: 0;
+  box-shadow: none;
+}
+.etn-speaker-details2 .etn-speaker-entry-header,
+.etn-speaker-details3 .etn-speaker-entry-header {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #eaeaea;
+  margin-bottom: 30px;
+  justify-content: space-between;
+}
+.etn-speaker-details2 .etn-speaker-designation,
+.etn-speaker-details3 .etn-speaker-designation {
+  padding: 0;
+  border-bottom: none;
+  margin-bottom: 15px;
+}
+@media (max-width: 767px) {
+  .etn-speaker-details2 .etn-social,
+.etn-speaker-details3 .etn-social {
+    margin-bottom: 20px;
+  }
+}
+.etn-speaker-details2 .etn-social a,
+.etn-speaker-details3 .etn-social a {
+  text-align: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -ms-border-radius: 50%;
+}
+
+/*=================================
+  speaker details style 3
+============================*/
+.etn-speaker-details3 .speaker-summery p {
+  margin-bottom: 20px;
+}
+.etn-speaker-details3 .etn-speaker-details-info-wrap {
+  padding: 0;
+  margin: 0;
+  border-bottom: none;
+}
+.etn-speaker-details3 .etn-speaker-info,
+.etn-speaker-details3 .speaker-title-info {
+  text-align: center;
+}
+.etn-speaker-details3 .speaker-title-info {
+  background-color: #FF057C;
+  padding: 10px 15px 5px;
+  transform: translateY(-10px);
+}
+.etn-speaker-details3 .speaker-title-info .etn-speaker-name {
+  font-size: 28px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.etn-speaker-details3 .speaker-title-info .etn-speaker-designation {
+  color: #fff;
+}
+.etn-speaker-details3 .etn-speaker-details-meta {
+  margin-bottom: 20px;
+}
+.etn-speaker-details3 .etn-speaker-details-meta li {
+  display: block;
+  line-height: 32px;
+}
+
+.etn-attendee-list-widget .etn-event-attendee-single,
+.etn-attendee-widget .etn-event-attendee-single {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+.etn-attendee-list-widget .etn-attendee-avatar-wrap,
+.etn-attendee-widget .etn-attendee-avatar-wrap {
+  margin-right: 15px;
+}
+.etn-attendee-list-widget .etn-attendee-avatar,
+.etn-attendee-widget .etn-attendee-avatar {
+  width: 70px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -ms-border-radius: 5px;
+}
+.etn-attendee-list-widget .etn-attendee-content,
+.etn-attendee-widget .etn-attendee-content {
+  flex: 1;
+  align-self: center;
+}
+.etn-attendee-list-widget .etn-attendee-title,
+.etn-attendee-widget .etn-attendee-title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.etn-attendee-list-widget .attende-meta,
+.etn-attendee-widget .attende-meta {
+  margin: 0 0 0;
+  font-size: 15px;
+}
+.etn-attendee-list-widget .etn-attendee-email-label,
+.etn-attendee-widget .etn-attendee-email-label {
+  font-weight: 500;
+}
+
+.etn-organizer-content .etn-speaker-mail-anchor {
+  text-decoration: none;
+}
+
+.schedule-list-1 .etn-schedule-speaker a {
+  flex: 0 0 50%;
+  margin-bottom: 10px;
+}

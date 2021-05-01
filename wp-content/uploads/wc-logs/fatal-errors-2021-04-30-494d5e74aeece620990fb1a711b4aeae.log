@@ -1,0 +1,54 @@
+2021-04-30T09:25:00+00:00 CRITICAL Cannot redeclare style_two_hook() (previously declared in C:\xampp\htdocs\wordpressform\wp-content\plugins\wp-event-solution\core\speaker\views\template-hooks.php:120) in C:\xampp\htdocs\wordpressform\wp-content\plugins\eventin-pro-v240\core\speaker\views\template-hooks.php on line 31
+
+2021-04-30T09:26:24+00:00 CRITICAL Cannot redeclare style_two_hook() (previously declared in C:\xampp\htdocs\wordpressform\wp-content\plugins\wp-event-solution\core\speaker\views\template-hooks.php:120) in C:\xampp\htdocs\wordpressform\wp-content\plugins\eventin-pro-v240\core\speaker\views\template-hooks.php on line 31
+
+2021-04-30T09:27:11+00:00 CRITICAL Unmatched '}' in C:\xampp\htdocs\wordpressform\wp-content\plugins\eventin-pro-v240\core\speaker\views\template-hooks.php on line 101
+
+2021-04-30T09:28:44+00:00 CRITICAL Cannot redeclare style_two_hook() (previously declared in C:\xampp\htdocs\wordpressform\wp-content\plugins\wp-event-solution\core\speaker\views\template-hooks.php:120) in C:\xampp\htdocs\wordpressform\wp-content\plugins\eventin-pro-v240\core\speaker\views\template-hooks.php on line 22
+
+2021-04-30T09:28:49+00:00 CRITICAL Cannot redeclare style_two_hook() (previously declared in C:\xampp\htdocs\wordpressform\wp-content\plugins\wp-event-solution\core\speaker\views\template-hooks.php:120) in C:\xampp\htdocs\wordpressform\wp-content\plugins\eventin-pro-v240\core\speaker\views\template-hooks.php on line 22
+
+2021-04-30T09:29:00+00:00 CRITICAL Cannot redeclare style_two_hook() (previously declared in C:\xampp\htdocs\wordpressform\wp-content\plugins\wp-event-solution\core\speaker\views\template-hooks.php:120) in C:\xampp\htdocs\wordpressform\wp-content\plugins\eventin-pro-v240\core\speaker\views\template-hooks.php on line 22
+
+2021-04-30T09:29:21+00:00 CRITICAL Cannot redeclare style_two_hook() (previously declared in C:\xampp\htdocs\wordpressform\wp-content\plugins\wp-event-solution\core\speaker\views\template-hooks.php:120) in C:\xampp\htdocs\wordpressform\wp-content\plugins\eventin-pro-v240\core\speaker\views\template-hooks.php on line 22
+
+2021-04-30T09:29:27+00:00 CRITICAL Cannot redeclare style_two_hook() (previously declared in C:\xampp\htdocs\wordpressform\wp-content\plugins\wp-event-solution\core\speaker\views\template-hooks.php:120) in C:\xampp\htdocs\wordpressform\wp-content\plugins\eventin-pro-v240\core\speaker\views\template-hooks.php on line 22
+
+2021-04-30T09:30:26+00:00 CRITICAL Cannot redeclare style_two_hook() (previously declared in C:\xampp\htdocs\wordpressform\wp-content\plugins\wp-event-solution\core\speaker\views\template-hooks.php:120) in C:\xampp\htdocs\wordpressform\wp-content\plugins\eventin-pro-v240\core\speaker\views\template-hooks.php on line 22
+
+2021-04-30T09:30:45+00:00 CRITICAL Cannot redeclare style_two_hook() (previously declared in C:\xampp\htdocs\wordpressform\wp-content\plugins\wp-event-solution\core\speaker\views\template-hooks.php:120) in C:\xampp\htdocs\wordpressform\wp-content\plugins\eventin-pro-v240\core\speaker\views\template-hooks.php on line 22
+
+2021-04-30T09:30:52+00:00 CRITICAL Cannot redeclare style_two_hook() (previously declared in C:\xampp\htdocs\wordpressform\wp-content\plugins\wp-event-solution\core\speaker\views\template-hooks.php:120) in C:\xampp\htdocs\wordpressform\wp-content\plugins\eventin-pro-v240\core\speaker\views\template-hooks.php on line 22
+
+2021-04-30T09:32:27+00:00 CRITICAL Cannot redeclare style_two_hook() (previously declared in C:\xampp\htdocs\wordpressform\wp-content\plugins\wp-event-solution\core\speaker\views\template-hooks.php:120) in C:\xampp\htdocs\wordpressform\wp-content\plugins\eventin-pro-v240\core\speaker\views\template-hooks.php on line 22
+
+2021-04-30T09:34:28+00:00 CRITICAL Cannot redeclare style_two_hook() (previously declared in C:\xampp\htdocs\wordpressform\wp-content\plugins\wp-event-solution\core\speaker\views\template-hooks.php:120) in C:\xampp\htdocs\wordpressform\wp-content\plugins\eventin-pro-v240\core\speaker\views\template-hooks.php on line 22
+
+2021-04-30T09:45:41+00:00 CRITICAL Cannot redeclare style_two_hook() (previously declared in C:\xampp\htdocs\wordpressform\wp-content\plugins\wp-event-solution\core\speaker\views\template-hooks.php:120) in C:\xampp\htdocs\wordpressform\wp-content\plugins\eventin-pro-v240\core\speaker\views\template-hooks.php on line 22
+
+2021-04-30T09:45:45+00:00 CRITICAL Cannot redeclare style_two_hook() (previously declared in C:\xampp\htdocs\wordpressform\wp-content\plugins\wp-event-solution\core\speaker\views\template-hooks.php:120) in C:\xampp\htdocs\wordpressform\wp-content\plugins\eventin-pro-v240\core\speaker\views\template-hooks.php on line 22
+
+2021-04-30T09:45:57+00:00 CRITICAL Cannot redeclare style_two_hook() (previously declared in C:\xampp\htdocs\wordpressform\wp-content\plugins\wp-event-solution\core\speaker\views\template-hooks.php:120) in C:\xampp\htdocs\wordpressform\wp-content\plugins\eventin-pro-v240\core\speaker\views\template-hooks.php on line 22
+
+2021-04-30T09:47:01+00:00 CRITICAL Cannot redeclare style_two_hook() (previously declared in C:\xampp\htdocs\wordpressform\wp-content\plugins\wp-event-solution\core\speaker\views\template-hooks.php:120) in C:\xampp\htdocs\wordpressform\wp-content\plugins\eventin-pro-v240\core\speaker\views\template-hooks.php on line 22
+
+2021-04-30T09:47:07+00:00 CRITICAL Cannot redeclare style_two_hook() (previously declared in C:\xampp\htdocs\wordpressform\wp-content\plugins\wp-event-solution\core\speaker\views\template-hooks.php:120) in C:\xampp\htdocs\wordpressform\wp-content\plugins\eventin-pro-v240\core\speaker\views\template-hooks.php on line 22
+
+2021-04-30T09:47:07+00:00 CRITICAL Cannot redeclare style_two_hook() (previously declared in C:\xampp\htdocs\wordpressform\wp-content\plugins\wp-event-solution\core\speaker\views\template-hooks.php:120) in C:\xampp\htdocs\wordpressform\wp-content\plugins\eventin-pro-v240\core\speaker\views\template-hooks.php on line 22
+
+2021-04-30T09:47:07+00:00 CRITICAL Cannot redeclare style_two_hook() (previously declared in C:\xampp\htdocs\wordpressform\wp-content\plugins\wp-event-solution\core\speaker\views\template-hooks.php:120) in C:\xampp\htdocs\wordpressform\wp-content\plugins\eventin-pro-v240\core\speaker\views\template-hooks.php on line 22
+
+2021-04-30T09:47:09+00:00 CRITICAL Cannot redeclare style_two_hook() (previously declared in C:\xampp\htdocs\wordpressform\wp-content\plugins\wp-event-solution\core\speaker\views\template-hooks.php:120) in C:\xampp\htdocs\wordpressform\wp-content\plugins\eventin-pro-v240\core\speaker\views\template-hooks.php on line 22
+
+2021-04-30T09:47:22+00:00 CRITICAL Cannot redeclare style_two_hook() (previously declared in C:\xampp\htdocs\wordpressform\wp-content\plugins\wp-event-solution\core\speaker\views\template-hooks.php:120) in C:\xampp\htdocs\wordpressform\wp-content\plugins\eventin-pro-v240\core\speaker\views\template-hooks.php on line 22
+
+2021-04-30T09:47:38+00:00 CRITICAL Cannot redeclare style_two_hook() (previously declared in C:\xampp\htdocs\wordpressform\wp-content\plugins\wp-event-solution\core\speaker\views\template-hooks.php:120) in C:\xampp\htdocs\wordpressform\wp-content\plugins\eventin-pro-v240\core\speaker\views\template-hooks.php on line 22
+
+2021-04-30T09:47:43+00:00 CRITICAL Cannot redeclare style_two_hook() (previously declared in C:\xampp\htdocs\wordpressform\wp-content\plugins\wp-event-solution\core\speaker\views\template-hooks.php:120) in C:\xampp\htdocs\wordpressform\wp-content\plugins\eventin-pro-v240\core\speaker\views\template-hooks.php on line 22
+
+2021-04-30T09:47:47+00:00 CRITICAL Cannot redeclare style_two_hook() (previously declared in C:\xampp\htdocs\wordpressform\wp-content\plugins\wp-event-solution\core\speaker\views\template-hooks.php:120) in C:\xampp\htdocs\wordpressform\wp-content\plugins\eventin-pro-v240\core\speaker\views\template-hooks.php on line 22
+
+2021-04-30T09:47:52+00:00 CRITICAL Cannot redeclare style_two_hook() (previously declared in C:\xampp\htdocs\wordpressform\wp-content\plugins\wp-event-solution\core\speaker\views\template-hooks.php:120) in C:\xampp\htdocs\wordpressform\wp-content\plugins\eventin-pro-v240\core\speaker\views\template-hooks.php on line 22
+
+2021-04-30T09:47:57+00:00 CRITICAL Cannot redeclare style_two_hook() (previously declared in C:\xampp\htdocs\wordpressform\wp-content\plugins\wp-event-solution\core\speaker\views\template-hooks.php:120) in C:\xampp\htdocs\wordpressform\wp-content\plugins\eventin-pro-v240\core\speaker\views\template-hooks.php on line 22
+

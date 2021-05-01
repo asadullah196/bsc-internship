@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: WP Event Solution\n"
-"POT-Creation-Date: 2021-04-14 10:38+0600\n"
-"PO-Revision-Date: 2021-04-14 10:38+0600\n"
+"POT-Creation-Date: 2021-04-29 10:30+0600\n"
+"PO-Revision-Date: 2021-04-29 10:30+0600\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -145,8 +145,8 @@ msgstr ""
 #: core/attendee/attendee-list.php:151 core/event/hooks.php:65
 #: core/event/hooks.php:87 core/schedule/hooks.php:45
 #: core/schedule/hooks.php:58 core/speaker/hooks.php:111
-#: core/zoom-meeting/hooks.php:57 widgets/events/events.php:127
-#: widgets/speakers/speakers.php:122
+#: core/zoom-meeting/hooks.php:57 widgets/events-tab/events-tab.php:128
+#: widgets/events/events.php:128 widgets/speakers/speakers.php:123
 msgid "Id"
 msgstr ""
 
@@ -199,7 +199,7 @@ msgstr ""
 
 #: core/attendee/cpt.php:35 core/attendee/cpt.php:36 core/attendee/cpt.php:70
 #: core/attendee/cpt.php:71 core/event/pages/event-woocommerce.php:41
-#: core/settings/views/etn-settings.php:69
+#: core/settings/views/etn-settings.php:70
 msgid "Attendee"
 msgstr ""
 
@@ -335,19 +335,19 @@ msgstr ""
 msgid "Update"
 msgstr ""
 
-#: core/attendee/views/ticket/pdf.php:7
+#: core/attendee/views/ticket/pdf.php:11
 msgid "Event details:"
 msgstr ""
 
-#: core/attendee/views/ticket/pdf.php:10
+#: core/attendee/views/ticket/pdf.php:14
 msgid "Event name:"
 msgstr ""
 
-#: core/attendee/views/ticket/pdf.php:14
+#: core/attendee/views/ticket/pdf.php:16
 msgid "Start date :"
 msgstr ""
 
-#: core/attendee/views/ticket/pdf.php:16
+#: core/attendee/views/ticket/pdf.php:18
 msgid "End date :"
 msgstr ""
 
@@ -359,27 +359,27 @@ msgstr ""
 msgid "End time :"
 msgstr ""
 
-#: core/attendee/views/ticket/pdf.php:25
+#: core/attendee/views/ticket/pdf.php:24
 msgid "Location:"
 msgstr ""
 
-#: core/attendee/views/ticket/pdf.php:28
+#: core/attendee/views/ticket/pdf.php:26
 msgid "Ticket price:"
 msgstr ""
 
-#: core/attendee/views/ticket/pdf.php:32
+#: core/attendee/views/ticket/pdf.php:38
 msgid "Attendee details:"
 msgstr ""
 
-#: core/attendee/views/ticket/pdf.php:36
+#: core/attendee/views/ticket/pdf.php:42
 msgid "Name:"
 msgstr ""
 
-#: core/attendee/views/ticket/pdf.php:41
+#: core/attendee/views/ticket/pdf.php:46
 msgid "Email:"
 msgstr ""
 
-#: core/attendee/views/ticket/pdf.php:46
+#: core/attendee/views/ticket/pdf.php:50
 msgid "Phone:"
 msgstr ""
 
@@ -388,7 +388,7 @@ msgid "Attendee details updated"
 msgstr ""
 
 #: core/attendee/views/ticket/update-attendee.php:58
-#: core/attendee/views/ticket/update-attendee.php:76 utils/helper.php:1344
+#: core/attendee/views/ticket/update-attendee.php:76 utils/helper.php:1391
 msgid "Return to homepage"
 msgstr ""
 
@@ -570,13 +570,14 @@ msgid "Settings"
 msgstr ""
 
 #: core/guten-block/src/blocks/event-list/edit.js:38
-#: widgets/events/events.php:62
+#: widgets/events-tab/events-tab.php:62 widgets/events/events.php:62
 msgid "Event Style"
 msgstr ""
 
 #: core/guten-block/src/blocks/event-list/edit.js:41
 #: core/guten-block/src/blocks/schedule-tab/edit.js:40
 #: core/guten-block/src/blocks/speaker-list/edit.js:57
+#: widgets/schedule-list/schedule-list.php:66
 msgid "Style 1"
 msgstr ""
 
@@ -591,7 +592,7 @@ msgid "Count"
 msgstr ""
 
 #: core/guten-block/src/blocks/event-list/edit.js:78
-#: widgets/events/events.php:99
+#: widgets/events-tab/events-tab.php:100 widgets/events/events.php:100
 msgid "Description Limit"
 msgstr ""
 
@@ -651,7 +652,7 @@ msgid "No schedule Found"
 msgstr ""
 
 #: core/guten-block/src/blocks/schedule-tab/edit.js:37
-#: widgets/schedule/schedule.php:62
+#: widgets/schedule-list/schedule-list.php:62 widgets/schedule/schedule.php:62
 msgid "Schedule Style"
 msgstr ""
 
@@ -893,8 +894,8 @@ msgstr ""
 msgid "Schedule info"
 msgstr ""
 
-#: core/metaboxs/schedule-meta.php:26 widgets/events/events.php:128
-#: widgets/speakers/speakers.php:123
+#: core/metaboxs/schedule-meta.php:26 widgets/events-tab/events-tab.php:129
+#: widgets/events/events.php:129 widgets/speakers/speakers.php:124
 msgid "Title"
 msgstr ""
 
@@ -963,7 +964,7 @@ msgstr ""
 
 #: core/metaboxs/schedule-meta.php:113 core/speaker/cpt.php:25
 #: core/speaker/cpt.php:27 core/speaker/cpt.php:28 core/speaker/cpt.php:61
-#: core/speaker/cpt.php:101 widgets/speakers/speakers.php:71
+#: core/speaker/cpt.php:101 widgets/speakers/speakers.php:72
 msgid "Speaker"
 msgstr ""
 
@@ -971,7 +972,7 @@ msgstr ""
 msgid "Select speaker "
 msgstr ""
 
-#: core/metaboxs/schedule-meta.php:125 core/settings/views/etn-settings.php:62
+#: core/metaboxs/schedule-meta.php:125 core/settings/views/etn-settings.php:63
 msgid "Details"
 msgstr ""
 
@@ -1038,6 +1039,7 @@ msgid "Schedule"
 msgstr ""
 
 #: core/schedule/cpt.php:20 core/schedule/cpt.php:21 core/schedule/cpt.php:53
+#: core/schedule/cpt.php:91 widgets/schedule-list/schedule-list.php:73
 #: widgets/schedule/schedule.php:73
 msgid "Schedule"
 msgstr ""
@@ -1090,7 +1092,7 @@ msgstr ""
 msgid "Schedules list navigation"
 msgstr ""
 
-#: core/schedule/cpt.php:52
+#: core/schedule/cpt.php:52 core/schedule/cpt.php:92
 msgid "Schedules"
 msgstr ""
 
@@ -1106,29 +1108,29 @@ msgstr ""
 msgid "website "
 msgstr ""
 
-#: core/settings/views/etn-settings.php:44
-#: core/settings/views/etn-settings.php:47
+#: core/settings/views/etn-settings.php:45
+#: core/settings/views/etn-settings.php:48
 msgid "Template One"
 msgstr ""
 
-#: core/settings/views/etn-settings.php:55
+#: core/settings/views/etn-settings.php:56
 msgid "General"
 msgstr ""
 
-#: core/settings/views/etn-settings.php:76
+#: core/settings/views/etn-settings.php:77
 #: core/settings/views/parts/zoom-settings-view.php:7
 msgid "Zoom"
 msgstr ""
 
-#: core/settings/views/etn-settings.php:83
+#: core/settings/views/etn-settings.php:84
 msgid "Shortcode"
 msgstr ""
 
-#: core/settings/views/etn-settings.php:89
+#: core/settings/views/etn-settings.php:90
 msgid "Eventin Settings"
 msgstr ""
 
-#: core/settings/views/etn-settings.php:116
+#: core/settings/views/etn-settings.php:117
 msgid "Save Changes"
 msgstr ""
 
@@ -1171,58 +1173,66 @@ msgid "no. of days"
 msgstr ""
 
 #: core/settings/views/parts/details-settings-view.php:11
-msgid "Hide time"
+msgid "Hide Event Date"
 msgstr ""
 
 #: core/settings/views/parts/details-settings-view.php:13
+msgid "Hide event date from event details."
+msgstr ""
+
+#: core/settings/views/parts/details-settings-view.php:23
+msgid "Hide time"
+msgstr ""
+
+#: core/settings/views/parts/details-settings-view.php:25
 msgid "Hide time from event details."
 msgstr ""
 
-#: core/settings/views/parts/details-settings-view.php:24
+#: core/settings/views/parts/details-settings-view.php:36
 msgid "Hide location"
 msgstr ""
 
-#: core/settings/views/parts/details-settings-view.php:26
+#: core/settings/views/parts/details-settings-view.php:38
 msgid "Hide location from event details."
 msgstr ""
 
-#: core/settings/views/parts/details-settings-view.php:37
+#: core/settings/views/parts/details-settings-view.php:49
 msgid "Hide total seats"
 msgstr ""
 
-#: core/settings/views/parts/details-settings-view.php:39
+#: core/settings/views/parts/details-settings-view.php:51
 msgid "Hide total seats from event details."
 msgstr ""
 
-#: core/settings/views/parts/details-settings-view.php:50
+#: core/settings/views/parts/details-settings-view.php:62
 msgid "Hide attendee count"
 msgstr ""
 
-#: core/settings/views/parts/details-settings-view.php:52
+#: core/settings/views/parts/details-settings-view.php:64
 msgid "Hide total attendee count from event details."
 msgstr ""
 
-#: core/settings/views/parts/details-settings-view.php:64
+#: core/settings/views/parts/details-settings-view.php:76
 msgid "Hide organizers"
 msgstr ""
 
-#: core/settings/views/parts/details-settings-view.php:66
+#: core/settings/views/parts/details-settings-view.php:78
 msgid "Hide organizers from event details."
 msgstr ""
 
-#: core/settings/views/parts/details-settings-view.php:77
+#: core/settings/views/parts/details-settings-view.php:89
 msgid "Hide schedule details"
 msgstr ""
 
-#: core/settings/views/parts/details-settings-view.php:79
+#: core/settings/views/parts/details-settings-view.php:91
 msgid "Hide schedule details from event details."
 msgstr ""
 
-#: core/settings/views/parts/details-settings-view.php:91
+#: core/settings/views/parts/details-settings-view.php:103
 msgid "Hide full address"
 msgstr ""
 
-#: core/settings/views/parts/details-settings-view.php:93
+#: core/settings/views/parts/details-settings-view.php:105
 msgid "Hide full address from event details."
 msgstr ""
 
@@ -1453,12 +1463,16 @@ msgstr ""
 msgid "Check connection"
 msgstr ""
 
-#: core/shortcodes/hooks.php:109
+#: core/shortcodes/hooks.php:125
+msgid "No style found"
+msgstr ""
+
+#: core/shortcodes/hooks.php:175
 msgid "No meeting id found"
 msgstr ""
 
 #: core/speaker/category.php:32 core/speaker/category.php:33
-#: core/speaker/category.php:42 widgets/speakers/speakers.php:81
+#: core/speaker/category.php:42 widgets/speakers/speakers.php:82
 msgid "Speaker Category"
 msgstr ""
 
@@ -1558,43 +1572,45 @@ msgstr ""
 msgid "Event Ticket"
 msgstr ""
 
-#: core/woocommerce/etn_woocommerce.php:386
-msgid " zoom meeting URL : "
-msgstr ""
-
-#: core/woocommerce/hooks.php:126
-msgid "Order Report"
-msgstr ""
-
-#: core/woocommerce/hooks.php:151
-msgid "invoice no."
-msgstr ""
-
-#: core/woocommerce/hooks.php:152
-msgid "total qty:"
-msgstr ""
-
-#: core/woocommerce/hooks.php:153
-msgid "total amount:"
+#: core/woocommerce/etn_woocommerce.php:366
+msgid ""
+"NB. This order includes Events which will be hosted on Zoom. After "
+"successful payment, Zoom details will be sent through email"
 msgstr ""
 
 #: core/woocommerce/hooks.php:154
+msgid "Order Report"
+msgstr ""
+
+#: core/woocommerce/hooks.php:179
+msgid "invoice no."
+msgstr ""
+
+#: core/woocommerce/hooks.php:180
+msgid "total qty:"
+msgstr ""
+
+#: core/woocommerce/hooks.php:181
+msgid "total amount:"
+msgstr ""
+
+#: core/woocommerce/hooks.php:182
 msgid "email:"
 msgstr ""
 
-#: core/woocommerce/hooks.php:155
+#: core/woocommerce/hooks.php:183
 msgid "status:"
 msgstr ""
 
-#: core/woocommerce/hooks.php:156
+#: core/woocommerce/hooks.php:184
 msgid "payment type:"
 msgstr ""
 
-#: core/woocommerce/hooks.php:167
+#: core/woocommerce/hooks.php:195
 msgid "Total tickets sold:"
 msgstr ""
 
-#: core/woocommerce/hooks.php:170
+#: core/woocommerce/hooks.php:198
 msgid "Total price sold:"
 msgstr ""
 
@@ -1778,19 +1794,19 @@ msgstr ""
 msgid "Social :"
 msgstr ""
 
-#: templates/event/event-sidebar-meta-free.php:13
+#: templates/event/event-sidebar-meta-free.php:16
 msgid "Date : "
 msgstr ""
 
-#: templates/event/event-sidebar-meta-free.php:21
+#: templates/event/event-sidebar-meta-free.php:26
 msgid "Time : "
 msgstr ""
 
-#: templates/event/event-sidebar-meta-free.php:28
+#: templates/event/event-sidebar-meta-free.php:34
 msgid "Registration Deadline : "
 msgstr ""
 
-#: templates/event/event-sidebar-meta-free.php:35
+#: templates/event/event-sidebar-meta-free.php:42
 msgid "Venue : "
 msgstr ""
 
@@ -1860,385 +1876,604 @@ msgstr ""
 msgid "attend"
 msgstr ""
 
-#: utils/helper.php:838
+#: utils/helper.php:880
 msgid "select organizer"
 msgstr ""
 
-#: utils/helper.php:872
+#: utils/helper.php:914
 msgid "facebook"
 msgstr ""
 
-#: utils/helper.php:873
+#: utils/helper.php:915
 msgid "facebook-f"
 msgstr ""
 
-#: utils/helper.php:874
+#: utils/helper.php:916
 msgid "facebook-messenger"
 msgstr ""
 
-#: utils/helper.php:875
+#: utils/helper.php:917
 msgid "facebook-square"
 msgstr ""
 
-#: utils/helper.php:876 utils/helper.php:885
+#: utils/helper.php:918 utils/helper.php:927
 msgid "linkedin"
 msgstr ""
 
-#: utils/helper.php:877 utils/helper.php:886
+#: utils/helper.php:919 utils/helper.php:928
 msgid "linkedin-in"
 msgstr ""
 
-#: utils/helper.php:878
+#: utils/helper.php:920
 msgid "twitter"
 msgstr ""
 
-#: utils/helper.php:879
+#: utils/helper.php:921
 msgid "twitter-square"
 msgstr ""
 
-#: utils/helper.php:880
+#: utils/helper.php:922
 msgid "uber"
 msgstr ""
 
-#: utils/helper.php:881
+#: utils/helper.php:923
 msgid "google"
 msgstr ""
 
-#: utils/helper.php:882
+#: utils/helper.php:924
 msgid "google-drive"
 msgstr ""
 
-#: utils/helper.php:883
+#: utils/helper.php:925
 msgid "google-play"
 msgstr ""
 
-#: utils/helper.php:884
+#: utils/helper.php:926
 msgid "google-wallet"
 msgstr ""
 
-#: utils/helper.php:887
+#: utils/helper.php:929
 msgid "whatsapp"
 msgstr ""
 
-#: utils/helper.php:888
+#: utils/helper.php:930
 msgid "whatsapp-square"
 msgstr ""
 
-#: utils/helper.php:889
+#: utils/helper.php:931
 msgid "wordpress"
 msgstr ""
 
-#: utils/helper.php:890
+#: utils/helper.php:932
 msgid "wordpress-simple"
 msgstr ""
 
-#: utils/helper.php:891
+#: utils/helper.php:933
 msgid "youtube"
 msgstr ""
 
-#: utils/helper.php:892
+#: utils/helper.php:934
 msgid "youtube-square"
 msgstr ""
 
-#: utils/helper.php:893
+#: utils/helper.php:935
 msgid "xbox"
 msgstr ""
 
-#: utils/helper.php:894
+#: utils/helper.php:936
 msgid "vk"
 msgstr ""
 
-#: utils/helper.php:895
+#: utils/helper.php:937
 msgid "vnv"
 msgstr ""
 
-#: utils/helper.php:896
+#: utils/helper.php:938
 msgid "instagram"
 msgstr ""
 
-#: utils/helper.php:897
+#: utils/helper.php:939
 msgid "reddit"
 msgstr ""
 
-#: utils/helper.php:898
+#: utils/helper.php:940
 msgid "reddit-alien"
 msgstr ""
 
-#: utils/helper.php:899
+#: utils/helper.php:941
 msgid "reddit-square"
 msgstr ""
 
-#: utils/helper.php:900
+#: utils/helper.php:942
 msgid "pinterest"
 msgstr ""
 
-#: utils/helper.php:901
+#: utils/helper.php:943
 msgid "pinterest-p"
 msgstr ""
 
-#: utils/helper.php:902
+#: utils/helper.php:944
 msgid "pinterest-square"
 msgstr ""
 
-#: utils/helper.php:903
+#: utils/helper.php:945
 msgid "tumblr"
 msgstr ""
 
-#: utils/helper.php:904
+#: utils/helper.php:946
 msgid "tumblr-square"
 msgstr ""
 
-#: utils/helper.php:905
+#: utils/helper.php:947
 msgid "flickr"
 msgstr ""
 
-#: utils/helper.php:906
+#: utils/helper.php:948
 msgid "meetup"
 msgstr ""
 
-#: utils/helper.php:907
+#: utils/helper.php:949
 msgid "share"
 msgstr ""
 
-#: utils/helper.php:908
+#: utils/helper.php:950
 msgid "vimeo"
 msgstr ""
 
-#: utils/helper.php:909
+#: utils/helper.php:951
 msgid "Wechat"
 msgstr ""
 
-#: utils/helper.php:1212
+#: utils/helper.php:1254
 msgid "Related Events"
 msgstr ""
 
-#: utils/helper.php:1341
+#: utils/helper.php:1388
 msgid "Invalid data. "
+msgstr ""
+
+#: utils/helper.php:1471
+msgid " zoom meeting details : "
+msgstr ""
+
+#: utils/helper.php:1475
+msgid "Meeting URL: "
+msgstr ""
+
+#: utils/helper.php:1477
+msgid "Click to join Zoom meeting"
+msgstr ""
+
+#: utils/helper.php:1485
+msgid "Meeting Password: "
+msgstr ""
+
+#: utils/helper.php:1510
+msgid "Event zoom meeting details"
 msgstr ""
 
 #: utils/pro-awareness/pro-awareness.php:156
 msgid "Default Title"
 msgstr ""
 
-#: widgets/events/events.php:56
-msgid "Eventin event Event"
+#: widgets/events-tab/events-tab.php:26 widgets/events-tab/events-tab.php:56
+msgid "Eventin Events Tab"
 msgstr ""
 
-#: widgets/events/events.php:66
+#: widgets/events-tab/events-tab.php:66 widgets/events/events.php:66
 msgid "Event 1"
 msgstr ""
 
-#: widgets/events/events.php:73
+#: widgets/events-tab/events-tab.php:67 widgets/events/events.php:67
+msgid "Event 2"
+msgstr ""
+
+#: widgets/events-tab/events-tab.php:74 widgets/events/events.php:74
 msgid "Event Category"
 msgstr ""
 
-#: widgets/events/events.php:82
+#: widgets/events-tab/events-tab.php:83 widgets/events/events.php:83
 msgid "Event Tag"
 msgstr ""
 
-#: widgets/events/events.php:91
+#: widgets/events-tab/events-tab.php:92 widgets/events/events.php:92
 msgid "Event count"
 msgstr ""
 
-#: widgets/events/events.php:108
+#: widgets/events-tab/events-tab.php:109 widgets/events/events.php:109
 msgid "Event column"
 msgstr ""
 
-#: widgets/events/events.php:112 widgets/speakers/speakers.php:106
+#: widgets/events-tab/events-tab.php:113 widgets/events/events.php:113
+#: widgets/speakers/speakers.php:107
 msgid "4 Column "
 msgstr ""
 
-#: widgets/events/events.php:113 widgets/speakers/speakers.php:107
+#: widgets/events-tab/events-tab.php:114 widgets/events/events.php:114
+#: widgets/speakers/speakers.php:108
 msgid "3 Column"
 msgstr ""
 
-#: widgets/events/events.php:114 widgets/speakers/speakers.php:108
+#: widgets/events-tab/events-tab.php:115 widgets/events/events.php:115
+#: widgets/speakers/speakers.php:109
 msgid "2 Column"
 msgstr ""
 
-#: widgets/events/events.php:123
+#: widgets/events-tab/events-tab.php:124 widgets/events/events.php:124
 msgid "Order Event By"
 msgstr ""
 
-#: widgets/events/events.php:129 widgets/speakers/speakers.php:124
+#: widgets/events-tab/events-tab.php:130 widgets/events/events.php:130
+#: widgets/speakers/speakers.php:125
 msgid "Post Date"
 msgstr ""
 
-#: widgets/events/events.php:138
+#: widgets/events-tab/events-tab.php:131 widgets/events/events.php:131
+msgid "Event Start Date"
+msgstr ""
+
+#: widgets/events-tab/events-tab.php:132 widgets/events/events.php:132
+msgid "Event End Date"
+msgstr ""
+
+#: widgets/events-tab/events-tab.php:140 widgets/events/events.php:140
+msgid "Event status filter By"
+msgstr ""
+
+#: widgets/events-tab/events-tab.php:144 widgets/events/events.php:144
+msgid "All"
+msgstr ""
+
+#: widgets/events-tab/events-tab.php:145 widgets/events/events.php:145
+msgid "upcoming Event"
+msgstr ""
+
+#: widgets/events-tab/events-tab.php:146 widgets/events/events.php:146
+msgid "Expire Event"
+msgstr ""
+
+#: widgets/events-tab/events-tab.php:154 widgets/events/events.php:154
 msgid "Event Order"
 msgstr ""
 
-#: widgets/events/events.php:142 widgets/schedule/schedule.php:87
-#: widgets/speakers/speakers.php:138
+#: widgets/events-tab/events-tab.php:158 widgets/events/events.php:158
+#: widgets/schedule/schedule.php:87 widgets/speakers/speakers.php:139
 msgid "Ascending"
 msgstr ""
 
-#: widgets/events/events.php:143 widgets/schedule/schedule.php:86
-#: widgets/speakers/speakers.php:137
+#: widgets/events-tab/events-tab.php:159 widgets/events/events.php:159
+#: widgets/schedule/schedule.php:86 widgets/speakers/speakers.php:138
 msgid "Descending"
 msgstr ""
 
-#: widgets/events/events.php:154
-msgid "Title Style"
+#: widgets/events-tab/events-tab.php:170 widgets/schedule/schedule.php:98
+msgid "Nav style"
 msgstr ""
 
-#: widgets/events/events.php:163 widgets/schedule/schedule.php:266
-#: widgets/speakers/speakers.php:162 widgets/zoom/zoom.php:169
-msgid "Title Typography"
+#: widgets/events-tab/events-tab.php:177 widgets/schedule/schedule.php:104
+msgid "Alignment"
 msgstr ""
 
-#: widgets/events/events.php:176 widgets/events/events.php:359
-#: widgets/events/events.php:465 widgets/schedule/schedule.php:162
-#: widgets/speakers/speakers.php:176 widgets/speakers/speakers.php:264
-#: widgets/speakers/speakers.php:340 widgets/speakers/speakers.php:400
+#: widgets/events-tab/events-tab.php:182
+#: widgets/schedule-list/schedule-list.php:264
+#: widgets/schedule/schedule.php:109
+msgid "Left"
+msgstr ""
+
+#: widgets/events-tab/events-tab.php:186
+#: widgets/schedule-list/schedule-list.php:268
+#: widgets/schedule/schedule.php:113
+msgid "Center"
+msgstr ""
+
+#: widgets/events-tab/events-tab.php:190
+#: widgets/schedule-list/schedule-list.php:272
+#: widgets/schedule/schedule.php:117
+msgid "Right"
+msgstr ""
+
+#: widgets/events-tab/events-tab.php:194 widgets/schedule/schedule.php:121
+msgid "Justified"
+msgstr ""
+
+#: widgets/events-tab/events-tab.php:211 widgets/schedule/schedule.php:138
+msgid "Nav Title Typography"
+msgstr ""
+
+#: widgets/events-tab/events-tab.php:227 widgets/events-tab/events-tab.php:379
+#: widgets/events-tab/events-tab.php:626 widgets/events-tab/events-tab.php:732
+#: widgets/events/events.php:192 widgets/events/events.php:439
+#: widgets/events/events.php:545 widgets/schedule/schedule.php:162
+#: widgets/speakers/speakers.php:177 widgets/speakers/speakers.php:265
+#: widgets/speakers/speakers.php:341 widgets/speakers/speakers.php:403
 #: widgets/zoom/zoom.php:183 widgets/zoom/zoom.php:276
 msgid "Normal"
 msgstr ""
 
-#: widgets/events/events.php:182 widgets/schedule/schedule.php:274
-#: widgets/speakers/speakers.php:182 widgets/zoom/zoom.php:190
-msgid "Title color"
+#: widgets/events-tab/events-tab.php:234 widgets/schedule/schedule.php:169
+msgid "Nav Title Color"
 msgstr ""
 
-#: widgets/events/events.php:196 widgets/events/events.php:397
-#: widgets/events/events.php:501 widgets/speakers/speakers.php:198
-#: widgets/speakers/speakers.php:285 widgets/speakers/speakers.php:361
-#: widgets/speakers/speakers.php:426 widgets/zoom/zoom.php:207
-#: widgets/zoom/zoom.php:300
-msgid "Hover"
+#: widgets/events-tab/events-tab.php:245
+msgid "Background"
 msgstr ""
 
-#: widgets/events/events.php:202 widgets/speakers/speakers.php:204
-#: widgets/zoom/zoom.php:214
-msgid "Title Hover color"
-msgstr ""
-
-#: widgets/events/events.php:219 widgets/speakers/speakers.php:223
-#: widgets/zoom/zoom.php:234
-msgid "Title margin"
-msgstr ""
-
-#: widgets/events/events.php:234
-msgid "Designation Style"
-msgstr ""
-
-#: widgets/events/events.php:243 widgets/speakers/speakers.php:250
-msgid "Designation Typography"
-msgstr ""
-
-#: widgets/events/events.php:251 widgets/speakers/speakers.php:270
-msgid "Designation color"
-msgstr ""
-
-#: widgets/events/events.php:262 widgets/speakers/speakers.php:309
-msgid "Description margin"
-msgstr ""
-
-#: widgets/events/events.php:277
-msgid "Location Style"
-msgstr ""
-
-#: widgets/events/events.php:286
-msgid "Location Typography"
-msgstr ""
-
-#: widgets/events/events.php:294
-msgid "Location color"
-msgstr ""
-
-#: widgets/events/events.php:308
-msgid "Date Style"
-msgstr ""
-
-#: widgets/events/events.php:317
-msgid "Date Typography"
-msgstr ""
-
-#: widgets/events/events.php:325
-msgid "Date color"
-msgstr ""
-
-#: widgets/events/events.php:339
-msgid "Button Style"
-msgstr ""
-
-#: widgets/events/events.php:347
-msgid "Button Typography"
-msgstr ""
-
-#: widgets/events/events.php:365
-msgid "Button color"
-msgstr ""
-
-#: widgets/events/events.php:377
-msgid "Background Color"
-msgstr ""
-
-#: widgets/events/events.php:387 widgets/events/events.php:483
-#: widgets/schedule/schedule.php:190 widgets/speakers/speakers.php:417
+#: widgets/events-tab/events-tab.php:255 widgets/events-tab/events-tab.php:654
+#: widgets/events/events.php:467 widgets/schedule/schedule.php:190
+#: widgets/speakers/speakers.php:420
 msgid "Border"
 msgstr ""
 
-#: widgets/events/events.php:403
+#: widgets/events-tab/events-tab.php:262 widgets/events-tab/events-tab.php:313
+#: widgets/schedule-list/schedule-list.php:220
+msgid "Padding"
+msgstr ""
+
+#: widgets/events-tab/events-tab.php:278 widgets/schedule/schedule.php:202
+msgid "Active"
+msgstr ""
+
+#: widgets/events-tab/events-tab.php:284 widgets/schedule/schedule.php:208
+msgid "Nav active color"
+msgstr ""
+
+#: widgets/events-tab/events-tab.php:297
+msgid "Active Background"
+msgstr ""
+
+#: widgets/events-tab/events-tab.php:306 widgets/schedule/schedule.php:240
+msgid "Border active"
+msgstr ""
+
+#: widgets/events-tab/events-tab.php:330
+#: widgets/schedule-list/schedule-list.php:115
+#: widgets/schedule-list/schedule-list.php:162
+#: widgets/schedule-list/schedule-list.php:247
+msgid "Margin"
+msgstr ""
+
+#: widgets/events-tab/events-tab.php:341
+msgid "Border Radius"
+msgstr ""
+
+#: widgets/events-tab/events-tab.php:357 widgets/events/events.php:170
+msgid "Title Style"
+msgstr ""
+
+#: widgets/events-tab/events-tab.php:366 widgets/events/events.php:179
+#: widgets/schedule/schedule.php:266 widgets/speakers/speakers.php:163
+#: widgets/zoom/zoom.php:169
+msgid "Title Typography"
+msgstr ""
+
+#: widgets/events-tab/events-tab.php:385 widgets/events/events.php:198
+#: widgets/schedule/schedule.php:274 widgets/speakers/speakers.php:183
+#: widgets/zoom/zoom.php:190
+msgid "Title color"
+msgstr ""
+
+#: widgets/events-tab/events-tab.php:399 widgets/events-tab/events-tab.php:664
+#: widgets/events-tab/events-tab.php:768 widgets/events/events.php:212
+#: widgets/events/events.php:477 widgets/events/events.php:581
+#: widgets/speakers/speakers.php:199 widgets/speakers/speakers.php:286
+#: widgets/speakers/speakers.php:363 widgets/speakers/speakers.php:429
+#: widgets/zoom/zoom.php:207 widgets/zoom/zoom.php:300
+msgid "Hover"
+msgstr ""
+
+#: widgets/events-tab/events-tab.php:405 widgets/events/events.php:218
+#: widgets/speakers/speakers.php:205 widgets/zoom/zoom.php:214
+msgid "Title Hover color"
+msgstr ""
+
+#: widgets/events-tab/events-tab.php:422 widgets/events/events.php:235
+#: widgets/speakers/speakers.php:224 widgets/zoom/zoom.php:234
+msgid "Title margin"
+msgstr ""
+
+#: widgets/events-tab/events-tab.php:437 widgets/events/events.php:250
+msgid "Designation Style"
+msgstr ""
+
+#: widgets/events-tab/events-tab.php:446 widgets/events/events.php:259
+#: widgets/speakers/speakers.php:251
+msgid "Designation Typography"
+msgstr ""
+
+#: widgets/events-tab/events-tab.php:454 widgets/events/events.php:267
+#: widgets/speakers/speakers.php:271
+msgid "Designation color"
+msgstr ""
+
+#: widgets/events-tab/events-tab.php:465 widgets/events/events.php:278
+#: widgets/speakers/speakers.php:310
+msgid "Description margin"
+msgstr ""
+
+#: widgets/events-tab/events-tab.php:480 widgets/events/events.php:293
+msgid "Location Style"
+msgstr ""
+
+#: widgets/events-tab/events-tab.php:489 widgets/events/events.php:302
+msgid "Location Typography"
+msgstr ""
+
+#: widgets/events-tab/events-tab.php:497 widgets/events/events.php:310
+msgid "Location color"
+msgstr ""
+
+#: widgets/events-tab/events-tab.php:511 widgets/events/events.php:324
+msgid "Category Style"
+msgstr ""
+
+#: widgets/events-tab/events-tab.php:520 widgets/events/events.php:333
+#: widgets/schedule-list/schedule-list.php:96
+#: widgets/schedule-list/schedule-list.php:143
+#: widgets/schedule-list/schedule-list.php:190
+msgid "Typography"
+msgstr ""
+
+#: widgets/events-tab/events-tab.php:528 widgets/events/events.php:341
+msgid "color"
+msgstr ""
+
+#: widgets/events-tab/events-tab.php:538 widgets/events/events.php:351
+msgid "background color"
+msgstr ""
+
+#: widgets/events-tab/events-tab.php:552 widgets/events/events.php:365
+msgid "Thumb Style"
+msgstr ""
+
+#: widgets/events-tab/events-tab.php:559 widgets/events/events.php:372
+msgid "border radius"
+msgstr ""
+
+#: widgets/events-tab/events-tab.php:575 widgets/events/events.php:388
+msgid "Date Style"
+msgstr ""
+
+#: widgets/events-tab/events-tab.php:584 widgets/events/events.php:397
+msgid "Date Typography"
+msgstr ""
+
+#: widgets/events-tab/events-tab.php:592 widgets/events/events.php:405
+msgid "Date color"
+msgstr ""
+
+#: widgets/events-tab/events-tab.php:606 widgets/events/events.php:419
+msgid "Button Style"
+msgstr ""
+
+#: widgets/events-tab/events-tab.php:614 widgets/events/events.php:427
+msgid "Button Typography"
+msgstr ""
+
+#: widgets/events-tab/events-tab.php:632 widgets/events/events.php:445
+msgid "Button color"
+msgstr ""
+
+#: widgets/events-tab/events-tab.php:644 widgets/events/events.php:457
+#: widgets/schedule-list/schedule-list.php:209
+msgid "Background Color"
+msgstr ""
+
+#: widgets/events-tab/events-tab.php:670 widgets/events/events.php:483
 msgid "Button Hover color"
 msgstr ""
 
-#: widgets/events/events.php:415
+#: widgets/events-tab/events-tab.php:682 widgets/events/events.php:495
 msgid "Background Hover Color"
 msgstr ""
 
-#: widgets/events/events.php:425
+#: widgets/events-tab/events-tab.php:692 widgets/events/events.php:505
 msgid "Border Hover"
 msgstr ""
 
-#: widgets/events/events.php:438
+#: widgets/events-tab/events-tab.php:705 widgets/events/events.php:518
 msgid "Button Padding"
 msgstr ""
 
-#: widgets/events/events.php:453
+#: widgets/events-tab/events-tab.php:720 widgets/events/events.php:533
+#: widgets/schedule-list/schedule-list.php:239
 msgid "Advance Style"
 msgstr ""
 
-#: widgets/events/events.php:471 widgets/speakers/speakers.php:406
-msgid "Content box BG color"
+#: widgets/events-tab/events-tab.php:738 widgets/events/events.php:551
+msgid "Wrapper box BG color"
 msgstr ""
 
-#: widgets/events/events.php:491
-msgid "Box Shadow"
+#: widgets/events-tab/events-tab.php:750 widgets/events/events.php:563
+msgid "Wrapper Border"
 msgstr ""
 
-#: widgets/events/events.php:507 widgets/speakers/speakers.php:432
-msgid "Box Hover BG color"
+#: widgets/events-tab/events-tab.php:758 widgets/events/events.php:571
+msgid "Wrapper Box Shadow"
 msgstr ""
 
-#: widgets/events/events.php:519 widgets/speakers/speakers.php:443
-msgid "BorderHover"
+#: widgets/events-tab/events-tab.php:774 widgets/events/events.php:587
+msgid "Wrapper Box Hover BG color"
 msgstr ""
 
-#: widgets/events/events.php:527
-msgid "Box Hover Shadow"
+#: widgets/events-tab/events-tab.php:786 widgets/events/events.php:599
+msgid "Wrapper Border Hover"
 msgstr ""
 
-#: widgets/events/events.php:540 widgets/speakers/speakers.php:455
-msgid "Content Box Padding"
+#: widgets/events-tab/events-tab.php:794 widgets/events/events.php:607
+msgid "Wrapper Box Hover Shadow"
 msgstr ""
 
-#: widgets/events/style/event-1.php:54
+#: widgets/events-tab/events-tab.php:807 widgets/events/events.php:620
+msgid "Content Padding"
+msgstr ""
+
+#: widgets/events-tab/events-tab.php:820 widgets/events/events.php:633
+msgid "Content Box Border"
+msgstr ""
+
+#: widgets/events-tab/events-tab.php:828 widgets/events/events.php:641
+msgid "Wrapper Box Padding"
+msgstr ""
+
+#: widgets/events-tab/events-tab.php:840 widgets/events/events.php:653
+msgid "Wrapper Box Margin"
+msgstr ""
+
+#: widgets/events/events.php:56
+msgid "Eventin event Event"
+msgstr ""
+
+#: widgets/events/style/event-1.php:54 widgets/events/style/event-2.php:66
 msgid "Expired!"
 msgstr ""
 
-#: widgets/events/style/event-1.php:58
+#: widgets/events/style/event-1.php:58 widgets/events/style/event-2.php:70
 msgid "Attend"
 msgstr ""
 
-#: widgets/events/style/event-1.php:73
+#: widgets/events/style/event-1.php:73 widgets/events/style/event-2.php:85
 #: widgets/schedule/style/schedule-1.php:121
 #: widgets/speakers/style/speaker-2.php:56
+#: widgets/speakers/style/speaker-3.php:56
 msgid "No Post Found"
 msgstr ""
 
+#: widgets/schedule-list/schedule-list.php:31
+msgid "Eventin Schedule List"
+msgstr ""
+
+#: widgets/schedule-list/schedule-list.php:56
+msgid "Schedule Settings"
+msgstr ""
+
+#: widgets/schedule-list/schedule-list.php:87
+msgid "Topics Title Style"
+msgstr ""
+
+#: widgets/schedule-list/schedule-list.php:104
+#: widgets/schedule-list/schedule-list.php:151
+#: widgets/schedule-list/schedule-list.php:198
+msgid "Color"
+msgstr ""
+
+#: widgets/schedule-list/schedule-list.php:134
+msgid "Topics Details Style"
+msgstr ""
+
+#: widgets/schedule-list/schedule-list.php:181
+msgid "Schedule Time Style"
+msgstr ""
+
+#: widgets/schedule-list/schedule-list.php:260
+msgid "Align"
+msgstr ""
+
+#: widgets/schedule-list/style/schedule-list-1.php:91
+msgid "No Schedule Found"
+msgstr ""
+
 #: widgets/schedule/schedule.php:31
-msgid "Eventin schedule"
+msgid "Eventin schedule Tab"
 msgstr ""
 
 #: widgets/schedule/schedule.php:56
@@ -2253,52 +2488,12 @@ msgstr ""
 msgid "Schedule order"
 msgstr ""
 
-#: widgets/schedule/schedule.php:98
-msgid "Nav style"
-msgstr ""
-
-#: widgets/schedule/schedule.php:104
-msgid "Alignment"
-msgstr ""
-
-#: widgets/schedule/schedule.php:109
-msgid "Left"
-msgstr ""
-
-#: widgets/schedule/schedule.php:113
-msgid "Center"
-msgstr ""
-
-#: widgets/schedule/schedule.php:117
-msgid "Right"
-msgstr ""
-
-#: widgets/schedule/schedule.php:121
-msgid "Justified"
-msgstr ""
-
-#: widgets/schedule/schedule.php:138
-msgid "Nav Title Typography"
-msgstr ""
-
 #: widgets/schedule/schedule.php:148
 msgid "Nav Sub Title Typography"
 msgstr ""
 
-#: widgets/schedule/schedule.php:169
-msgid "Nav Title Color"
-msgstr ""
-
 #: widgets/schedule/schedule.php:179
 msgid "Nav Subtitle color"
-msgstr ""
-
-#: widgets/schedule/schedule.php:202
-msgid "Active"
-msgstr ""
-
-#: widgets/schedule/schedule.php:208
-msgid "Nav active color"
 msgstr ""
 
 #: widgets/schedule/schedule.php:219
@@ -2307,10 +2502,6 @@ msgstr ""
 
 #: widgets/schedule/schedule.php:229
 msgid "Nav Angle Active color"
-msgstr ""
-
-#: widgets/schedule/schedule.php:240
-msgid "Border active"
 msgstr ""
 
 #: widgets/schedule/schedule.php:257
@@ -2365,48 +2556,68 @@ msgstr ""
 msgid "Speaker 2"
 msgstr ""
 
-#: widgets/speakers/speakers.php:92
+#: widgets/speakers/speakers.php:63
+msgid "Speaker 3"
+msgstr ""
+
+#: widgets/speakers/speakers.php:93
 msgid "Speaker Count"
 msgstr ""
 
-#: widgets/speakers/speakers.php:102
+#: widgets/speakers/speakers.php:103
 msgid "Speaker Column"
 msgstr ""
 
-#: widgets/speakers/speakers.php:118
+#: widgets/speakers/speakers.php:119
 msgid "Order Speaker By"
 msgstr ""
 
-#: widgets/speakers/speakers.php:133
+#: widgets/speakers/speakers.php:134
 msgid "Speaker Order"
 msgstr ""
 
-#: widgets/speakers/speakers.php:152 widgets/zoom/zoom.php:159
+#: widgets/speakers/speakers.php:153 widgets/zoom/zoom.php:159
 msgid "Title Section"
 msgstr ""
 
-#: widgets/speakers/speakers.php:241
+#: widgets/speakers/speakers.php:242
 msgid "Designation Section"
 msgstr ""
 
-#: widgets/speakers/speakers.php:291
+#: widgets/speakers/speakers.php:292
 msgid "Designation Hover color"
 msgstr ""
 
-#: widgets/speakers/speakers.php:326
+#: widgets/speakers/speakers.php:327
 msgid "Social Section"
 msgstr ""
 
-#: widgets/speakers/speakers.php:346
+#: widgets/speakers/speakers.php:347
 msgid "Social BG color"
 msgstr ""
 
-#: widgets/speakers/speakers.php:367
+#: widgets/speakers/speakers.php:369
 msgid "Social Hover BG color"
 msgstr ""
 
-#: widgets/speakers/speakers.php:388
+#: widgets/speakers/speakers.php:391
 msgid "Advance Section"
+msgstr ""
+
+#: widgets/speakers/speakers.php:409
+msgid "Content box BG color"
+msgstr ""
+
+#: widgets/speakers/speakers.php:435
+msgid "Box Hover BG color"
+msgstr ""
+
+#: widgets/speakers/speakers.php:446
+msgid "BorderHover"
+msgstr ""
+
+#: widgets/speakers/speakers.php:458
+msgid "Content Box Padding"
 msgstr ""
 
 #: widgets/zoom/style/zoom-1.php:49

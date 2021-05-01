@@ -28,7 +28,7 @@ class Etn_Schedule extends Widget_Base {
      * @return string Widget title.
      */
     public function get_title() {
-        return esc_html__( 'Eventin schedule', 'eventin' );
+        return esc_html__( 'Eventin schedule Tab', 'eventin' );
     }
 
     /**
@@ -48,7 +48,7 @@ class Etn_Schedule extends Widget_Base {
         return ['etn-event'];
     }
 
-    protected function _register_controls() {
+    protected function register_controls() {
         // Start of schedule section
         $this->start_controls_section(
             'section_tab',

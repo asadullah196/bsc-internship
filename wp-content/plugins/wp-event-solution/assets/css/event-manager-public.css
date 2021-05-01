@@ -28,7 +28,7 @@ a {
   font-size: 16px;
   line-height: 28px;
   color: #fff;
-  background-color: #ff057c;
+  background-color: #FF057C;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -45,8 +45,7 @@ a {
   cursor: pointer;
   outline: none;
 }
-.etn-btn:hover,
-.etn-btn:focus,
+.etn-btn:hover, .etn-btn:focus,
 .attr-btn-primary:hover,
 .attr-btn-primary:focus,
 .etn-attendee-form .etn-btn:hover,
@@ -65,7 +64,7 @@ a {
 .etn-attendee-form .etn-btn:hover,
 .etn-ticket-widget .etn-btn:hover,
 .etn-settings-dashboard .button-primary:hover {
-  background-color: #09c4b7;
+  background-color: #09C4B7;
 }
 .etn-btn.etn-edit-btn,
 .attr-btn-primary.etn-edit-btn,
@@ -82,14 +81,14 @@ a {
 .etn-attendee-form .etn-btn.etn-edit-btn:hover,
 .etn-ticket-widget .etn-btn.etn-edit-btn:hover,
 .etn-settings-dashboard .button-primary.etn-edit-btn:hover {
-  color: #09c4b7;
+  color: #09C4B7;
 }
 .etn-btn.etn-delete-btn,
 .attr-btn-primary.etn-delete-btn,
 .etn-attendee-form .etn-btn.etn-delete-btn,
 .etn-ticket-widget .etn-btn.etn-delete-btn,
 .etn-settings-dashboard .button-primary.etn-delete-btn {
-  color: #09c4b7;
+  color: #09C4B7;
   background-color: #ffeeee;
   border: none;
   padding: 0 15px;
@@ -99,10 +98,10 @@ a {
 .etn-attendee-form .etn-btn.etn-btn-border,
 .etn-ticket-widget .etn-btn.etn-btn-border,
 .etn-settings-dashboard .button-primary.etn-btn-border {
-  border: 1px solid #ff057c;
+  border: 1px solid #FF057C;
   background-color: transparent;
   background-image: none;
-  color: #ff057c;
+  color: #FF057C;
   text-transform: uppercase;
 }
 .etn-btn.etn-btn-border:hover,
@@ -110,22 +109,22 @@ a {
 .etn-attendee-form .etn-btn.etn-btn-border:hover,
 .etn-ticket-widget .etn-btn.etn-btn-border:hover,
 .etn-settings-dashboard .button-primary.etn-btn-border:hover {
-  border-color: #09c4b7;
-  color: #09c4b7;
+  border-color: #09C4B7;
+  color: #09C4B7;
 }
 .etn-btn.etn-btn-secondary,
 .attr-btn-primary.etn-btn-secondary,
 .etn-attendee-form .etn-btn.etn-btn-secondary,
 .etn-ticket-widget .etn-btn.etn-btn-secondary,
 .etn-settings-dashboard .button-primary.etn-btn-secondary {
-  background-color: #09c4b7;
+  background-color: #09C4B7;
 }
 .etn-btn.etn-btn-secondary:hover,
 .attr-btn-primary.etn-btn-secondary:hover,
 .etn-attendee-form .etn-btn.etn-btn-secondary:hover,
 .etn-ticket-widget .etn-btn.etn-btn-secondary:hover,
 .etn-settings-dashboard .button-primary.etn-btn-secondary:hover {
-  background-color: #ff057c;
+  background-color: #FF057C;
 }
 
 .attr-form-control[disabled],
@@ -160,8 +159,7 @@ fieldset[disabled] .etn-form-control {
   width: 100%;
   padding: 5px 10px;
 }
-.etn-form-control:focus,
-.etn-form-control.focused,
+.etn-form-control:focus, .etn-form-control.focused,
 .etn-attendee-form-wrap .etn-form-control:focus,
 .etn-attendee-form-wrap .etn-form-control.focused,
 .attr-form-control:focus,
@@ -183,7 +181,7 @@ fieldset[disabled] .etn-form-control {
   cursor: pointer;
   width: 55px;
   height: 24px;
-  background: #dddddd;
+  background: #DDDDDD;
   display: block;
   border-radius: 100px;
   position: relative;
@@ -214,20 +212,14 @@ fieldset[disabled] .etn-form-control {
   text-transform: uppercase;
   font-weight: 600;
 }
-.etn-meta
-  input.etn-admin-control-input:checked
-  + label.etn_switch_button_label {
-  background: #ff057c;
+.etn-meta input.etn-admin-control-input:checked + label.etn_switch_button_label {
+  background: #FF057C;
 }
-.etn-meta
-  input.etn-admin-control-input:checked
-  + label.etn_switch_button_label:after {
+.etn-meta input.etn-admin-control-input:checked + label.etn_switch_button_label:after {
   left: calc(100% - 5px);
   transform: translateX(-100%);
 }
-.etn-meta
-  input.etn-admin-control-input:checked
-  + label.etn_switch_button_label:before {
+.etn-meta input.etn-admin-control-input:checked + label.etn_switch_button_label:before {
   content: "Yes";
   right: inherit;
   left: 10px;
@@ -236,19 +228,19 @@ fieldset[disabled] .etn-form-control {
   text-indent: 0px;
 }
 
-.etn-radio-btn > input[type="radio"] {
+.etn-radio-btn > input[type=radio] {
   display: none;
 }
 .etn-radio-btn > img {
   cursor: pointer;
-  border: 1px solid #ff057c;
+  border: 1px solid #FF057C;
   max-width: 100%;
   border-radius: 6px;
   -webkit-border-radius: 6px;
   -ms-border-radius: 6px;
 }
-.etn-radio-btn > input[type="radio"]:checked + img {
-  border: 1px solid #09c4b7;
+.etn-radio-btn > input[type=radio]:checked + img {
+  border: 1px solid #09C4B7;
 }
 
 .etn-title {
@@ -285,11 +277,7 @@ fieldset[disabled] .etn-form-control {
     max-width: 1140px;
   }
 }
-.etn-container-fluid,
-.etn-container-sm,
-.etn-container-md,
-.etn-container-lg,
-.etn-container-xl {
+.etn-container-fluid, .etn-container-sm, .etn-container-md, .etn-container-lg, .etn-container-xl {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -298,32 +286,22 @@ fieldset[disabled] .etn-form-control {
 }
 
 @media (min-width: 576px) {
-  .etn-container,
-  .etn-container-sm {
+  .etn-container, .etn-container-sm {
     max-width: 540px;
   }
 }
 @media (min-width: 768px) {
-  .etn-container,
-  .etn-container-sm,
-  .etn-container-md {
+  .etn-container, .etn-container-sm, .etn-container-md {
     max-width: 720px;
   }
 }
 @media (min-width: 992px) {
-  .etn-container,
-  .etn-container-sm,
-  .etn-container-md,
-  .etn-container-lg {
+  .etn-container, .etn-container-sm, .etn-container-md, .etn-container-lg {
     max-width: 960px;
   }
 }
 @media (min-width: 1200px) {
-  .etn-container,
-  .etn-container-sm,
-  .etn-container-md,
-  .etn-container-lg,
-  .etn-container-xl {
+  .etn-container, .etn-container-sm, .etn-container-md, .etn-container-lg, .etn-container-xl {
     max-width: 1140px;
   }
 }
@@ -340,80 +318,16 @@ fieldset[disabled] .etn-form-control {
 }
 
 .etn-no-gutters > .etn-col,
-.etn-no-gutters > [class*="col-"] {
+.etn-no-gutters > [class*=col-] {
   padding-right: 0;
   padding-left: 0;
 }
 
-.etn-col-1,
-.etn-col-2,
-.etn-col-3,
-.etn-col-4,
-.etn-col-5,
-.etn-col-6,
-.etn-col-7,
-.etn-col-8,
-.etn-col-9,
-.etn-col-10,
-.etn-col-11,
-.etn-col-12,
-.etn-col,
-.etn-col-auto,
-.etn-col-sm-1,
-.etn-col-sm-2,
-.etn-col-sm-3,
-.etn-col-sm-4,
-.etn-col-sm-5,
-.etn-col-sm-6,
-.etn-col-sm-7,
-.etn-col-sm-8,
-.etn-col-sm-9,
-.etn-col-sm-10,
-.etn-col-sm-11,
-.etn-col-sm-12,
-.etn-col-sm,
-.etn-col-sm-auto,
-.etn-col-md-1,
-.etn-col-md-2,
-.etn-col-md-3,
-.etn-col-md-4,
-.etn-col-md-5,
-.etn-col-md-6,
-.etn-col-md-7,
-.etn-col-md-8,
-.etn-col-md-9,
-.etn-col-md-10,
-.etn-col-md-11,
-.etn-col-md-12,
-.etn-col-md,
-.etn-col-md-auto,
-.etn-col-lg-1,
-.etn-col-lg-2,
-.etn-col-lg-3,
-.etn-col-lg-4,
-.etn-col-lg-5,
-.etn-col-lg-6,
-.etn-col-lg-7,
-.etn-col-lg-8,
-.etn-col-lg-9,
-.etn-col-lg-10,
-.etn-col-lg-11,
-.etn-col-lg-12,
-.etn-col-lg,
-.etn-col-lg-auto,
-.etn-col-xl-1,
-.etn-col-xl-2,
-.etn-col-xl-3,
-.etn-col-xl-4,
-.etn-col-xl-5,
-.etn-col-xl-6,
-.etn-col-xl-7,
-.etn-col-xl-8,
-.etn-col-xl-9,
-.etn-col-xl-10,
-.etn-col-xl-11,
-.etn-col-xl-12,
-.etn-col-xl,
+.etn-col-1, .etn-col-2, .etn-col-3, .etn-col-4, .etn-col-5, .etn-col-6, .etn-col-7, .etn-col-8, .etn-col-9, .etn-col-10, .etn-col-11, .etn-col-12, .etn-col,
+.etn-col-auto, .etn-col-sm-1, .etn-col-sm-2, .etn-col-sm-3, .etn-col-sm-4, .etn-col-sm-5, .etn-col-sm-6, .etn-col-sm-7, .etn-col-sm-8, .etn-col-sm-9, .etn-col-sm-10, .etn-col-sm-11, .etn-col-sm-12, .etn-col-sm,
+.etn-col-sm-auto, .etn-col-md-1, .etn-col-md-2, .etn-col-md-3, .etn-col-md-4, .etn-col-md-5, .etn-col-md-6, .etn-col-md-7, .etn-col-md-8, .etn-col-md-9, .etn-col-md-10, .etn-col-md-11, .etn-col-md-12, .etn-col-md,
+.etn-col-md-auto, .etn-col-lg-1, .etn-col-lg-2, .etn-col-lg-3, .etn-col-lg-4, .etn-col-lg-5, .etn-col-lg-6, .etn-col-lg-7, .etn-col-lg-8, .etn-col-lg-9, .etn-col-lg-10, .etn-col-lg-11, .etn-col-lg-12, .etn-col-lg,
+.etn-col-lg-auto, .etn-col-xl-1, .etn-col-xl-2, .etn-col-xl-3, .etn-col-xl-4, .etn-col-xl-5, .etn-col-xl-6, .etn-col-xl-7, .etn-col-xl-8, .etn-col-xl-9, .etn-col-xl-10, .etn-col-xl-11, .etn-col-xl-12, .etn-col-xl,
 .etn-col-xl-auto {
   position: relative;
   width: 100%;
@@ -2814,22 +2728,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-mt-sm-0,
-  .etn-my-sm-0 {
+.etn-my-sm-0 {
     margin-top: 0 !important;
   }
 
   .etn-mr-sm-0,
-  .etn-mx-sm-0 {
+.etn-mx-sm-0 {
     margin-right: 0 !important;
   }
 
   .etn-mb-sm-0,
-  .etn-my-sm-0 {
+.etn-my-sm-0 {
     margin-bottom: 0 !important;
   }
 
   .etn-ml-sm-0,
-  .etn-mx-sm-0 {
+.etn-mx-sm-0 {
     margin-left: 0 !important;
   }
 
@@ -2838,22 +2752,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-mt-sm-1,
-  .etn-my-sm-1 {
+.etn-my-sm-1 {
     margin-top: 0.25rem !important;
   }
 
   .etn-mr-sm-1,
-  .etn-mx-sm-1 {
+.etn-mx-sm-1 {
     margin-right: 0.25rem !important;
   }
 
   .etn-mb-sm-1,
-  .etn-my-sm-1 {
+.etn-my-sm-1 {
     margin-bottom: 0.25rem !important;
   }
 
   .etn-ml-sm-1,
-  .etn-mx-sm-1 {
+.etn-mx-sm-1 {
     margin-left: 0.25rem !important;
   }
 
@@ -2862,22 +2776,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-mt-sm-2,
-  .etn-my-sm-2 {
+.etn-my-sm-2 {
     margin-top: 0.5rem !important;
   }
 
   .etn-mr-sm-2,
-  .etn-mx-sm-2 {
+.etn-mx-sm-2 {
     margin-right: 0.5rem !important;
   }
 
   .etn-mb-sm-2,
-  .etn-my-sm-2 {
+.etn-my-sm-2 {
     margin-bottom: 0.5rem !important;
   }
 
   .etn-ml-sm-2,
-  .etn-mx-sm-2 {
+.etn-mx-sm-2 {
     margin-left: 0.5rem !important;
   }
 
@@ -2886,22 +2800,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-mt-sm-3,
-  .etn-my-sm-3 {
+.etn-my-sm-3 {
     margin-top: 1rem !important;
   }
 
   .etn-mr-sm-3,
-  .etn-mx-sm-3 {
+.etn-mx-sm-3 {
     margin-right: 1rem !important;
   }
 
   .etn-mb-sm-3,
-  .etn-my-sm-3 {
+.etn-my-sm-3 {
     margin-bottom: 1rem !important;
   }
 
   .etn-ml-sm-3,
-  .etn-mx-sm-3 {
+.etn-mx-sm-3 {
     margin-left: 1rem !important;
   }
 
@@ -2910,22 +2824,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-mt-sm-4,
-  .etn-my-sm-4 {
+.etn-my-sm-4 {
     margin-top: 1.5rem !important;
   }
 
   .etn-mr-sm-4,
-  .etn-mx-sm-4 {
+.etn-mx-sm-4 {
     margin-right: 1.5rem !important;
   }
 
   .etn-mb-sm-4,
-  .etn-my-sm-4 {
+.etn-my-sm-4 {
     margin-bottom: 1.5rem !important;
   }
 
   .etn-ml-sm-4,
-  .etn-mx-sm-4 {
+.etn-mx-sm-4 {
     margin-left: 1.5rem !important;
   }
 
@@ -2934,22 +2848,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-mt-sm-5,
-  .etn-my-sm-5 {
+.etn-my-sm-5 {
     margin-top: 3rem !important;
   }
 
   .etn-mr-sm-5,
-  .etn-mx-sm-5 {
+.etn-mx-sm-5 {
     margin-right: 3rem !important;
   }
 
   .etn-mb-sm-5,
-  .etn-my-sm-5 {
+.etn-my-sm-5 {
     margin-bottom: 3rem !important;
   }
 
   .etn-ml-sm-5,
-  .etn-mx-sm-5 {
+.etn-mx-sm-5 {
     margin-left: 3rem !important;
   }
 
@@ -2958,22 +2872,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-pt-sm-0,
-  .etn-py-sm-0 {
+.etn-py-sm-0 {
     padding-top: 0 !important;
   }
 
   .etn-pr-sm-0,
-  .etn-px-sm-0 {
+.etn-px-sm-0 {
     padding-right: 0 !important;
   }
 
   .etn-pb-sm-0,
-  .etn-py-sm-0 {
+.etn-py-sm-0 {
     padding-bottom: 0 !important;
   }
 
   .etn-pl-sm-0,
-  .etn-px-sm-0 {
+.etn-px-sm-0 {
     padding-left: 0 !important;
   }
 
@@ -2982,22 +2896,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-pt-sm-1,
-  .etn-py-sm-1 {
+.etn-py-sm-1 {
     padding-top: 0.25rem !important;
   }
 
   .etn-pr-sm-1,
-  .etn-px-sm-1 {
+.etn-px-sm-1 {
     padding-right: 0.25rem !important;
   }
 
   .etn-pb-sm-1,
-  .etn-py-sm-1 {
+.etn-py-sm-1 {
     padding-bottom: 0.25rem !important;
   }
 
   .etn-pl-sm-1,
-  .etn-px-sm-1 {
+.etn-px-sm-1 {
     padding-left: 0.25rem !important;
   }
 
@@ -3006,22 +2920,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-pt-sm-2,
-  .etn-py-sm-2 {
+.etn-py-sm-2 {
     padding-top: 0.5rem !important;
   }
 
   .etn-pr-sm-2,
-  .etn-px-sm-2 {
+.etn-px-sm-2 {
     padding-right: 0.5rem !important;
   }
 
   .etn-pb-sm-2,
-  .etn-py-sm-2 {
+.etn-py-sm-2 {
     padding-bottom: 0.5rem !important;
   }
 
   .etn-pl-sm-2,
-  .etn-px-sm-2 {
+.etn-px-sm-2 {
     padding-left: 0.5rem !important;
   }
 
@@ -3030,22 +2944,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-pt-sm-3,
-  .etn-py-sm-3 {
+.etn-py-sm-3 {
     padding-top: 1rem !important;
   }
 
   .etn-pr-sm-3,
-  .etn-px-sm-3 {
+.etn-px-sm-3 {
     padding-right: 1rem !important;
   }
 
   .etn-pb-sm-3,
-  .etn-py-sm-3 {
+.etn-py-sm-3 {
     padding-bottom: 1rem !important;
   }
 
   .etn-pl-sm-3,
-  .etn-px-sm-3 {
+.etn-px-sm-3 {
     padding-left: 1rem !important;
   }
 
@@ -3054,22 +2968,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-pt-sm-4,
-  .etn-py-sm-4 {
+.etn-py-sm-4 {
     padding-top: 1.5rem !important;
   }
 
   .etn-pr-sm-4,
-  .etn-px-sm-4 {
+.etn-px-sm-4 {
     padding-right: 1.5rem !important;
   }
 
   .etn-pb-sm-4,
-  .etn-py-sm-4 {
+.etn-py-sm-4 {
     padding-bottom: 1.5rem !important;
   }
 
   .etn-pl-sm-4,
-  .etn-px-sm-4 {
+.etn-px-sm-4 {
     padding-left: 1.5rem !important;
   }
 
@@ -3078,22 +2992,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-pt-sm-5,
-  .etn-py-sm-5 {
+.etn-py-sm-5 {
     padding-top: 3rem !important;
   }
 
   .etn-pr-sm-5,
-  .etn-px-sm-5 {
+.etn-px-sm-5 {
     padding-right: 3rem !important;
   }
 
   .etn-pb-sm-5,
-  .etn-py-sm-5 {
+.etn-py-sm-5 {
     padding-bottom: 3rem !important;
   }
 
   .etn-pl-sm-5,
-  .etn-px-sm-5 {
+.etn-px-sm-5 {
     padding-left: 3rem !important;
   }
 
@@ -3102,22 +3016,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-mt-sm-n1,
-  .etn-my-sm-n1 {
+.etn-my-sm-n1 {
     margin-top: -0.25rem !important;
   }
 
   .etn-mr-sm-n1,
-  .etn-mx-sm-n1 {
+.etn-mx-sm-n1 {
     margin-right: -0.25rem !important;
   }
 
   .etn-mb-sm-n1,
-  .etn-my-sm-n1 {
+.etn-my-sm-n1 {
     margin-bottom: -0.25rem !important;
   }
 
   .etn-ml-sm-n1,
-  .etn-mx-sm-n1 {
+.etn-mx-sm-n1 {
     margin-left: -0.25rem !important;
   }
 
@@ -3126,22 +3040,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-mt-sm-n2,
-  .etn-my-sm-n2 {
+.etn-my-sm-n2 {
     margin-top: -0.5rem !important;
   }
 
   .etn-mr-sm-n2,
-  .etn-mx-sm-n2 {
+.etn-mx-sm-n2 {
     margin-right: -0.5rem !important;
   }
 
   .etn-mb-sm-n2,
-  .etn-my-sm-n2 {
+.etn-my-sm-n2 {
     margin-bottom: -0.5rem !important;
   }
 
   .etn-ml-sm-n2,
-  .etn-mx-sm-n2 {
+.etn-mx-sm-n2 {
     margin-left: -0.5rem !important;
   }
 
@@ -3150,22 +3064,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-mt-sm-n3,
-  .etn-my-sm-n3 {
+.etn-my-sm-n3 {
     margin-top: -1rem !important;
   }
 
   .etn-mr-sm-n3,
-  .etn-mx-sm-n3 {
+.etn-mx-sm-n3 {
     margin-right: -1rem !important;
   }
 
   .etn-mb-sm-n3,
-  .etn-my-sm-n3 {
+.etn-my-sm-n3 {
     margin-bottom: -1rem !important;
   }
 
   .etn-ml-sm-n3,
-  .etn-mx-sm-n3 {
+.etn-mx-sm-n3 {
     margin-left: -1rem !important;
   }
 
@@ -3174,22 +3088,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-mt-sm-n4,
-  .etn-my-sm-n4 {
+.etn-my-sm-n4 {
     margin-top: -1.5rem !important;
   }
 
   .etn-mr-sm-n4,
-  .etn-mx-sm-n4 {
+.etn-mx-sm-n4 {
     margin-right: -1.5rem !important;
   }
 
   .etn-mb-sm-n4,
-  .etn-my-sm-n4 {
+.etn-my-sm-n4 {
     margin-bottom: -1.5rem !important;
   }
 
   .etn-ml-sm-n4,
-  .etn-mx-sm-n4 {
+.etn-mx-sm-n4 {
     margin-left: -1.5rem !important;
   }
 
@@ -3198,22 +3112,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-mt-sm-n5,
-  .etn-my-sm-n5 {
+.etn-my-sm-n5 {
     margin-top: -3rem !important;
   }
 
   .etn-mr-sm-n5,
-  .etn-mx-sm-n5 {
+.etn-mx-sm-n5 {
     margin-right: -3rem !important;
   }
 
   .etn-mb-sm-n5,
-  .etn-my-sm-n5 {
+.etn-my-sm-n5 {
     margin-bottom: -3rem !important;
   }
 
   .etn-ml-sm-n5,
-  .etn-mx-sm-n5 {
+.etn-mx-sm-n5 {
     margin-left: -3rem !important;
   }
 
@@ -3222,22 +3136,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-mt-sm-auto,
-  .etn-my-sm-auto {
+.etn-my-sm-auto {
     margin-top: auto !important;
   }
 
   .etn-mr-sm-auto,
-  .etn-mx-sm-auto {
+.etn-mx-sm-auto {
     margin-right: auto !important;
   }
 
   .etn-mb-sm-auto,
-  .etn-my-sm-auto {
+.etn-my-sm-auto {
     margin-bottom: auto !important;
   }
 
   .etn-ml-sm-auto,
-  .etn-mx-sm-auto {
+.etn-mx-sm-auto {
     margin-left: auto !important;
   }
 }
@@ -3247,22 +3161,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-mt-md-0,
-  .etn-my-md-0 {
+.etn-my-md-0 {
     margin-top: 0 !important;
   }
 
   .etn-mr-md-0,
-  .etn-mx-md-0 {
+.etn-mx-md-0 {
     margin-right: 0 !important;
   }
 
   .etn-mb-md-0,
-  .etn-my-md-0 {
+.etn-my-md-0 {
     margin-bottom: 0 !important;
   }
 
   .etn-ml-md-0,
-  .etn-mx-md-0 {
+.etn-mx-md-0 {
     margin-left: 0 !important;
   }
 
@@ -3271,22 +3185,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-mt-md-1,
-  .etn-my-md-1 {
+.etn-my-md-1 {
     margin-top: 0.25rem !important;
   }
 
   .etn-mr-md-1,
-  .etn-mx-md-1 {
+.etn-mx-md-1 {
     margin-right: 0.25rem !important;
   }
 
   .etn-mb-md-1,
-  .etn-my-md-1 {
+.etn-my-md-1 {
     margin-bottom: 0.25rem !important;
   }
 
   .etn-ml-md-1,
-  .etn-mx-md-1 {
+.etn-mx-md-1 {
     margin-left: 0.25rem !important;
   }
 
@@ -3295,22 +3209,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-mt-md-2,
-  .etn-my-md-2 {
+.etn-my-md-2 {
     margin-top: 0.5rem !important;
   }
 
   .etn-mr-md-2,
-  .etn-mx-md-2 {
+.etn-mx-md-2 {
     margin-right: 0.5rem !important;
   }
 
   .etn-mb-md-2,
-  .etn-my-md-2 {
+.etn-my-md-2 {
     margin-bottom: 0.5rem !important;
   }
 
   .etn-ml-md-2,
-  .etn-mx-md-2 {
+.etn-mx-md-2 {
     margin-left: 0.5rem !important;
   }
 
@@ -3319,22 +3233,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-mt-md-3,
-  .etn-my-md-3 {
+.etn-my-md-3 {
     margin-top: 1rem !important;
   }
 
   .etn-mr-md-3,
-  .etn-mx-md-3 {
+.etn-mx-md-3 {
     margin-right: 1rem !important;
   }
 
   .etn-mb-md-3,
-  .etn-my-md-3 {
+.etn-my-md-3 {
     margin-bottom: 1rem !important;
   }
 
   .etn-ml-md-3,
-  .etn-mx-md-3 {
+.etn-mx-md-3 {
     margin-left: 1rem !important;
   }
 
@@ -3343,22 +3257,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-mt-md-4,
-  .etn-my-md-4 {
+.etn-my-md-4 {
     margin-top: 1.5rem !important;
   }
 
   .etn-mr-md-4,
-  .etn-mx-md-4 {
+.etn-mx-md-4 {
     margin-right: 1.5rem !important;
   }
 
   .etn-mb-md-4,
-  .etn-my-md-4 {
+.etn-my-md-4 {
     margin-bottom: 1.5rem !important;
   }
 
   .etn-ml-md-4,
-  .etn-mx-md-4 {
+.etn-mx-md-4 {
     margin-left: 1.5rem !important;
   }
 
@@ -3367,22 +3281,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-mt-md-5,
-  .etn-my-md-5 {
+.etn-my-md-5 {
     margin-top: 3rem !important;
   }
 
   .etn-mr-md-5,
-  .etn-mx-md-5 {
+.etn-mx-md-5 {
     margin-right: 3rem !important;
   }
 
   .etn-mb-md-5,
-  .etn-my-md-5 {
+.etn-my-md-5 {
     margin-bottom: 3rem !important;
   }
 
   .etn-ml-md-5,
-  .etn-mx-md-5 {
+.etn-mx-md-5 {
     margin-left: 3rem !important;
   }
 
@@ -3391,22 +3305,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-pt-md-0,
-  .etn-py-md-0 {
+.etn-py-md-0 {
     padding-top: 0 !important;
   }
 
   .etn-pr-md-0,
-  .etn-px-md-0 {
+.etn-px-md-0 {
     padding-right: 0 !important;
   }
 
   .etn-pb-md-0,
-  .etn-py-md-0 {
+.etn-py-md-0 {
     padding-bottom: 0 !important;
   }
 
   .etn-pl-md-0,
-  .etn-px-md-0 {
+.etn-px-md-0 {
     padding-left: 0 !important;
   }
 
@@ -3415,22 +3329,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-pt-md-1,
-  .etn-py-md-1 {
+.etn-py-md-1 {
     padding-top: 0.25rem !important;
   }
 
   .etn-pr-md-1,
-  .etn-px-md-1 {
+.etn-px-md-1 {
     padding-right: 0.25rem !important;
   }
 
   .etn-pb-md-1,
-  .etn-py-md-1 {
+.etn-py-md-1 {
     padding-bottom: 0.25rem !important;
   }
 
   .etn-pl-md-1,
-  .etn-px-md-1 {
+.etn-px-md-1 {
     padding-left: 0.25rem !important;
   }
 
@@ -3439,22 +3353,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-pt-md-2,
-  .etn-py-md-2 {
+.etn-py-md-2 {
     padding-top: 0.5rem !important;
   }
 
   .etn-pr-md-2,
-  .etn-px-md-2 {
+.etn-px-md-2 {
     padding-right: 0.5rem !important;
   }
 
   .etn-pb-md-2,
-  .etn-py-md-2 {
+.etn-py-md-2 {
     padding-bottom: 0.5rem !important;
   }
 
   .etn-pl-md-2,
-  .etn-px-md-2 {
+.etn-px-md-2 {
     padding-left: 0.5rem !important;
   }
 
@@ -3463,22 +3377,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-pt-md-3,
-  .etn-py-md-3 {
+.etn-py-md-3 {
     padding-top: 1rem !important;
   }
 
   .etn-pr-md-3,
-  .etn-px-md-3 {
+.etn-px-md-3 {
     padding-right: 1rem !important;
   }
 
   .etn-pb-md-3,
-  .etn-py-md-3 {
+.etn-py-md-3 {
     padding-bottom: 1rem !important;
   }
 
   .etn-pl-md-3,
-  .etn-px-md-3 {
+.etn-px-md-3 {
     padding-left: 1rem !important;
   }
 
@@ -3487,22 +3401,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-pt-md-4,
-  .etn-py-md-4 {
+.etn-py-md-4 {
     padding-top: 1.5rem !important;
   }
 
   .etn-pr-md-4,
-  .etn-px-md-4 {
+.etn-px-md-4 {
     padding-right: 1.5rem !important;
   }
 
   .etn-pb-md-4,
-  .etn-py-md-4 {
+.etn-py-md-4 {
     padding-bottom: 1.5rem !important;
   }
 
   .etn-pl-md-4,
-  .etn-px-md-4 {
+.etn-px-md-4 {
     padding-left: 1.5rem !important;
   }
 
@@ -3511,22 +3425,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-pt-md-5,
-  .etn-py-md-5 {
+.etn-py-md-5 {
     padding-top: 3rem !important;
   }
 
   .etn-pr-md-5,
-  .etn-px-md-5 {
+.etn-px-md-5 {
     padding-right: 3rem !important;
   }
 
   .etn-pb-md-5,
-  .etn-py-md-5 {
+.etn-py-md-5 {
     padding-bottom: 3rem !important;
   }
 
   .etn-pl-md-5,
-  .etn-px-md-5 {
+.etn-px-md-5 {
     padding-left: 3rem !important;
   }
 
@@ -3535,22 +3449,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-mt-md-n1,
-  .etn-my-md-n1 {
+.etn-my-md-n1 {
     margin-top: -0.25rem !important;
   }
 
   .etn-mr-md-n1,
-  .etn-mx-md-n1 {
+.etn-mx-md-n1 {
     margin-right: -0.25rem !important;
   }
 
   .etn-mb-md-n1,
-  .etn-my-md-n1 {
+.etn-my-md-n1 {
     margin-bottom: -0.25rem !important;
   }
 
   .etn-ml-md-n1,
-  .etn-mx-md-n1 {
+.etn-mx-md-n1 {
     margin-left: -0.25rem !important;
   }
 
@@ -3559,22 +3473,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-mt-md-n2,
-  .etn-my-md-n2 {
+.etn-my-md-n2 {
     margin-top: -0.5rem !important;
   }
 
   .etn-mr-md-n2,
-  .etn-mx-md-n2 {
+.etn-mx-md-n2 {
     margin-right: -0.5rem !important;
   }
 
   .etn-mb-md-n2,
-  .etn-my-md-n2 {
+.etn-my-md-n2 {
     margin-bottom: -0.5rem !important;
   }
 
   .etn-ml-md-n2,
-  .etn-mx-md-n2 {
+.etn-mx-md-n2 {
     margin-left: -0.5rem !important;
   }
 
@@ -3583,22 +3497,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-mt-md-n3,
-  .etn-my-md-n3 {
+.etn-my-md-n3 {
     margin-top: -1rem !important;
   }
 
   .etn-mr-md-n3,
-  .etn-mx-md-n3 {
+.etn-mx-md-n3 {
     margin-right: -1rem !important;
   }
 
   .etn-mb-md-n3,
-  .etn-my-md-n3 {
+.etn-my-md-n3 {
     margin-bottom: -1rem !important;
   }
 
   .etn-ml-md-n3,
-  .etn-mx-md-n3 {
+.etn-mx-md-n3 {
     margin-left: -1rem !important;
   }
 
@@ -3607,22 +3521,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-mt-md-n4,
-  .etn-my-md-n4 {
+.etn-my-md-n4 {
     margin-top: -1.5rem !important;
   }
 
   .etn-mr-md-n4,
-  .etn-mx-md-n4 {
+.etn-mx-md-n4 {
     margin-right: -1.5rem !important;
   }
 
   .etn-mb-md-n4,
-  .etn-my-md-n4 {
+.etn-my-md-n4 {
     margin-bottom: -1.5rem !important;
   }
 
   .etn-ml-md-n4,
-  .etn-mx-md-n4 {
+.etn-mx-md-n4 {
     margin-left: -1.5rem !important;
   }
 
@@ -3631,22 +3545,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-mt-md-n5,
-  .etn-my-md-n5 {
+.etn-my-md-n5 {
     margin-top: -3rem !important;
   }
 
   .etn-mr-md-n5,
-  .etn-mx-md-n5 {
+.etn-mx-md-n5 {
     margin-right: -3rem !important;
   }
 
   .etn-mb-md-n5,
-  .etn-my-md-n5 {
+.etn-my-md-n5 {
     margin-bottom: -3rem !important;
   }
 
   .etn-ml-md-n5,
-  .etn-mx-md-n5 {
+.etn-mx-md-n5 {
     margin-left: -3rem !important;
   }
 
@@ -3655,22 +3569,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-mt-md-auto,
-  .etn-my-md-auto {
+.etn-my-md-auto {
     margin-top: auto !important;
   }
 
   .etn-mr-md-auto,
-  .etn-mx-md-auto {
+.etn-mx-md-auto {
     margin-right: auto !important;
   }
 
   .etn-mb-md-auto,
-  .etn-my-md-auto {
+.etn-my-md-auto {
     margin-bottom: auto !important;
   }
 
   .etn-ml-md-auto,
-  .etn-mx-md-auto {
+.etn-mx-md-auto {
     margin-left: auto !important;
   }
 }
@@ -3680,22 +3594,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-mt-lg-0,
-  .etn-my-lg-0 {
+.etn-my-lg-0 {
     margin-top: 0 !important;
   }
 
   .etn-mr-lg-0,
-  .etn-mx-lg-0 {
+.etn-mx-lg-0 {
     margin-right: 0 !important;
   }
 
   .etn-mb-lg-0,
-  .etn-my-lg-0 {
+.etn-my-lg-0 {
     margin-bottom: 0 !important;
   }
 
   .etn-ml-lg-0,
-  .etn-mx-lg-0 {
+.etn-mx-lg-0 {
     margin-left: 0 !important;
   }
 
@@ -3704,22 +3618,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-mt-lg-1,
-  .etn-my-lg-1 {
+.etn-my-lg-1 {
     margin-top: 0.25rem !important;
   }
 
   .etn-mr-lg-1,
-  .etn-mx-lg-1 {
+.etn-mx-lg-1 {
     margin-right: 0.25rem !important;
   }
 
   .etn-mb-lg-1,
-  .etn-my-lg-1 {
+.etn-my-lg-1 {
     margin-bottom: 0.25rem !important;
   }
 
   .etn-ml-lg-1,
-  .etn-mx-lg-1 {
+.etn-mx-lg-1 {
     margin-left: 0.25rem !important;
   }
 
@@ -3728,22 +3642,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-mt-lg-2,
-  .etn-my-lg-2 {
+.etn-my-lg-2 {
     margin-top: 0.5rem !important;
   }
 
   .etn-mr-lg-2,
-  .etn-mx-lg-2 {
+.etn-mx-lg-2 {
     margin-right: 0.5rem !important;
   }
 
   .etn-mb-lg-2,
-  .etn-my-lg-2 {
+.etn-my-lg-2 {
     margin-bottom: 0.5rem !important;
   }
 
   .etn-ml-lg-2,
-  .etn-mx-lg-2 {
+.etn-mx-lg-2 {
     margin-left: 0.5rem !important;
   }
 
@@ -3752,22 +3666,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-mt-lg-3,
-  .etn-my-lg-3 {
+.etn-my-lg-3 {
     margin-top: 1rem !important;
   }
 
   .etn-mr-lg-3,
-  .etn-mx-lg-3 {
+.etn-mx-lg-3 {
     margin-right: 1rem !important;
   }
 
   .etn-mb-lg-3,
-  .etn-my-lg-3 {
+.etn-my-lg-3 {
     margin-bottom: 1rem !important;
   }
 
   .etn-ml-lg-3,
-  .etn-mx-lg-3 {
+.etn-mx-lg-3 {
     margin-left: 1rem !important;
   }
 
@@ -3776,22 +3690,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-mt-lg-4,
-  .etn-my-lg-4 {
+.etn-my-lg-4 {
     margin-top: 1.5rem !important;
   }
 
   .etn-mr-lg-4,
-  .etn-mx-lg-4 {
+.etn-mx-lg-4 {
     margin-right: 1.5rem !important;
   }
 
   .etn-mb-lg-4,
-  .etn-my-lg-4 {
+.etn-my-lg-4 {
     margin-bottom: 1.5rem !important;
   }
 
   .etn-ml-lg-4,
-  .etn-mx-lg-4 {
+.etn-mx-lg-4 {
     margin-left: 1.5rem !important;
   }
 
@@ -3800,22 +3714,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-mt-lg-5,
-  .etn-my-lg-5 {
+.etn-my-lg-5 {
     margin-top: 3rem !important;
   }
 
   .etn-mr-lg-5,
-  .etn-mx-lg-5 {
+.etn-mx-lg-5 {
     margin-right: 3rem !important;
   }
 
   .etn-mb-lg-5,
-  .etn-my-lg-5 {
+.etn-my-lg-5 {
     margin-bottom: 3rem !important;
   }
 
   .etn-ml-lg-5,
-  .etn-mx-lg-5 {
+.etn-mx-lg-5 {
     margin-left: 3rem !important;
   }
 
@@ -3824,22 +3738,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-pt-lg-0,
-  .etn-py-lg-0 {
+.etn-py-lg-0 {
     padding-top: 0 !important;
   }
 
   .etn-pr-lg-0,
-  .etn-px-lg-0 {
+.etn-px-lg-0 {
     padding-right: 0 !important;
   }
 
   .etn-pb-lg-0,
-  .etn-py-lg-0 {
+.etn-py-lg-0 {
     padding-bottom: 0 !important;
   }
 
   .etn-pl-lg-0,
-  .etn-px-lg-0 {
+.etn-px-lg-0 {
     padding-left: 0 !important;
   }
 
@@ -3848,22 +3762,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-pt-lg-1,
-  .etn-py-lg-1 {
+.etn-py-lg-1 {
     padding-top: 0.25rem !important;
   }
 
   .etn-pr-lg-1,
-  .etn-px-lg-1 {
+.etn-px-lg-1 {
     padding-right: 0.25rem !important;
   }
 
   .etn-pb-lg-1,
-  .etn-py-lg-1 {
+.etn-py-lg-1 {
     padding-bottom: 0.25rem !important;
   }
 
   .etn-pl-lg-1,
-  .etn-px-lg-1 {
+.etn-px-lg-1 {
     padding-left: 0.25rem !important;
   }
 
@@ -3872,22 +3786,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-pt-lg-2,
-  .etn-py-lg-2 {
+.etn-py-lg-2 {
     padding-top: 0.5rem !important;
   }
 
   .etn-pr-lg-2,
-  .etn-px-lg-2 {
+.etn-px-lg-2 {
     padding-right: 0.5rem !important;
   }
 
   .etn-pb-lg-2,
-  .etn-py-lg-2 {
+.etn-py-lg-2 {
     padding-bottom: 0.5rem !important;
   }
 
   .etn-pl-lg-2,
-  .etn-px-lg-2 {
+.etn-px-lg-2 {
     padding-left: 0.5rem !important;
   }
 
@@ -3896,22 +3810,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-pt-lg-3,
-  .etn-py-lg-3 {
+.etn-py-lg-3 {
     padding-top: 1rem !important;
   }
 
   .etn-pr-lg-3,
-  .etn-px-lg-3 {
+.etn-px-lg-3 {
     padding-right: 1rem !important;
   }
 
   .etn-pb-lg-3,
-  .etn-py-lg-3 {
+.etn-py-lg-3 {
     padding-bottom: 1rem !important;
   }
 
   .etn-pl-lg-3,
-  .etn-px-lg-3 {
+.etn-px-lg-3 {
     padding-left: 1rem !important;
   }
 
@@ -3920,22 +3834,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-pt-lg-4,
-  .etn-py-lg-4 {
+.etn-py-lg-4 {
     padding-top: 1.5rem !important;
   }
 
   .etn-pr-lg-4,
-  .etn-px-lg-4 {
+.etn-px-lg-4 {
     padding-right: 1.5rem !important;
   }
 
   .etn-pb-lg-4,
-  .etn-py-lg-4 {
+.etn-py-lg-4 {
     padding-bottom: 1.5rem !important;
   }
 
   .etn-pl-lg-4,
-  .etn-px-lg-4 {
+.etn-px-lg-4 {
     padding-left: 1.5rem !important;
   }
 
@@ -3944,22 +3858,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-pt-lg-5,
-  .etn-py-lg-5 {
+.etn-py-lg-5 {
     padding-top: 3rem !important;
   }
 
   .etn-pr-lg-5,
-  .etn-px-lg-5 {
+.etn-px-lg-5 {
     padding-right: 3rem !important;
   }
 
   .etn-pb-lg-5,
-  .etn-py-lg-5 {
+.etn-py-lg-5 {
     padding-bottom: 3rem !important;
   }
 
   .etn-pl-lg-5,
-  .etn-px-lg-5 {
+.etn-px-lg-5 {
     padding-left: 3rem !important;
   }
 
@@ -3968,22 +3882,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-mt-lg-n1,
-  .etn-my-lg-n1 {
+.etn-my-lg-n1 {
     margin-top: -0.25rem !important;
   }
 
   .etn-mr-lg-n1,
-  .etn-mx-lg-n1 {
+.etn-mx-lg-n1 {
     margin-right: -0.25rem !important;
   }
 
   .etn-mb-lg-n1,
-  .etn-my-lg-n1 {
+.etn-my-lg-n1 {
     margin-bottom: -0.25rem !important;
   }
 
   .etn-ml-lg-n1,
-  .etn-mx-lg-n1 {
+.etn-mx-lg-n1 {
     margin-left: -0.25rem !important;
   }
 
@@ -3992,22 +3906,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-mt-lg-n2,
-  .etn-my-lg-n2 {
+.etn-my-lg-n2 {
     margin-top: -0.5rem !important;
   }
 
   .etn-mr-lg-n2,
-  .etn-mx-lg-n2 {
+.etn-mx-lg-n2 {
     margin-right: -0.5rem !important;
   }
 
   .etn-mb-lg-n2,
-  .etn-my-lg-n2 {
+.etn-my-lg-n2 {
     margin-bottom: -0.5rem !important;
   }
 
   .etn-ml-lg-n2,
-  .etn-mx-lg-n2 {
+.etn-mx-lg-n2 {
     margin-left: -0.5rem !important;
   }
 
@@ -4016,22 +3930,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-mt-lg-n3,
-  .etn-my-lg-n3 {
+.etn-my-lg-n3 {
     margin-top: -1rem !important;
   }
 
   .etn-mr-lg-n3,
-  .etn-mx-lg-n3 {
+.etn-mx-lg-n3 {
     margin-right: -1rem !important;
   }
 
   .etn-mb-lg-n3,
-  .etn-my-lg-n3 {
+.etn-my-lg-n3 {
     margin-bottom: -1rem !important;
   }
 
   .etn-ml-lg-n3,
-  .etn-mx-lg-n3 {
+.etn-mx-lg-n3 {
     margin-left: -1rem !important;
   }
 
@@ -4040,22 +3954,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-mt-lg-n4,
-  .etn-my-lg-n4 {
+.etn-my-lg-n4 {
     margin-top: -1.5rem !important;
   }
 
   .etn-mr-lg-n4,
-  .etn-mx-lg-n4 {
+.etn-mx-lg-n4 {
     margin-right: -1.5rem !important;
   }
 
   .etn-mb-lg-n4,
-  .etn-my-lg-n4 {
+.etn-my-lg-n4 {
     margin-bottom: -1.5rem !important;
   }
 
   .etn-ml-lg-n4,
-  .etn-mx-lg-n4 {
+.etn-mx-lg-n4 {
     margin-left: -1.5rem !important;
   }
 
@@ -4064,22 +3978,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-mt-lg-n5,
-  .etn-my-lg-n5 {
+.etn-my-lg-n5 {
     margin-top: -3rem !important;
   }
 
   .etn-mr-lg-n5,
-  .etn-mx-lg-n5 {
+.etn-mx-lg-n5 {
     margin-right: -3rem !important;
   }
 
   .etn-mb-lg-n5,
-  .etn-my-lg-n5 {
+.etn-my-lg-n5 {
     margin-bottom: -3rem !important;
   }
 
   .etn-ml-lg-n5,
-  .etn-mx-lg-n5 {
+.etn-mx-lg-n5 {
     margin-left: -3rem !important;
   }
 
@@ -4088,22 +4002,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-mt-lg-auto,
-  .etn-my-lg-auto {
+.etn-my-lg-auto {
     margin-top: auto !important;
   }
 
   .etn-mr-lg-auto,
-  .etn-mx-lg-auto {
+.etn-mx-lg-auto {
     margin-right: auto !important;
   }
 
   .etn-mb-lg-auto,
-  .etn-my-lg-auto {
+.etn-my-lg-auto {
     margin-bottom: auto !important;
   }
 
   .etn-ml-lg-auto,
-  .etn-mx-lg-auto {
+.etn-mx-lg-auto {
     margin-left: auto !important;
   }
 }
@@ -4113,22 +4027,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-mt-xl-0,
-  .etn-my-xl-0 {
+.etn-my-xl-0 {
     margin-top: 0 !important;
   }
 
   .etn-mr-xl-0,
-  .etn-mx-xl-0 {
+.etn-mx-xl-0 {
     margin-right: 0 !important;
   }
 
   .etn-mb-xl-0,
-  .etn-my-xl-0 {
+.etn-my-xl-0 {
     margin-bottom: 0 !important;
   }
 
   .etn-ml-xl-0,
-  .etn-mx-xl-0 {
+.etn-mx-xl-0 {
     margin-left: 0 !important;
   }
 
@@ -4137,22 +4051,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-mt-xl-1,
-  .etn-my-xl-1 {
+.etn-my-xl-1 {
     margin-top: 0.25rem !important;
   }
 
   .etn-mr-xl-1,
-  .etn-mx-xl-1 {
+.etn-mx-xl-1 {
     margin-right: 0.25rem !important;
   }
 
   .etn-mb-xl-1,
-  .etn-my-xl-1 {
+.etn-my-xl-1 {
     margin-bottom: 0.25rem !important;
   }
 
   .etn-ml-xl-1,
-  .etn-mx-xl-1 {
+.etn-mx-xl-1 {
     margin-left: 0.25rem !important;
   }
 
@@ -4161,22 +4075,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-mt-xl-2,
-  .etn-my-xl-2 {
+.etn-my-xl-2 {
     margin-top: 0.5rem !important;
   }
 
   .etn-mr-xl-2,
-  .etn-mx-xl-2 {
+.etn-mx-xl-2 {
     margin-right: 0.5rem !important;
   }
 
   .etn-mb-xl-2,
-  .etn-my-xl-2 {
+.etn-my-xl-2 {
     margin-bottom: 0.5rem !important;
   }
 
   .etn-ml-xl-2,
-  .etn-mx-xl-2 {
+.etn-mx-xl-2 {
     margin-left: 0.5rem !important;
   }
 
@@ -4185,22 +4099,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-mt-xl-3,
-  .etn-my-xl-3 {
+.etn-my-xl-3 {
     margin-top: 1rem !important;
   }
 
   .etn-mr-xl-3,
-  .etn-mx-xl-3 {
+.etn-mx-xl-3 {
     margin-right: 1rem !important;
   }
 
   .etn-mb-xl-3,
-  .etn-my-xl-3 {
+.etn-my-xl-3 {
     margin-bottom: 1rem !important;
   }
 
   .etn-ml-xl-3,
-  .etn-mx-xl-3 {
+.etn-mx-xl-3 {
     margin-left: 1rem !important;
   }
 
@@ -4209,22 +4123,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-mt-xl-4,
-  .etn-my-xl-4 {
+.etn-my-xl-4 {
     margin-top: 1.5rem !important;
   }
 
   .etn-mr-xl-4,
-  .etn-mx-xl-4 {
+.etn-mx-xl-4 {
     margin-right: 1.5rem !important;
   }
 
   .etn-mb-xl-4,
-  .etn-my-xl-4 {
+.etn-my-xl-4 {
     margin-bottom: 1.5rem !important;
   }
 
   .etn-ml-xl-4,
-  .etn-mx-xl-4 {
+.etn-mx-xl-4 {
     margin-left: 1.5rem !important;
   }
 
@@ -4233,22 +4147,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-mt-xl-5,
-  .etn-my-xl-5 {
+.etn-my-xl-5 {
     margin-top: 3rem !important;
   }
 
   .etn-mr-xl-5,
-  .etn-mx-xl-5 {
+.etn-mx-xl-5 {
     margin-right: 3rem !important;
   }
 
   .etn-mb-xl-5,
-  .etn-my-xl-5 {
+.etn-my-xl-5 {
     margin-bottom: 3rem !important;
   }
 
   .etn-ml-xl-5,
-  .etn-mx-xl-5 {
+.etn-mx-xl-5 {
     margin-left: 3rem !important;
   }
 
@@ -4257,22 +4171,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-pt-xl-0,
-  .etn-py-xl-0 {
+.etn-py-xl-0 {
     padding-top: 0 !important;
   }
 
   .etn-pr-xl-0,
-  .etn-px-xl-0 {
+.etn-px-xl-0 {
     padding-right: 0 !important;
   }
 
   .etn-pb-xl-0,
-  .etn-py-xl-0 {
+.etn-py-xl-0 {
     padding-bottom: 0 !important;
   }
 
   .etn-pl-xl-0,
-  .etn-px-xl-0 {
+.etn-px-xl-0 {
     padding-left: 0 !important;
   }
 
@@ -4281,22 +4195,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-pt-xl-1,
-  .etn-py-xl-1 {
+.etn-py-xl-1 {
     padding-top: 0.25rem !important;
   }
 
   .etn-pr-xl-1,
-  .etn-px-xl-1 {
+.etn-px-xl-1 {
     padding-right: 0.25rem !important;
   }
 
   .etn-pb-xl-1,
-  .etn-py-xl-1 {
+.etn-py-xl-1 {
     padding-bottom: 0.25rem !important;
   }
 
   .etn-pl-xl-1,
-  .etn-px-xl-1 {
+.etn-px-xl-1 {
     padding-left: 0.25rem !important;
   }
 
@@ -4305,22 +4219,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-pt-xl-2,
-  .etn-py-xl-2 {
+.etn-py-xl-2 {
     padding-top: 0.5rem !important;
   }
 
   .etn-pr-xl-2,
-  .etn-px-xl-2 {
+.etn-px-xl-2 {
     padding-right: 0.5rem !important;
   }
 
   .etn-pb-xl-2,
-  .etn-py-xl-2 {
+.etn-py-xl-2 {
     padding-bottom: 0.5rem !important;
   }
 
   .etn-pl-xl-2,
-  .etn-px-xl-2 {
+.etn-px-xl-2 {
     padding-left: 0.5rem !important;
   }
 
@@ -4329,22 +4243,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-pt-xl-3,
-  .etn-py-xl-3 {
+.etn-py-xl-3 {
     padding-top: 1rem !important;
   }
 
   .etn-pr-xl-3,
-  .etn-px-xl-3 {
+.etn-px-xl-3 {
     padding-right: 1rem !important;
   }
 
   .etn-pb-xl-3,
-  .etn-py-xl-3 {
+.etn-py-xl-3 {
     padding-bottom: 1rem !important;
   }
 
   .etn-pl-xl-3,
-  .etn-px-xl-3 {
+.etn-px-xl-3 {
     padding-left: 1rem !important;
   }
 
@@ -4353,22 +4267,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-pt-xl-4,
-  .etn-py-xl-4 {
+.etn-py-xl-4 {
     padding-top: 1.5rem !important;
   }
 
   .etn-pr-xl-4,
-  .etn-px-xl-4 {
+.etn-px-xl-4 {
     padding-right: 1.5rem !important;
   }
 
   .etn-pb-xl-4,
-  .etn-py-xl-4 {
+.etn-py-xl-4 {
     padding-bottom: 1.5rem !important;
   }
 
   .etn-pl-xl-4,
-  .etn-px-xl-4 {
+.etn-px-xl-4 {
     padding-left: 1.5rem !important;
   }
 
@@ -4377,22 +4291,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-pt-xl-5,
-  .etn-py-xl-5 {
+.etn-py-xl-5 {
     padding-top: 3rem !important;
   }
 
   .etn-pr-xl-5,
-  .etn-px-xl-5 {
+.etn-px-xl-5 {
     padding-right: 3rem !important;
   }
 
   .etn-pb-xl-5,
-  .etn-py-xl-5 {
+.etn-py-xl-5 {
     padding-bottom: 3rem !important;
   }
 
   .etn-pl-xl-5,
-  .etn-px-xl-5 {
+.etn-px-xl-5 {
     padding-left: 3rem !important;
   }
 
@@ -4401,22 +4315,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-mt-xl-n1,
-  .etn-my-xl-n1 {
+.etn-my-xl-n1 {
     margin-top: -0.25rem !important;
   }
 
   .etn-mr-xl-n1,
-  .etn-mx-xl-n1 {
+.etn-mx-xl-n1 {
     margin-right: -0.25rem !important;
   }
 
   .etn-mb-xl-n1,
-  .etn-my-xl-n1 {
+.etn-my-xl-n1 {
     margin-bottom: -0.25rem !important;
   }
 
   .etn-ml-xl-n1,
-  .etn-mx-xl-n1 {
+.etn-mx-xl-n1 {
     margin-left: -0.25rem !important;
   }
 
@@ -4425,22 +4339,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-mt-xl-n2,
-  .etn-my-xl-n2 {
+.etn-my-xl-n2 {
     margin-top: -0.5rem !important;
   }
 
   .etn-mr-xl-n2,
-  .etn-mx-xl-n2 {
+.etn-mx-xl-n2 {
     margin-right: -0.5rem !important;
   }
 
   .etn-mb-xl-n2,
-  .etn-my-xl-n2 {
+.etn-my-xl-n2 {
     margin-bottom: -0.5rem !important;
   }
 
   .etn-ml-xl-n2,
-  .etn-mx-xl-n2 {
+.etn-mx-xl-n2 {
     margin-left: -0.5rem !important;
   }
 
@@ -4449,22 +4363,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-mt-xl-n3,
-  .etn-my-xl-n3 {
+.etn-my-xl-n3 {
     margin-top: -1rem !important;
   }
 
   .etn-mr-xl-n3,
-  .etn-mx-xl-n3 {
+.etn-mx-xl-n3 {
     margin-right: -1rem !important;
   }
 
   .etn-mb-xl-n3,
-  .etn-my-xl-n3 {
+.etn-my-xl-n3 {
     margin-bottom: -1rem !important;
   }
 
   .etn-ml-xl-n3,
-  .etn-mx-xl-n3 {
+.etn-mx-xl-n3 {
     margin-left: -1rem !important;
   }
 
@@ -4473,22 +4387,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-mt-xl-n4,
-  .etn-my-xl-n4 {
+.etn-my-xl-n4 {
     margin-top: -1.5rem !important;
   }
 
   .etn-mr-xl-n4,
-  .etn-mx-xl-n4 {
+.etn-mx-xl-n4 {
     margin-right: -1.5rem !important;
   }
 
   .etn-mb-xl-n4,
-  .etn-my-xl-n4 {
+.etn-my-xl-n4 {
     margin-bottom: -1.5rem !important;
   }
 
   .etn-ml-xl-n4,
-  .etn-mx-xl-n4 {
+.etn-mx-xl-n4 {
     margin-left: -1.5rem !important;
   }
 
@@ -4497,22 +4411,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-mt-xl-n5,
-  .etn-my-xl-n5 {
+.etn-my-xl-n5 {
     margin-top: -3rem !important;
   }
 
   .etn-mr-xl-n5,
-  .etn-mx-xl-n5 {
+.etn-mx-xl-n5 {
     margin-right: -3rem !important;
   }
 
   .etn-mb-xl-n5,
-  .etn-my-xl-n5 {
+.etn-my-xl-n5 {
     margin-bottom: -3rem !important;
   }
 
   .etn-ml-xl-n5,
-  .etn-mx-xl-n5 {
+.etn-mx-xl-n5 {
     margin-left: -3rem !important;
   }
 
@@ -4521,22 +4435,22 @@ fieldset[disabled] .etn-form-control {
   }
 
   .etn-mt-xl-auto,
-  .etn-my-xl-auto {
+.etn-my-xl-auto {
     margin-top: auto !important;
   }
 
   .etn-mr-xl-auto,
-  .etn-mx-xl-auto {
+.etn-mx-xl-auto {
     margin-right: auto !important;
   }
 
   .etn-mb-xl-auto,
-  .etn-my-xl-auto {
+.etn-my-xl-auto {
     margin-bottom: auto !important;
   }
 
   .etn-ml-xl-auto,
-  .etn-mx-xl-auto {
+.etn-mx-xl-auto {
     margin-left: auto !important;
   }
 }
@@ -4627,7 +4541,7 @@ fieldset[disabled] .etn-form-control {
   font-size: 16px;
 }
 .etn-speaker-item:hover .etn-speaker-content {
-  background-color: #8000ff;
+  background-color: #8000FF;
   border-bottom-color: transparent;
 }
 .etn-speaker-item:hover .etn-speaker-content .etn-title a,
@@ -4638,6 +4552,55 @@ fieldset[disabled] .etn-form-control {
   opacity: 1;
 }
 .etn-speaker-item:hover .etn-speakers-social {
+  transform: scale(1);
+  opacity: 1;
+  bottom: 30px;
+}
+.etn-speaker-item.style-3 .etn-speaker-thumb img {
+  transform: scale(1);
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+}
+.etn-speaker-item.style-3 .etn-speaker-content {
+  position: absolute;
+  right: 0;
+  bottom: -13px;
+  background: #fff;
+  z-index: 1;
+  width: 90%;
+  padding: 20px 0 25px;
+}
+.etn-speaker-item.style-3 .etn-speaker-content .etn-title {
+  margin: 0 0 10px;
+}
+.etn-speaker-item.style-3 .etn-speaker-content p {
+  margin-bottom: 15px;
+}
+.etn-speaker-item.style-3 .etn-speaker-content .etn-speakers-social a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #5d78ff;
+  line-height: 40px;
+  color: #fff;
+  margin: 0 2px;
+  font-size: 14px;
+}
+.etn-speaker-item.style-3 .etn-speaker-content .etn-speakers-social a:hover {
+  background-color: rgba(93, 120, 255, 0.8);
+}
+.etn-speaker-item.style-3:hover .etn-speaker-thumb img {
+  transform: scale(1.2);
+}
+.etn-speaker-item.style-3:hover .etn-speaker-content .etn-title a {
+  color: #FF007A;
+}
+.etn-speaker-item.style-3:hover .etn-speaker-content p {
+  color: #000000;
+}
+.etn-speaker-item.style-3:hover .etn-speaker-content .etn-speakers-social {
   transform: scale(1);
   opacity: 1;
   bottom: 30px;
@@ -4700,7 +4663,7 @@ fieldset[disabled] .etn-form-control {
 }
 .etn-event-item .etn-event-location {
   font-size: 15px;
-  color: #ff007a;
+  color: #FF007A;
   margin-bottom: 5px;
 }
 .etn-event-item .etn-event-location i {
@@ -4737,8 +4700,8 @@ fieldset[disabled] .etn-form-control {
   font-size: 13px;
   border-width: 2px;
   line-height: 25px;
-  border-color: #ff007a;
-  color: #ff007a;
+  border-color: #FF007A;
+  color: #FF007A;
   background-image: none;
   display: inline-block;
 }
@@ -4750,6 +4713,57 @@ fieldset[disabled] .etn-form-control {
 }
 .etn-event-item:hover .etn-title a {
   color: #5d78ff;
+}
+
+.etn-event-list2 .etn-event-item {
+  padding: 0;
+  box-shadow: none;
+}
+.etn-event-list2 .etn-event-content {
+  border-top: 4px solid #5d78ff;
+  margin: -60px 20px 0;
+  background: #fff;
+  position: relative;
+  padding: 24px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -ms-border-radius: 6px;
+}
+.etn-event-list2 .etn-ticket-price,
+.etn-event-list2 .etn-event-location {
+  margin: 0px 15px 15px 0;
+}
+.etn-event-list2 .event-top-meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/*==================================
+  event tab wrapper
+=================================*/
+.event-tab-wrapper ul {
+  margin-bottom: 30px;
+  padding: 0;
+  text-align: center;
+}
+.event-tab-wrapper ul li {
+  display: inline-block;
+}
+.event-tab-wrapper ul li a.etn-tab-a {
+  padding: 8px 20px;
+  color: #fff;
+  display: block;
+  margin: 0 2px;
+  border: 1px solid #5d78ff;
+  color: #5d78ff;
+  border-radius: 36px;
+  -webkit-border-radius: 36px;
+  -ms-border-radius: 36px;
+}
+.event-tab-wrapper ul li a.etn-tab-a.etn-active {
+  background-color: #5d78ff;
+  color: #fff;
 }
 
 /*=======================
@@ -4768,6 +4782,7 @@ speaker single page
   padding: 50px;
   text-align: center;
 }
+
 .etn-speaker-info .etn-speaker-thumb {
   width: 255px;
   height: 255px;
@@ -4782,10 +4797,35 @@ speaker single page
   width: 100%;
   height: auto;
 }
+
+/*Speaker two style ag21*/
+
+.etn-speaker-info .etn-speaker-thumb-two {
+  width: 300px;
+  height: 300px;
+  border-radius: 2%;
+  -webkit-border-radius: 2%;
+  -ms-border-radius: 2%;
+  overflow: hidden;
+  margin: auto;
+  margin-bottom: 30px;
+}
+.etn-speaker-info .etn-speaker-thumb-two img {
+  width: 100%;
+  height: auto;
+}
+
 .etn-speaker-info .etn-title {
   font-size: 36px;
   margin-bottom: 10px;
 }
+
+/* Style 2 speaker title ag21*/
+#etn-speaker-name-two {
+  font-size: 30px;
+  border-radius: 50%;
+}
+
 @media (max-width: 767px) {
   .etn-speaker-info .etn-title {
     font-size: 26px;
@@ -4798,26 +4838,37 @@ speaker single page
 }
 
 .etn-social a {
-  display: inline-block;
-  margin: 0 2px;
+  display: inline-block;  
   width: 35px;
   height: 35px;
+  margin: 0 2px;
   line-height: 35px;
   color: #fff;
   background-color: #5d78ff;
 }
-.etn-social a.etn-facebook-f,
-.etn-social a.etn-facebook,
-.etn-social a.etn-facebook-square,
-.etn-social a.etn-facebook-messenger {
+
+/* spekaer style 2 ag21 */
+.etn-social-two a {
+  display: inline-block;  
+  width: 50px;
+  height: 50px;
+  margin: 0 5px;
+  line-height: 35px;
+  color: #fff;
+  background-color: #5d78ff;
+  border-radius: 50%;
+}
+
+.etn-social-two a {
+  padding-top: 6px;
+}
+.etn-social a.etn-facebook-f, .etn-social a.etn-facebook, .etn-social a.etn-facebook-square, .etn-social a.etn-facebook-messenger {
   background-color: #3b5998;
 }
-.etn-social a.etn-twitter,
-.etn-social a.etn-twitter-square {
+.etn-social a.etn-twitter, .etn-social a.etn-twitter-square {
   background-color: #1da1f2;
 }
-.etn-social a.etn-linkedin-in,
-.etn-social a.etn-linkedin {
+.etn-social a.etn-linkedin-in, .etn-social a.etn-linkedin {
   background-color: #007bb5;
 }
 .etn-social a.etn-instagram {
@@ -4826,26 +4877,19 @@ speaker single page
 .etn-social a.etn-youtube-square {
   background-color: #ff0000;
 }
-.etn-social a.etn-pinterest,
-.etn-social a.etn-pinterest-square,
-.etn-social a.etn-pinterest-p {
+.etn-social a.etn-pinterest, .etn-social a.etn-pinterest-square, .etn-social a.etn-pinterest-p {
   background-color: #bd081c;
 }
 .etn-social.etn-social-style-1 a {
   background-color: transparent;
 }
-.etn-social.etn-social-style-1 a.etn-facebook-f,
-.etn-social.etn-social-style-1 a.etn-facebook,
-.etn-social.etn-social-style-1 a.etn-facebook-square,
-.etn-social.etn-social-style-1 a.etn-facebook-messenger {
+.etn-social.etn-social-style-1 a.etn-facebook-f, .etn-social.etn-social-style-1 a.etn-facebook, .etn-social.etn-social-style-1 a.etn-facebook-square, .etn-social.etn-social-style-1 a.etn-facebook-messenger {
   color: #3b5998;
 }
-.etn-social.etn-social-style-1 a.etn-twitter,
-.etn-social.etn-social-style-1 a.etn-twitter-square {
+.etn-social.etn-social-style-1 a.etn-twitter, .etn-social.etn-social-style-1 a.etn-twitter-square {
   color: #1da1f2;
 }
-.etn-social.etn-social-style-1 a.etn-linkedin-in,
-.etn-social.etn-social-style-1 a.etn-linkedin {
+.etn-social.etn-social-style-1 a.etn-linkedin-in, .etn-social.etn-social-style-1 a.etn-linkedin {
   color: #007bb5;
 }
 .etn-social.etn-social-style-1 a.etn-instagram {
@@ -4854,12 +4898,91 @@ speaker single page
 .etn-social.etn-social-style-1 a.etn-youtube-square {
   color: #ff0000;
 }
-.etn-social.etn-social-style-1 a.etn-pinterest,
-.etn-social.etn-social-style-1 a.etn-pinterest-square,
-.etn-social.etn-social-style-1 a.etn-pinterest-p {
+.etn-social.etn-social-style-1 a.etn-pinterest, .etn-social.etn-social-style-1 a.etn-pinterest-square, .etn-social.etn-social-style-1 a.etn-pinterest-p {
   color: #bd081c;
 }
 
+.schedule-list-wrapper .schedule-listing.multi-schedule-list {
+  display: flex;
+  display: -ms-flexbox;
+  flex-direction: row;
+}
+.schedule-list-wrapper .schedule-listing.multi-schedule-list .schedule-slot-time {
+  color: #fff;
+  background: #5d78ff;
+  padding: 60px 20px;
+  font-size: 15px;
+  font-weight: 700;
+  flex: 0 0 18%;
+  max-width: 18%;
+  display: flex;
+  display: -ms-flexbox;
+  align-items: center;
+}
+.schedule-list-wrapper .schedule-listing.multi-schedule-list .schedule-slot-time span {
+  display: block;
+  line-height: 26px;
+}
+.schedule-list-wrapper .schedule-listing.multi-schedule-list .schedule-slot-info {
+  padding: 35px 40px;
+  border: 1px dashed #e5e5e5;
+  border-left: none;
+  width: 100%;
+}
+.schedule-list-wrapper .schedule-listing.multi-schedule-list .schedule-slot-info .schedule-slot-title {
+  margin: 0;
+  line-height: 1;
+}
+.schedule-list-wrapper .schedule-listing.multi-schedule-list .schedule-slot-info .schedule-slot-details {
+  margin-bottom: 0;
+}
+.schedule-list-wrapper .schedule-listing.multi-schedule-list .schedule-slot-info .multi-speaker .speaker-content {
+  margin: 30px 15px 0 0;
+  display: inline-block;
+  text-align: center;
+}
+.schedule-list-wrapper .schedule-listing.multi-schedule-list .schedule-slot-info .multi-speaker .speaker-content .schedule-slot-speakers {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -ms-border-radius: 50%;
+}
+.schedule-list-wrapper .schedule-listing.multi-schedule-list .schedule-slot-info .multi-speaker .speaker-content .schedule-speaker {
+  margin: 0;
+  font-size: 14px;
+}
+.schedule-list-wrapper .schedule-listing.multi-schedule-list .schedule-slot-info a {
+  outline: none;
+}
+.schedule-list-wrapper .schedule-listing.multi-schedule-list:nth-of-type(even) .schedule-slot-time {
+  opacity: 0.8;
+}
+@media (max-width: 767px) {
+  .schedule-list-wrapper .schedule-listing.multi-schedule-list {
+    flex-direction: column;
+  }
+  .schedule-list-wrapper .schedule-listing.multi-schedule-list .schedule-slot-time {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 20px 35px;
+  }
+  .schedule-list-wrapper .schedule-listing.multi-schedule-list .schedule-slot-info {
+    flex: 0 0 100%;
+    padding: 35px 40px 35px 35px;
+    border-left: 1px dashed #e5e5e5;
+  }
+}
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 3%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
 .etn-schedule-wrap .etn-single-schedule-item {
   border-bottom: 1px solid #eaeaea;
   padding: 30px 0;
@@ -4960,8 +5083,7 @@ speaker single page
   color: #777777;
   font-weight: 500;
 }
-.schedule-tab-wrapper .etn-nav li a:hover,
-.schedule-tab-wrapper .etn-nav li a:focus {
+.schedule-tab-wrapper .etn-nav li a:hover, .schedule-tab-wrapper .etn-nav li a:focus {
   background-color: transparent;
   outline: none;
 }
@@ -4978,10 +5100,7 @@ speaker single page
   height: 50px;
   object-fit: cover;
 }
-.schedule-tab-wrapper
-  .etn-schedule-speaker
-  .etn-schedule-single-speaker
-  .etn-schedule-speaker-title {
+.schedule-tab-wrapper .etn-schedule-speaker .etn-schedule-single-speaker .etn-schedule-speaker-title {
   position: absolute;
   left: -30px;
   top: -25px;
@@ -5000,10 +5119,7 @@ speaker single page
   margin: 0;
   white-space: nowrap;
 }
-.schedule-tab-wrapper
-  .etn-schedule-speaker
-  .etn-schedule-single-speaker
-  .etn-schedule-speaker-title:after {
+.schedule-tab-wrapper .etn-schedule-speaker .etn-schedule-single-speaker .etn-schedule-speaker-title:after {
   width: 0;
   height: 0;
   border-style: solid;
@@ -5016,10 +5132,7 @@ speaker single page
   right: 0;
   margin: 0 auto;
 }
-.schedule-tab-wrapper
-  .etn-schedule-speaker
-  .etn-schedule-single-speaker:hover
-  .etn-schedule-speaker-title {
+.schedule-tab-wrapper .etn-schedule-speaker .etn-schedule-single-speaker:hover .etn-schedule-speaker-title {
   opacity: 1;
   visibility: visible;
   z-index: 1;
@@ -5034,22 +5147,11 @@ speaker single page
 .schedule-tab-wrapper .etn-schedule-right-content .etn-schedule-speaker {
   margin-top: 12px;
 }
-.schedule-tab-wrapper .etn-tab-content .etn-tab {
-  display: none;
-}
-.schedule-tab-wrapper .etn-tab-content .etn-tab.tab-active {
-  display: block;
-}
-.schedule-tab-wrapper .etn-tab-content .etn-tab.tab-active {
-  animation-name: fadeUp;
-  animation-duration: 1.5s;
-  animation-fill-mode: both;
-}
 .schedule-tab-wrapper.schedule-style-1 .etn-nav li {
   margin: 0 -2px;
 }
 .schedule-tab-wrapper.schedule-style-1 .etn-nav li a.etn-active {
-  border-bottom-color: #5d78ff;
+  border-bottom-color: #5D78FF;
 }
 .schedule-tab-wrapper.schedule-style-1 .etn-nav li a.etn-active::after {
   opacity: 0;
@@ -5061,12 +5163,22 @@ speaker single page
   background: transparent;
   padding: 0;
   font-weight: 400;
-  color: #aaaaaa;
+  color: #AAAAAA;
 }
-.schedule-tab-wrapper.schedule-style-1
-  .etn-schedule-wrap
-  .etn-single-schedule-item:last-of-type {
+.schedule-tab-wrapper.schedule-style-1 .etn-schedule-wrap .etn-single-schedule-item:last-of-type {
   border-bottom: 1px solid #eaeaea;
+}
+
+.etn-tab-content .etn-tab {
+  display: none;
+}
+.etn-tab-content .etn-tab.tab-active {
+  display: block;
+}
+.etn-tab-content .etn-tab.tab-active {
+  animation-name: fadeUp;
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
 }
 @keyframes fadeUp {
   from {
@@ -5090,8 +5202,8 @@ event  single page
 }
 @media (max-width: 767px) {
   .etn-event-single-wrap .etn-event-single-content-wrap,
-  .etn-event-single-wrap .schedule-tab-wrapper,
-  .etn-event-single-wrap .etn-tag-wrapper {
+.etn-event-single-wrap .schedule-tab-wrapper,
+.etn-event-single-wrap .etn-tag-wrapper {
     padding: 25px;
   }
 }
@@ -5124,10 +5236,7 @@ event  single page
   float: right;
   position: relative;
 }
-.etn-event-single-content-wrap
-  .etn-event-meta
-  .etn-event-social-wrap
-  .etn-social {
+.etn-event-single-content-wrap .etn-event-meta .etn-event-social-wrap .etn-social {
   position: absolute;
   right: -15px;
   top: 100%;
@@ -5138,17 +5247,10 @@ event  single page
   -moz-transition: all 0.4s ease;
   -ms-transition: all 0.4s ease;
 }
-.etn-event-single-content-wrap
-  .etn-event-meta
-  .etn-event-social-wrap
-  .etn-social
-  a {
+.etn-event-single-content-wrap .etn-event-meta .etn-event-social-wrap .etn-social a {
   text-align: center;
 }
-.etn-event-single-content-wrap
-  .etn-event-meta
-  .etn-event-social-wrap:hover
-  .etn-social {
+.etn-event-single-content-wrap .etn-event-meta .etn-event-social-wrap:hover .etn-social {
   opacity: 1;
   transform: scale(1);
 }
@@ -5218,7 +5320,7 @@ event  single page
 }
 .meeting-wrapper .meeting-row .info-right {
   flex: 70%;
-  border-left: 1px solid #ededed;
+  border-left: 1px solid #EDEDED;
 }
 
 .etn-organizer-style-1 {
@@ -5248,16 +5350,10 @@ event  single page
   width: 50%;
   margin-bottom: 30px;
 }
-.etn-organizer-style-1
-  .etn-organizer-wrap
-  .etn-organaizer-item
-  .etn-organizer-logo {
+.etn-organizer-style-1 .etn-organizer-wrap .etn-organaizer-item .etn-organizer-logo {
   margin-bottom: 15px;
 }
-.etn-organizer-style-1
-  .etn-organizer-wrap
-  .etn-organaizer-item
-  .etn-label-name {
+.etn-organizer-style-1 .etn-organizer-wrap .etn-organaizer-item .etn-label-name {
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -5320,6 +5416,14 @@ Etn event sidebar
 .etn-sidebar .etn-ticket-widget .etn-price-field .attr-form-control {
   border: 1px solid #eaeaea;
 }
+.etn-sidebar .etn-ticket-widget .etn-price-field input[type=number]::-webkit-outer-spin-button,
+.etn-sidebar .etn-ticket-widget .etn-price-field input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.etn-sidebar .etn-ticket-widget .etn-price-field input[type=number] {
+  -moz-appearance: textfield;
+}
 .etn-sidebar .etn-ticket-widget .etn-total-price {
   font-weight: 700;
   margin: 15px 0;
@@ -5334,18 +5438,13 @@ Etn event sidebar
   padding: 0 2px;
   font-size: 14px;
 }
-.etn-sidebar .etn-widget .etn-social a.etn-facebook-f,
-.etn-sidebar .etn-widget .etn-social a.etn-facebook,
-.etn-sidebar .etn-widget .etn-social a.etn-facebook-square,
-.etn-sidebar .etn-widget .etn-social a.etn-facebook-messenger {
+.etn-sidebar .etn-widget .etn-social a.etn-facebook-f, .etn-sidebar .etn-widget .etn-social a.etn-facebook, .etn-sidebar .etn-widget .etn-social a.etn-facebook-square, .etn-sidebar .etn-widget .etn-social a.etn-facebook-messenger {
   color: #3b5998;
 }
-.etn-sidebar .etn-widget .etn-social a.etn-twitter,
-.etn-sidebar .etn-widget .etn-social a.etn-twitter-square {
+.etn-sidebar .etn-widget .etn-social a.etn-twitter, .etn-sidebar .etn-widget .etn-social a.etn-twitter-square {
   color: #1da1f2;
 }
-.etn-sidebar .etn-widget .etn-social a.etn-linkedin-in,
-.etn-sidebar .etn-widget .etn-social a.etn-linkedin {
+.etn-sidebar .etn-widget .etn-social a.etn-linkedin-in, .etn-sidebar .etn-widget .etn-social a.etn-linkedin {
   color: #007bb5;
 }
 .etn-sidebar .etn-widget .etn-social a.etn-instagram {
@@ -5354,9 +5453,7 @@ Etn event sidebar
 .etn-sidebar .etn-widget .etn-social a.etn-youtube-square {
   color: #ff0000;
 }
-.etn-sidebar .etn-widget .etn-social a.etn-pinterest,
-.etn-sidebar .etn-widget .etn-social a.etn-pinterest-square,
-.etn-sidebar .etn-widget .etn-social a.etn-pinterest-p {
+.etn-sidebar .etn-widget .etn-social a.etn-pinterest, .etn-sidebar .etn-widget .etn-social a.etn-pinterest-square, .etn-sidebar .etn-widget .etn-social a.etn-pinterest-p {
   color: #bd081c;
 }
 
@@ -5400,7 +5497,7 @@ Zoom event
 
 .etn-attendee-form-wrap {
   padding: 50px;
-  border: 3px solid #eaeaea;
+  border: 3px solid #EAEAEA;
   border-radius: 12px;
   -webkit-border-radius: 12px;
   -ms-border-radius: 12px;
@@ -5413,7 +5510,7 @@ Zoom event
 }
 .etn-attendee-form-wrap .attr-form-control {
   background-color: transparent;
-  border: 1px solid #eaeaea;
+  border: 1px solid #EAEAEA;
 }
 .etn-attendee-form-wrap .attr-form-control:focus {
   outline: none;
@@ -5431,10 +5528,12 @@ Zoom event
   font-size: 13px;
   color: #f00;
 }
+
 .etn-form-ticket-text {
   font-size: 16px;
   color: #777777;
 }
+
 .etn-single-page-ticket-count-text-holder {
   margin-bottom: 12px;
   padding: 10px;
@@ -5443,6 +5542,7 @@ Zoom event
   margin-top: 0px;
   line-height: 26px;
 }
+
 .etn-sidebar .etn-widget .etn-widget-title.etn-form-title {
   margin-bottom: 12px;
 }
@@ -5461,13 +5561,6 @@ Zoom event
   background-color: #5d78ff;
   border-radius: 5px;
   margin-bottom: 30px;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -ms-border-radius: 5px;
-  transition: all 0.4s ease;
-  -webkit-transition: all 0.4s ease;
-  -moz-transition: all 0.4s ease;
-  -ms-transition: all 0.4s ease;
 }
 
 .etn-single-event-attendee-btn:hover {
@@ -5482,7 +5575,8 @@ Zoom event
   font-size: 20px;
   padding: 16px;
 }
-.etn-event-single-category-list{
+
+.etn-event-single-category-list {
   text-align: center;
   color: whitesmoke;
   border: 1px solid whitesmoke;
@@ -5491,6 +5585,6 @@ Zoom event
   margin-left: 3px;
 }
 
-.etn-event-single-category-list:hover{
+.etn-event-single-category-list:hover {
   background-color: whitesmoke;
 }

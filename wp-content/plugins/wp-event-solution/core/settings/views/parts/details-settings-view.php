@@ -8,6 +8,18 @@
                                 <div class="attr-form-group etn-label-item">
                                     <div class="etn-label">
                                         <label>
+                                            <?php esc_html_e('Hide Event Date', 'eventin'); ?>
+                                        </label>
+                                        <div class="etn-desc"> <?php esc_html_e('Hide event date from event details.', 'eventin'); ?> </div>
+                                    </div>
+                                    <div class="etn-meta">
+                                        <input id="checked_hide_date_from_details" type="checkbox" <?php echo esc_html($checked_hide_date_from_details); ?> class="etn-admin-control-input etn-form-modalinput-paypal_sandbox" name="etn_hide_date_from_details" />
+                                        <label for="checked_hide_date_from_details" class="etn_switch_button_label"></label>
+                                    </div>
+                                </div>
+                                <div class="attr-form-group etn-label-item">
+                                    <div class="etn-label">
+                                        <label>
                                             <?php esc_html_e('Hide time', 'eventin'); ?>
                                         </label>
                                         <div class="etn-desc"> <?php esc_html_e('Hide time from event details.', 'eventin'); ?> </div>

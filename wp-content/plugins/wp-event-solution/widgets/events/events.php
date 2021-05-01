@@ -64,6 +64,7 @@ class Etn_Events extends Widget_Base {
                 'default' => 'event-1',
                 'options' => [
                     'event-1' => esc_html__( 'Event 1', 'eventin' ),
+                    'event-2' => esc_html__( 'Event 2', 'eventin' ),
                 ],
             ]
         );
@@ -127,8 +128,23 @@ class Etn_Events extends Widget_Base {
                     'ID'        => esc_html__( 'Id', 'eventin' ),
                     'title'     => esc_html__( 'Title', 'eventin' ),
                     'post_date' => esc_html__( 'Post Date', 'eventin' ),
+                    'etn_start_date' => esc_html__( 'Event Start Date', 'eventin' ),
+                    'etn_end_date' => esc_html__( 'Event End Date', 'eventin' ),
                 ],
                 'condition' => ['etn_event_style' => ['event-1']],
+            ]
+        );
+        $this->add_control(
+            'filter_with_status',
+            [
+                'label'     => esc_html__( 'Event status filter By', 'eventin' ),
+                'type'      => Controls_Manager::SELECT,
+                'default'   => '',
+                'options'   => [
+                    ''        => esc_html__( 'All', 'eventin' ),
+                    'upcoming' => esc_html__( 'upcoming Event', 'eventin' ),
+                    'expire' => esc_html__( 'Expire Event', 'eventin' ),
+                ],
             ]
         );
 
@@ -301,6 +317,70 @@ class Etn_Events extends Widget_Base {
 
         $this->end_controls_section();
 
+        // location style section
+        $this->start_controls_section(
+            'category_style',
+            [
+                'label' => esc_html__( 'Category Style', 'eventin' ),
+                'tab'   => \Elementor\Controls_Manager::TAB_STYLE,
+            ]
+        );
+
+        $this->add_group_control(
+            \Elementor\Group_Control_Typography::get_type(),
+            [
+                'name'     => 'etn_category_typography',
+                'label'    => esc_html__( 'Typography', 'eventin' ),
+                'selector' => '{{WRAPPER}} .etn-event-item .etn-event-category span',
+            ]
+        );
+
+        $this->add_control(
+            'etn_cat_color',
+            [
+                'label'     => esc_html__( 'color', 'eventin' ),
+                'type'      => Controls_Manager::COLOR,
+                'selectors' => [
+                    '{{WRAPPER}} .etn-event-item .etn-event-category span' => 'color: {{VALUE}};',
+                ],
+            ]
+        );
+        $this->add_control(
+            'etn_cat_bg_color',
+            [
+                'label'     => esc_html__( 'background color', 'eventin' ),
+                'type'      => Controls_Manager::COLOR,
+                'selectors' => [
+                    '{{WRAPPER}} .etn-event-item .etn-event-category span' => 'background-color: {{VALUE}};',
+                ],
+            ]
+        );
+
+        $this->end_controls_section();
+
+        // location style section
+        $this->start_controls_section(
+            'thumb_style',
+            [
+                'label' => esc_html__( 'Thumb Style', 'eventin' ),
+                'tab'   => \Elementor\Controls_Manager::TAB_STYLE,
+            ]
+        );
+        $this->add_responsive_control(
+            'thumb_border_radius',
+            [
+                'label'      => esc_html__( 'border radius', 'eventin' ),
+                'type'       => Controls_Manager::DIMENSIONS,
+                'size_units' => ['px', '%', 'em'],
+                'selectors'  => [
+                    '{{WRAPPER}} .etn-event-item .etn-event-thumb' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                ],
+            ]
+        );
+
+
+        $this->end_controls_section();
+
         // Date style section
         $this->start_controls_section(
             'date_style',
@@ -375,7 +455,7 @@ class Etn_Events extends Widget_Base {
             [
                 'name'     => 'btn_background',
                 'label'    => esc_html__( 'Background Color', 'eventin' ),
-                'types'    => ['gradient'],
+                'types'    => ['classic','gradient'],
                 'selector' => '{{WRAPPER}} .etn-event-item .etn-btn',
             ]
         );
@@ -468,7 +548,7 @@ class Etn_Events extends Widget_Base {
         $this->add_control(
             'etn_content_box_color',
             [
-                'label'     => esc_html__( 'Content box BG color', 'eventin' ),
+                'label'     => esc_html__( 'Wrapper box BG color', 'eventin' ),
                 'type'      => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .etn-event-item' => 'background-color: {{VALUE}};',
@@ -480,7 +560,7 @@ class Etn_Events extends Widget_Base {
             Group_Control_Border::get_type(),
             [
                 'name'     => 'content_box_border',
-                'label'    => esc_html__( 'Border', 'eventin' ),
+                'label'    => esc_html__( 'Wrapper Border', 'eventin' ),
                 'selector' => '{{WRAPPER}} .etn-event-item',
             ]
         );
@@ -488,7 +568,7 @@ class Etn_Events extends Widget_Base {
             Group_Control_Box_Shadow::get_type(),
             [
                 'name'     => 'conetnt_box_shadow',
-                'label'    => esc_html__( 'Box Shadow', 'eventin' ),
+                'label'    => esc_html__( 'Wrapper Box Shadow', 'eventin' ),
                 'selector' => '{{WRAPPER}} .etn-event-item',
             ]
         );
@@ -504,7 +584,7 @@ class Etn_Events extends Widget_Base {
         $this->add_control(
             'etn_content_box_hover_color',
             [
-                'label'     => esc_html__( 'Box Hover BG color', 'eventin' ),
+                'label'     => esc_html__( 'Wrapper Box Hover BG color', 'eventin' ),
                 'type'      => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .etn-event-item:hover' => 'background-color: {{VALUE}};',
@@ -516,7 +596,7 @@ class Etn_Events extends Widget_Base {
             Group_Control_Border::get_type(),
             [
                 'name'     => 'content_box_hover_border',
-                'label'    => esc_html__( 'BorderHover', 'eventin' ),
+                'label'    => esc_html__( 'Wrapper Border Hover', 'eventin' ),
                 'selector' => '{{WRAPPER}} .etn-event-item:hover',
             ]
         );
@@ -524,7 +604,7 @@ class Etn_Events extends Widget_Base {
             Group_Control_Box_Shadow::get_type(),
             [
                 'name'     => 'conetnt_hover_box_shadow',
-                'label'    =>esc_html__( 'Box Hover Shadow', 'eventin' ),
+                'label'    =>esc_html__( 'Wrapper Box Hover Shadow', 'eventin' ),
                 'selector' => '{{WRAPPER}} .etn-event-item:hover',
             ]
         );
@@ -535,9 +615,30 @@ class Etn_Events extends Widget_Base {
         // tabs control end
 
         $this->add_responsive_control(
+            'etn_content_padding',
+            [
+                'label'      => esc_html__( 'Content Padding', 'eventin' ),
+                'type'       => Controls_Manager::DIMENSIONS,
+                'size_units' => ['px', '%', 'em'],
+                'selectors'  => [
+                    '{{WRAPPER}} .etn-event-content' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                ],
+            ]
+        );
+
+        $this->add_group_control(
+            Group_Control_Border::get_type(),
+            [
+                'name'     => 'content_border',
+                'label'    => esc_html__( 'Content Box Border', 'eventin' ),
+                'selector' => '{{WRAPPER}} .etn-event-content',
+            ]
+        );
+
+        $this->add_responsive_control(
             'etn_content_box_padding',
             [
-                'label'      => esc_html__( 'Content Box Padding', 'eventin' ),
+                'label'      => esc_html__( 'Wrapper Box Padding', 'eventin' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%', 'em'],
                 'selectors'  => [
@@ -545,6 +646,19 @@ class Etn_Events extends Widget_Base {
                 ],
             ]
         );
+
+        $this->add_responsive_control(
+                'etn_wrapper_margin',
+                [
+                    'label'      => esc_html__( 'Wrapper Box Margin', 'eventin' ),
+                    'type'       => Controls_Manager::DIMENSIONS,
+                    'size_units' => ['px', '%', 'em'],
+                    'selectors'  => [
+                        '{{WRAPPER}} .etn-event-item' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                    ],
+                ]
+            );
+  
 
         $this->end_controls_section();
 
@@ -561,6 +675,8 @@ class Etn_Events extends Widget_Base {
         $order              = (isset($settings["order"]) ? $settings["order"] : 'DESC');
         $orderby            = $settings["orderby"];
         $orderby_meta       = null;
+        $filter_with_status       = $settings['filter_with_status'];
+
 
         include ETN_DIR . "/widgets/events/style/{$style}.php";
     }

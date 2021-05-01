@@ -1,0 +1,233 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+/*==================================
+   General settings
+=================================*/
+.etn-wrap-title,
+.etn-title-wrap h2 {
+  font-size: 24px;
+  margin: 0 0 20px;
+  font-weight: 600;
+  color: #FF057C;
+}
+
+.etn-label-item .etn-setting-input.etn-msg-box {
+  height: 100px;
+}
+
+/*==================================
+   sales report style
+=================================*/
+.event-sales-report-head {
+  margin-top: 30px;
+}
+.event-sales-report-head .attr-row {
+  margin-left: 0;
+  margin-right: 0;
+}
+@media (min-width: 992px) {
+  .event-sales-report-head .attr-col-md-4 {
+    width: 30.333333%;
+  }
+}
+
+.sales-report-head-item {
+  background-color: #09C4B7;
+  padding: 20px 30px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -ms-border-radius: 8px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.sales-report-head-item .sales-report-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -ms-border-radius: 50%;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.05);
+  margin-right: 30px;
+}
+.sales-report-head-item .sales-report-icon img {
+  padding: 22px;
+  max-width: 25px;
+}
+.sales-report-head-item .sales-info {
+  color: #fff;
+  font-size: 14px;
+}
+.sales-report-head-item .sales-info span {
+  display: block;
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 600;
+}
+.sales-report-head-item.report-head2 {
+  background-color: #5d78ff;
+}
+.sales-report-head-item.report-head3 {
+  background-color: #FF057C;
+}
+
+#etn-report {
+  display: none;
+}
+
+body.eventin_page_etn_sales_report .etn-sales-report {
+  padding-bottom: 40px;
+}
+body.eventin_page_etn_sales_report .etn-atendee-list-report {
+  padding-bottom: 40px;
+}
+body.eventin_page_etn_sales_report .etn-atendee-list-report .tablenav {
+  display: none;
+}
+
+.etn-sales-report table tr {
+  background-color: #FBFBFF;
+}
+.etn-sales-report table tr:nth-child(odd) {
+  background-color: transparent;
+}
+.etn-sales-report table tr td,
+.etn-sales-report table tr th {
+  text-align: center;
+}
+.etn-sales-report table tr td {
+  padding: 15px;
+  border-bottom: 1px solid #eaeaea;
+}
+.etn-sales-report table tr td.title {
+  text-align: left;
+  font-weight: 600;
+}
+.etn-sales-report table tr .event-report-title {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.etn-event-repeater-clearfix.etn-repeater-item {
+  margin-bottom: 40px;
+}
+
+.etn-license-module-parent {
+  margin-top: 50px;
+  margin-right: 30px;
+}
+
+.etn-license-parent {
+  margin-top: 30px;
+  margin-right: 30px;
+}
+
+.etn-license-input-box,
+.etn-license-result-box {
+  width: 765px;
+}
+
+.etn-marketplace-data-holder .etn-desc {
+  margin-bottom: 20px;
+}
+
+.etn-marketplace-themewinter, .etn-marketplace-codecanyon {
+  display: none;
+}
+
+.etn-marketplace-input-wrapper .input-select.etn-select-marketplace {
+  margin-right: 15px;
+  padding: 7px 20px;
+  border-color: #eaeaea;
+}
+.etn-marketplace-input-wrapper .input-select.etn-select-marketplace:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.marketplace-save-result {
+  max-width: 440px;
+  text-align: center;
+}
+
+.etn-marketplace-input-wrapper .attr-form-group {
+  margin-bottom: 0;
+}
+
+.etn-marketplace-data-holder h2.etn-main-title {
+  margin-bottom: 10px;
+}
+.etn-marketplace-data-holder .etn-btn {
+  text-transform: capitalize;
+}
+
+.etn-license-parent .etn-admin-option-text-etn-license-key {
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: block;
+  font-weight: 500;
+}
+.etn-license-parent .attr-form-control {
+  border: 1px solid #eaeaea;
+}
+.etn-license-parent .etn-license-link {
+  margin-bottom: 20px;
+}
+
+#deposit_settings {
+  border: 1px solid #f5f5f5;
+}
+#deposit_settings h2.hndle, #deposit_settings #etn_event_settings h2.hndle {
+  font-size: 18px;
+  border-bottom: 1px solid #f5f5f5;
+}
+#deposit_settings .postbox-header {
+  border-bottom: none;
+}
+
+.etn-deposit-wrap .postbox {
+  border: 1px solid #f5f5f5;
+}
+.etn-deposit-wrap .form-field {
+  margin: 20px 20px;
+}
+.etn-deposit-wrap .form-field label {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 600;
+  margin: 0 0 8px;
+  color: #101010;
+  display: block;
+}
+.etn-deposit-wrap .form-field select.select,
+.etn-deposit-wrap .form-field .wc_input_price {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-color: transparent;
+  border: 1px solid #eaeaea;
+  height: 45px;
+  line-height: 45px;
+  box-shadow: none;
+  padding: 0 20px;
+  margin-bottom: 5px;
+  max-width: 50%;
+}
+.etn-deposit-wrap .form-field .description {
+  display: block;
+}
+
+.remove_attendee_extra_field {
+  height: 100%;
+}
+
+.attendee_extra_main_block .etn-attendee-field {
+  display: flex;
+  flex-wrap: wrap;
+}
+.attendee_extra_main_block .etn-attendee-field .etn-form-control {
+  margin-right: 5px;
+}

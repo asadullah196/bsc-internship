@@ -22,6 +22,8 @@ class Manifest {
             'schedule',
             'zoom',
             'speakers',
+            'schedule-list',
+            'events-tab'
         ];
     }
 

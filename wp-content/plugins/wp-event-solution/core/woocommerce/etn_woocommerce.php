@@ -266,7 +266,7 @@ class Etn_Product_Data_Store_CPT extends WC_Product_Data_Store_CPT implements WC
                             'etn_end_time'      => $etn_end_time  
                         ];
                         
-                        mail_attende_report( $pdf_data );
+                        mail_attendee_report( $pdf_data );
                     }
                     // ========================== Attendee related works start ========================= //
                 }
@@ -276,7 +276,7 @@ class Etn_Product_Data_Store_CPT extends WC_Product_Data_Store_CPT implements WC
         }
         ?>
         <div class="etn-thankyou-page-order-details">
-            <?php echo esc_html__( "Order ID: ", "eventin" ) . esc_html( $order_id ); ?> | <?php echo esc_html__("Order Status: ", "eventin") . esc_html( $order->get_status() ); ?> | <?php echo esc_html__( "Order is Payment Status: ", "eventin" ) . esc_html( $paid ); ?>
+            <?php echo esc_html__( "Order ID: ", "eventin" ) . esc_html( $order_id ); ?> | <?php echo esc_html__("Order Status: ", "eventin") . esc_html( wc_get_order_status_name( $order->get_status() )); ?> | <?php echo esc_html__( "Order is Payment Status: ", "eventin" ) . esc_html( $paid ); ?>
         </div>
         <?php
         //checking for zoom event
@@ -289,7 +289,7 @@ class Etn_Product_Data_Store_CPT extends WC_Product_Data_Store_CPT implements WC
     /**
      * update attendee status and send ticket to email
      */
-    function mail_attende_report( $pdf_data ){
+    function mail_attendee_report( $pdf_data ){
 
         global $wpdb;
 
@@ -334,7 +334,7 @@ class Etn_Product_Data_Store_CPT extends WC_Product_Data_Store_CPT implements WC
             $content            = ob_get_clean();
             $mail_content       = Helper::kses( $content );
             $settings_options   = Helper::get_settings();
-    
+
             if ( is_array($pdf_data) && !empty( $settings_options['admin_mail_address'] ) && !empty( $pdf_data['user_email'] ) ) {
                 $to         = $pdf_data['user_email'];
                 $subject    = esc_html__( 'Event Ticket', "eventin" );
@@ -342,16 +342,9 @@ class Etn_Product_Data_Store_CPT extends WC_Product_Data_Store_CPT implements WC
                 $from_name  = get_bloginfo( "name" );
                 Helper::send_email( $to, $subject, $mail_content, $from, $from_name );
             }
+
         }
     }
-
-    /**
-     * after successful checkout, customize data after table in email 
-     */
-    function etn_email_after_order_table( $order, $sent_to_admin, $plain_text, $email ) {
-        show_zoom_events_details( $order );
-    }
-
 
     /**
      * check if any zoom meeting exists in order
@@ -364,37 +357,23 @@ class Etn_Product_Data_Store_CPT extends WC_Product_Data_Store_CPT implements WC
             $product_post     = get_page_by_title( $product_name, OBJECT, 'etn' );
 
             if ( !empty( $product_post ) ) {
-                $post_id = $product_post->ID;
-                process_zoom_events($post_id);
+                $post_id        = $product_post->ID;
+                $is_zoom_event  = Helper::check_if_zoom_event($post_id);
+
+                if( $is_zoom_event ){
+                    ?>
+                    <div class="etn-thankyou-page-order-details">
+                    <?php echo esc_html__('NB. This order includes Events which will be hosted on Zoom. After successful payment, Zoom details will be sent through email', 'eventin');?>
+                    </div>
+                    <?php
+                    break;
+                }
             }
         }
     }
-
-    /**
-     * check if provided event is zoom, if so then print zoom meeting join url
-     */
-    function process_zoom_events( $event_id ){
-
-        $is_zoom_event = get_post_meta( $event_id, 'etn_zoom_event', true );
-        if(isset( $is_zoom_event ) && "on" == $is_zoom_event){
-            $zoom_meeting_id = get_post_meta( $event_id, 'etn_zoom_id', true );
-            if(isset( $zoom_meeting_id ) && "" != $zoom_meeting_id){
-                $event_name = get_the_title( $event_id );
-                $zoom_meeting_url = get_post_meta( $zoom_meeting_id, 'zoom_join_url', true );
-                ?>
-                <div class="etn-invoice-zoom-event">
-                    <span class="etn-invoice-zoom-event-title"><?php echo esc_html( $event_name ); ?></span> <?php echo esc_html__(" zoom meeting URL : ", "eventin"); ?>
-                    <a target="_blank" href="<?php echo esc_url( $zoom_meeting_url ); ?>"> <?php echo esc_html( $zoom_meeting_url ); ?></a>
-                </div>
-                <?php
-            }
-        }
-    }
-
 
     //all hooks required to hook our event as woocommerce product
     add_filter( 'woocommerce_data_stores', 'etn_woocommerce_data_stores' );
     add_filter( 'woocommerce_product_get_price', 'etn_woocommerce_product_get_price', 10, 2 );
     add_filter( 'woocommerce_cart_item_quantity', 'wc_cart_item_quantity', 10, 3 );
-    add_action( 'woocommerce_email_after_order_table', 'etn_email_after_order_table', 10, 4 );
     add_action( 'woocommerce_thankyou', 'etn_checkout_callback', 10, 1 );

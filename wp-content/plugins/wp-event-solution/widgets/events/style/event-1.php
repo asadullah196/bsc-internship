@@ -3,7 +3,7 @@ if (!defined('ABSPATH')) exit;
 
 use \Etn\Utils\Helper as Helper;
 
-$data           = Helper::post_data_query('etn', $event_count, $order, $event_cat, 'etn_category', null, null, $event_tag,  $orderby_meta, $orderby);
+$data           = Helper::post_data_query('etn', $event_count, $order, $event_cat, 'etn_category', null, null, $event_tag,  $orderby_meta, $orderby, $filter_with_status);
 $date_format    = Helper::get_option("date_format");
 $date_options   = Helper::get_date_formats();
 

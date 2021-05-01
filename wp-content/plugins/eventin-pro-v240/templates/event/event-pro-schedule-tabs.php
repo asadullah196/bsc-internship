@@ -1,0 +1,129 @@
+<?php
+
+defined( 'ABSPATH' ) || exit;
+use Etn_Pro\Utils\Helper;
+
+$event_options          = get_option("etn_event_options");
+$data                   = Helper::single_template_options( $single_event_id );
+$etn_event_schedule     = isset( $data['etn_event_schedule']) ? $data['etn_event_schedule'] : [];
+if (!isset($event_options["etn_hide_schedule_from_details"])) {
+    if (is_array($etn_event_schedule)) {
+        $args = array(
+            'post__in' => $etn_event_schedule,
+            'orderby' => 'post_date',
+            'order' => 'asc',
+            'post_type' => 'etn-schedule',
+            'post_status' => 'publish',
+            'suppress_filters' => false,
+        );
+
+        $schedule_query = get_posts($args);
+
+        ?>
+        <!-- schedule tab start -->
+        <div class="schedule-tab-wrapper schedule-style-1  no-shadow pt-0">
+            <h3 class="etn-tags-title"><?php echo esc_html__('Schedule:', 'eventin-pro'); ?></h3>
+            <ul class='etn-nav'>
+                <?php
+                $i = -1;
+                foreach ($schedule_query as $post) :
+                    $single_schedule_id = $post->ID;
+                    $i++;
+                    $schedule_meta = get_post_meta($single_schedule_id);
+                    $schedule_date = !empty( $schedule_meta['etn_schedule_date'][0] ) ? date_i18n("d M, Y", strtotime($schedule_meta['etn_schedule_date'][0])) : "";
+                    $active_class = (($i == 0) ? 'etn-active' : ' ');
+                    ?>
+                    <li>
+                        <a href='#' class='etn-tab-a <?php echo esc_attr($active_class); ?>' data-id='tab<?php echo esc_attr($i); ?>'>
+                            <span class='etn-date'><?php echo esc_html($post->post_title); ?></span>
+                            <span class='etn-day'><?php echo esc_html($schedule_date); ?></span>
+                        </a>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
+            <div class='etn-tab-content clearfix etn-schedule-wrap'>
+                <?php
+                $j = -1;
+                foreach ($schedule_query as $post) :
+                    $single_schedule_id = $post->ID;
+                    $j++;
+                    $schedule_meta = get_post_meta($single_schedule_id);
+                    $schedule_date = strtotime($schedule_meta['etn_schedule_date'][0]);
+                    $schedule_topics = unserialize($schedule_meta['etn_schedule_topics'][0]);
+                    $schedule_date = date_i18n("d M", $schedule_date);
+                    $active_class = (($j == 0) ? 'tab-active' : ' ');
+                    ?>
+                    <!-- start repeatable item -->
+                    <div class='etn-tab <?php echo esc_attr($active_class); ?>' data-id='tab<?php echo esc_attr($j); ?>'>
+                        <?php
+                        $etn_tab_time_format = $event_options["time_format"] == '24' ? "H:i" : "h:i a";
+                        foreach ($schedule_topics as $topic) :
+                            $etn_schedule_topic = (isset($topic['etn_schedule_topic']) ? $topic['etn_schedule_topic'] : '');
+                            $etn_schedule_start_time = date_i18n($etn_tab_time_format, strtotime($topic['etn_shedule_start_time']));
+                            $etn_schedule_end_time = date_i18n($etn_tab_time_format, strtotime($topic['etn_shedule_end_time']));
+                            $etn_schedule_room = (isset($topic['etn_shedule_room']) ? $topic['etn_shedule_room'] : '');
+                            $etn_schedule_objective = (isset($topic['etn_shedule_objective']) ? $topic['etn_shedule_objective'] : '');
+                            $etn_schedule_speaker = (isset($topic['etn_shedule_speaker']) ? $topic['etn_shedule_speaker'] : []);
+                            ?>
+                            <div class='etn-single-schedule-item etn-row'>
+                                <div class='etn-schedule-info etn-col-sm-4'>
+                                    <span class='etn-schedule-time'><?php echo esc_html($etn_schedule_start_time) . " - " . esc_html($etn_schedule_end_time); ?></span>
+                                    <?php
+                                    if( !empty( $etn_schedule_room ) ){
+                                        ?>
+                                        <span class='etn-schedule-location'>
+                                            <i class='fas fa-map-marker-alt'></i>
+                                            <?php echo esc_html($etn_schedule_room); ?>
+                                        </span>
+                                        <?php
+                                    }
+                                    ?>
+                                </div>
+                                <div class='etn-col-sm-8'>
+                                    <div class="etn-accordion-wrap">
+                                        <div class="etn-content-item">
+                                            <h4 class='etn-accordion-heading'><?php echo esc_html($etn_schedule_topic); ?>
+                                                <i class="fa fa-plus"></i>
+                                            </h4>
+                                            <div class="etn-acccordion-contents">
+                                                <p><?php echo Helper::render(trim( $etn_schedule_objective )); ?></p>
+                                                <div class='etn-schedule-content'>
+                                                    <div class='etn-schedule-speaker'>
+                                                        <?php
+                                                        $speaker_avatar = apply_filters("etn/speakers/avatar", ETN_ASSETS . "images/avatar.jpg");
+                                                        if (count($etn_schedule_speaker) > 0) {
+                                                            foreach ($etn_schedule_speaker as $key => $value) {
+                                                                $speaker_thumbnail = !empty( get_the_post_thumbnail_url($value) ) ?  get_the_post_thumbnail_url($value) : $speaker_avatar;
+                                                        
+                                                                $etn_schedule_single_speaker = get_post($value);
+                                                                $etn_speaker_permalink = get_post_permalink($value);
+                                                                $speaker_title = $etn_schedule_single_speaker->post_title;
+                                                                ?>
+                                                                <div class='etn-schedule-single-speaker'>
+                                                                    <a href='<?php echo esc_url($etn_speaker_permalink); ?>'>
+                                                                        <img src='<?php echo esc_url($speaker_thumbnail); ?>' alt='<?php echo esc_attr($speaker_title); ?>'>
+                                                                    </a>
+                                                                    <span class='etn-schedule-speaker-title'><?php echo esc_html($speaker_title); ?></span>
+                                                                </div>
+                                                                <?php
+                                                            }
+                                                        }
+                                                        ?>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <?php endforeach; ?>
+                    </div>
+                    <!-- end repeatable item -->
+                <?php endforeach;
+                wp_reset_postdata(); ?>
+            </div>
+        </div>
+        <!-- schedule tab end -->
+        <?php
+    }
+}

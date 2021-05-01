@@ -1,4 +1,4 @@
-/*! elementor - v3.2.1 - 21-04-2021 */
+/*! elementor - v3.2.2 - 26-04-2021 */
 (self["webpackChunkelementor"] = self["webpackChunkelementor"] || []).push([["frontend"],{
 
 /***/ "../node_modules/@babel/runtime-corejs2/core-js/array/from.js":
@@ -3464,24 +3464,22 @@ var AssetsLoader = /*#__PURE__*/function () {
     value: function load(type, key) {
       var _this = this;
 
-      return new _promise.default(function (resolve) {
-        var assetData = _this.constructor.assets[type][key];
+      var assetData = AssetsLoader.assets[type][key];
 
-        if (assetData.isLoaded) {
-          resolve(true);
-          return;
-        }
+      if (!assetData.loader) {
+        assetData.loader = new _promise.default(function (resolve) {
+          var element = 'style' === type ? _this.getStyleElement(assetData.src) : _this.getScriptElement(assetData.src);
 
-        _this.constructor.assets[type][key].isLoaded = true;
-        var element = 'style' === type ? _this.getStyleElement(assetData.src) : _this.getScriptElement(assetData.src);
+          element.onload = function () {
+            return resolve(true);
+          };
 
-        element.onload = function () {
-          return resolve(true);
-        };
+          var parent = 'head' === assetData.parent ? assetData.parent : 'body';
+          document[parent].appendChild(element);
+        });
+      }
 
-        var parent = 'head' === assetData.parent ? assetData.parent : 'body';
-        document[parent].appendChild(element);
-      });
+      return assetData.loader;
     }
   }]);
   return AssetsLoader;

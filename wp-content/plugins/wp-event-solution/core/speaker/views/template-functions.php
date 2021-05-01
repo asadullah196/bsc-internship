@@ -63,6 +63,28 @@ if ( !function_exists( 'speaker_socials' ) ) {
     }
 }
 
+/**
+ * Speaker social 2 style
+ */
+if ( !function_exists( 'speaker_socials_two' ) ) {
+    /**
+     * Socials
+     */
+    function speaker_socials_two() {
+
+        if( ( ETN_DEMO_SITE === false ) || ( ETN_DEMO_SITE === true && ( ETN_SPEAKER_TEMPLATE_TWO_ID != get_the_ID(  ) && ETN_SPEAKER_TEMPLATE_THREE_ID != get_the_ID(  ) ) ) ){
+            if ( file_exists( get_stylesheet_directory() . ETN_THEME_TEMPLATE_DIR . 'speaker/speaker-socials-two.php' ) ) {
+                require_once get_stylesheet_directory() . ETN_THEME_TEMPLATE_DIR . 'speaker/speaker-socials-two.php';
+            } elseif ( file_exists( get_template_directory() . ETN_THEME_TEMPLATE_DIR . 'speaker/speaker-socials-two.php' ) ) {
+                require_once get_template_directory() . ETN_THEME_TEMPLATE_DIR . 'speaker/speaker-socials-two.php';
+            } else {
+                require_once ETN_PLUGIN_TEMPLATE_DIR . 'speaker/speaker-socials-two.php';
+            }
+        }
+
+    }
+}
+
 if ( !function_exists( 'schedule_time' ) ) {
     /**
      * Schedule time
@@ -152,9 +174,21 @@ if ( !function_exists( 'speaker_objective' ) ) {
 
 if ( !function_exists( 'etn_single_speaker_template_select' ) ) {
     function etn_single_speaker_template_select() {
-        $default_template_name = "speaker-one";
+
+        //$settings =  \Etn\Core\Settings\Settings::instance()->get_settings_option();
+       // $default_template_name              = isset( $settings['speaker_template'] ) ? $settings['speaker_template'] : "";
+
+        /**
+         * Use them to check output
+         */
+        //print_r(); - direct print
+        //var_dump(); - Array
+
+        //$default_template_name = "speaker-two";
+
         $settings              = \Etn\Core\Settings\Settings::instance()->get_settings_option();
         $template_name         = !empty( $settings['speaker_template'] ) ? $settings['speaker_template'] : $default_template_name;
+        $default_template_name         = !empty( $settings['speaker_template'] ) ? $settings['speaker_template'] : $default_template_name;
         
         if( ETN_DEMO_SITE === true ) {
 

@@ -1,0 +1,36 @@
+2021-05-01T11:49:07+00:00 CRITICAL syntax error, unexpected token "<" in C:\xampp\htdocs\wordpressform\wp-content\plugins\wp-event-solution\templates\speaker-two.php on line 60
+
+2021-05-01T13:30:34+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($function) must be a valid callback, function "speaker_socials-two" not found or invalid function name in C:\xampp\htdocs\wordpressform\wp-includes\class-wp-hook.php:292
+Stack trace:
+#0 C:\xampp\htdocs\wordpressform\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 C:\xampp\htdocs\wordpressform\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\wordpressform\wp-content\plugins\wp-event-solution\templates\speaker-two.php(58): do_action('etn_speaker_soc...')
+#3 C:\xampp\htdocs\wordpressform\wp-content\plugins\wp-event-solution\core\speaker\views\template-functions.php(206): include_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpressform\wp-includes\class-wp-hook.php(292): etn_single_speaker_template_select(NULL)
+#5 C:\xampp\htdocs\wordpressform\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#6 C:\xampp\htdocs\wordpressform\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\wordpressform\wp-content\plugins\wp-event-solution\templates\single-speaker.php(31): do_action('etn_single_spea...', NULL)
+#8 C:\xampp\htdocs\wordpressform\wp-content\plugins\wp-event-solution\core\speaker\views\single\speaker-single-page.php(10): require_once('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\wordpressform\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\wordpressform\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\wordpressform\index.php(17): require('C:\\xampp\\htdocs...')
+#12 {main}
+  thrown in C:\xampp\htdocs\wordpressform\wp-includes\class-wp-hook.php on line 292
+
+2021-05-01T13:31:26+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($function) must be a valid callback, function "speaker_socials_two" not found or invalid function name in C:\xampp\htdocs\wordpressform\wp-includes\class-wp-hook.php:292
+Stack trace:
+#0 C:\xampp\htdocs\wordpressform\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#1 C:\xampp\htdocs\wordpressform\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#2 C:\xampp\htdocs\wordpressform\wp-content\plugins\wp-event-solution\templates\speaker-two.php(58): do_action('etn_speaker_soc...')
+#3 C:\xampp\htdocs\wordpressform\wp-content\plugins\wp-event-solution\core\speaker\views\template-functions.php(206): include_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\wordpressform\wp-includes\class-wp-hook.php(292): etn_single_speaker_template_select(NULL)
+#5 C:\xampp\htdocs\wordpressform\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters('', Array)
+#6 C:\xampp\htdocs\wordpressform\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\wordpressform\wp-content\plugins\wp-event-solution\templates\single-speaker.php(31): do_action('etn_single_spea...', NULL)
+#8 C:\xampp\htdocs\wordpressform\wp-content\plugins\wp-event-solution\core\speaker\views\single\speaker-single-page.php(10): require_once('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\wordpressform\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\wordpressform\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#11 C:\xampp\htdocs\wordpressform\index.php(17): require('C:\\xampp\\htdocs...')
+#12 {main}
+  thrown in C:\xampp\htdocs\wordpressform\wp-includes\class-wp-hook.php on line 292
+

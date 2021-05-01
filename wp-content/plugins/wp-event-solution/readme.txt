@@ -3,16 +3,16 @@ Contributors: ataurr, themewinter, abrasel600, rezakhan995,  nitu456410
 Tags: event, event manager, tickets, events, zoom, registration, schedule, bookings, meeting, seminar, conference
 Requires at least: 5.2
 Tested up to: 5.7
-Stable tag: 2.4.0
+Stable tag: 2.4.1
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 
 == Description ==
-All-in-one Event Management solution.
+All-in-one Event Management solution for Single or Multi-Event & Attendees Management.
 
-[WP Eventin](https://themewinter.com/eventin/) is a simple and easy to use WooCommerce Event Manager Plugin to manage Event, Conference and Sell Tickets. The Eventin Plugin supports WordPress Shortcode and Elementor Builder. The plugin comes with both Single and Multi Event features. You can leverage Zoom for scheduling both single events and multi-events.
+[WPEventin](https://themewinter.com/eventin/) is a simple and easy to use WooCommerce Event Manager Plugin to manage Event, Conference and Sell Tickets. The Eventin Plugin supports WordPress Shortcode and Elementor Builder. The plugin comes with both Single and Multi Event features. You can leverage Zoom for scheduling both single events and multi-events.
 
 
 https://www.youtube.com/watch?v=vt3s7-vD8KQ
@@ -134,6 +134,17 @@ Add your information and automatically get the meeting ID within seconds! Creati
 
 
 == Changelog ==
+
+
+= 2.4.1 ( April 29, 2021 ) =
+* Fix    : Translation issue fix
+* Fix    : CSS optimization 
+* Tweak  : Filter events by upcoming and expired inside widgets
+* Tweak  : New styles added for widgets
+* Tweak  : UTF-8 encoding support inside PDF tickets 
+* Tweak  : Send zoom event details on order status update
+* New    : New event widget with tabs
+* New    : Send zoom meeting password with zoom joining URL
 
 
 = 2.4.0 ( April 13, 2021 ) =

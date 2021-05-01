@@ -18,9 +18,7 @@ defined('ABSPATH') || die();
         <?php 
     } 
     ?>
-    
     <div class="etn-speakers-social">
-        
         <?php 
         $social = get_post_meta( get_the_ID( ) , 'etn_speaker_socials', true);
         if (is_array($social)  & !empty( $social )) { 

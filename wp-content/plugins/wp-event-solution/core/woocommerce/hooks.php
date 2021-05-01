@@ -27,6 +27,7 @@ class Hooks {
         // add the filter 
         add_action('woocommerce_order_status_changed', [$this, 'change_attendee_payment_status_on_order_status_update' ], 10, 3);
         add_action('woocommerce_order_status_changed', [$this, 'change_purchase_report_status_on_order_status_update' ], 10, 3);
+        add_action('woocommerce_order_status_changed', [$this, 'email_zoom_event_details_on_order_status_update' ], 10, 3);
 
         // ====================== Attendee registration related hooks for woocommerce start ======================== //
         {
@@ -42,6 +43,33 @@ class Hooks {
         
         // ===================== Attendee registration related hooks for woocommerce end ========================== //
 
+    }
+
+    /**
+     * Send Zoom Event Details On Status CHange
+     *
+     * @param [type] $order_id
+     * @param [type] $old_order_status
+     * @param [type] $new_order_status
+     * @return void
+     */
+    function email_zoom_event_details_on_order_status_update(  $order_id, $old_order_status, $new_order_status ) {
+         
+        $payment_success_status_array = [
+            // 'pending', 'on-hold',
+            'processing',
+            'completed',
+            // 'cancelled','refunded', 'failed',
+        ];
+
+        $zoom_email_sent = Helper::check_if_zoom_email_sent_for_order( $order_id );
+
+        if( !$zoom_email_sent && in_array($new_order_status, $payment_success_status_array)){
+
+            //email not sent yet and order order status is paid, so proceed..
+            $order = wc_get_order( $order_id );
+            Helper::send_email_with_zoom_meeting_details( $order_id, $order );
+        }
     }
 
     /**

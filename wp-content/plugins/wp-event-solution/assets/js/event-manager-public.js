@@ -124,12 +124,22 @@ jQuery(document).ready(function ($) {
 
 
     //   custom tabs
+    // $(document).on('click', '.etn-tab-a', function (event) {
+    //     event.preventDefault();
+
+    //     $(this).parents(".schedule-tab-wrapper").find(".etn-tab").removeClass('tab-active');
+    //     $(this).parents(".schedule-tab-wrapper").find(".etn-tab[data-id='" + $(this).attr('data-id') + "']").addClass("tab-active");
+    //     $(this).parents(".schedule-tab-wrapper").find(".etn-tab-a").removeClass('etn-active');
+    //     $(this).parent().find(".etn-tab-a").addClass('etn-active');
+    // });
+
+       //   custom tabs
     $(document).on('click', '.etn-tab-a', function (event) {
         event.preventDefault();
 
-        $(this).parents(".schedule-tab-wrapper").find(".etn-tab").removeClass('tab-active');
-        $(this).parents(".schedule-tab-wrapper").find(".etn-tab[data-id='" + $(this).attr('data-id') + "']").addClass("tab-active");
-        $(this).parents(".schedule-tab-wrapper").find(".etn-tab-a").removeClass('etn-active');
+        $(this).parents(".etn-tab-wrapper").find(".etn-tab").removeClass('tab-active');
+        $(this).parents(".etn-tab-wrapper").find(".etn-tab[data-id='" + $(this).attr('data-id') + "']").addClass("tab-active");
+        $(this).parents(".etn-tab-wrapper").find(".etn-tab-a").removeClass('etn-active');
         $(this).parent().find(".etn-tab-a").addClass('etn-active');
     });
 

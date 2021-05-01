@@ -88,8 +88,8 @@ class Cpt extends \Etn\Base\Cpt {
         $settings_options = get_option( 'etn_schedule_options' );
 
         $options = [
-            'etn_schedule_singular_name'       => 'Schedule',
-            'etn_schedule_all'                 => 'Schedules',
+            'etn_schedule_singular_name'       => esc_html__('Schedule', 'eventin'),
+            'etn_schedule_all'                 => esc_html__('Schedules', 'eventin'),
             'etn_schedule_slug'                => 'etn-schedule',
             'etn_schedule_exclude_from_search' => true,
         ];

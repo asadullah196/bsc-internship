@@ -1,0 +1,98 @@
+/* put rtl css here */
+.etn-sidebar .etn-event-meta-info ul li span{
+    float: right;
+    padding-left: 5px;
+}
+.etn-event-single2 .etn-event-related-post .etn-event-date{
+    margin-right: 0 !important;
+    margin-left: 16px;
+}
+.etn-event-header .etn-event-countdown-wrap .etn-count-item:last-child{
+    margin-right: 12px !important; 
+    margin-left: 0;
+}
+.etn-organizer-style-1 .etn-organizer-wrap .etn-organizer-email .etn-label-name {
+    float: right;
+}
+.etn-event-item .etn-event-location i{
+    margin-right: 0;
+    margin-left: 5px;
+}
+.etn-event-item .etn-event-footer .etn-event-date i{
+    padding-left: 5px;
+    padding-right: 0;
+}
+.etn-event-content .etn-event-date i{
+    margin-left: 5px;
+}
+.etn-event-attendee-count i{
+    margin-left: 5px;
+}
+
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+    background-image: none;
+}
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+    background-image: none !important;
+}
+.rtl .etn-event-slider:hover .swiper-button-next,
+.rtl .etn-speaker-slider:hover .swiper-button-next {
+    left: -45px;
+    right: auto;
+}
+.rtl .etn-event-slider:hover .swiper-button-prev,
+.rtl .etn-speaker-slider:hover .swiper-button-prev {
+    right: -45px;
+    left: auto;
+}
+.swiper-button-prev i,
+.swiper-button-next i{
+    transform: rotate(180deg);
+}
+.rtl .schedule-list-1 .etn-schedule-single-speaker{
+    margin-right: 0;
+    margin-left: 15px;
+}
+.rtl .schedule-list-1 .speaker-info{
+    margin: 0 15px 20px 0;
+}
+.rtl .etn-accordion-wrap .etn-content-item .etn-accordion-heading i{
+    right: auto;
+    left: 0;
+}
+.rtl .etn-organizer-item .etn-organizer-content li strong{
+    margin-right: 0;
+    margin-left: 20px;
+}
+.rtl .speaker-style4 .etn-single-speaker-item{
+    text-align: right;
+}
+.rtl .speaker-style4 .etn-speaker-content,
+.rtl .speaker-style5 .etn-speaker-content{
+    left: auto;
+    right: 0;
+}
+.rtl .speaker-style4 .etn-single-speaker-item:hover .etn-speaker-content{
+    right: -100%;
+    left: auto;
+}
+.rtl .speaker-style4 .etn-speaker-thumb .etn-speakers-social{
+    right: auto;
+    left: 15px;
+}
+.rtl .speaker-slider-style1 .etn-speaker-content{
+    left: 0;
+    right: auto;
+}
+.etn-schedule-wrap .etn-schedule-info .etn-schedule-time{
+    padding: 10px 15px;
+}
+
+@media (max-width: 1024px){
+    .swiper-button-prev,
+    .swiper-button-next{
+        display: none;
+    } 
+}

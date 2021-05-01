@@ -1,6 +1,6 @@
 <?php
 use \Etn\Utils\Helper as Helper;
-$data = Helper::post_data_query( 'etn-speaker' , $etn_speaker_count, $etn_speaker_order , $speakers_category , 'etn_speaker_category', null, null, null, $orderby_meta, $orderby );
+$data = Helper::post_data_query( 'etn-speaker' , $etn_speaker_count, $etn_speaker_order , $speakers_category , 'etn_speaker_category', null, null, null, $orderby_meta, $orderby, null );
 
 if ( is_array( $data ) && !empty( $data ) ) { 
     ?>

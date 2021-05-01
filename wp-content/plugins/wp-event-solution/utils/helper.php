@@ -454,17 +454,19 @@ class Helper {
     /**
      * Post query to get data for widget and shortcode
      */
-    public static function post_data_query( $post_type, 
-                                            $count = null, 
-                                            $order = 'DESC', 
-                                            $term_arr = null,
-                                            $taxonomy_slug = null,
-                                            $post__in = null,
-                                            $post_not_in = null,
-                                            $tag__in = null,
-                                            $orderby_meta = null,
-                                            $orderby = 'post_date'
-                                            ) {
+    public static function post_data_query(
+         $post_type, 
+        $count = null, 
+        $order = 'DESC', 
+        $term_arr = null,
+        $taxonomy_slug = null,
+        $post__in = null,
+        $post_not_in = null,
+        $tag__in = null,
+        $orderby_meta = null,
+        $orderby = 'post_date',
+        $filter_with_status = null
+        ) {
 
         $data = [];
         $args = [
@@ -476,6 +478,7 @@ class Helper {
             ],
         ];
 
+    
         if ( $order != null ) {
             if ( $orderby_meta == null ) {
                 $args['orderby']    = $orderby;
@@ -485,6 +488,7 @@ class Helper {
             }
             $args['order']      = strtoupper( $order );
         }
+
 
         if ( $post_not_in != null ) {
             $args['post__not_in'] = $post_not_in;
@@ -522,24 +526,62 @@ class Helper {
             array_push( $args['tax_query'], $tags );
         }
 
-        // Settings::If hide Expired event is checked, filter out the expired events
-        if ( !empty( get_option( "etn_event_options" )['checked_expired_event'] )
-            && get_option( "etn_event_options" )['checked_expired_event'] == 'on'
-            && $post_type == "etn" ) {
+        $expire_event = (!empty( get_option( "etn_event_options" )['checked_expired_event']) && get_option( "etn_event_options" )['checked_expired_event'] == 'on') ? 'yes' : 'no';
+        // Elementor::If select upcoming  event , filter out the upcoming events
+        if($filter_with_status == 'upcoming'  && $post_type == "etn" || $expire_event =='yes'){
+            $args['meta_query'] = [
+                [
+                    'key' => 'etn_start_date',
+                    'value' => date('Y-m-d'),
+                    'compare' => '>=',
+                    'type' => 'DATE'
+                ],
+            ];
+          
+        }
+
+        if ( ($filter_with_status == 'expire' && $post_type == "etn")) {
             $args['meta_query'] = [
                 'relation' => 'OR',
                 [
                     'key'     => 'etn_end_date',
                     'value'   => date( 'Y-m-d' ),
-                    'compare' => '>',
+                    'compare' => '<',
+                    'type' => 'DATE'
+
                 ],
                 [
                     'key'     => 'etn_end_date',
                     'value'   => '',
                     'compare' => '=',
+
                 ],
             ];
         }
+
+         //Settings::If hide Expired event is checked, filter out the expired events
+        // if ( (!empty( get_option( "etn_event_options" )['checked_expired_event'] )
+        // && get_option( "etn_event_options" )['checked_expired_event'] == 'on'
+        // && $post_type == "etn") ) {
+        //     $args['meta_query'] = [
+        //         'relation' => 'OR',
+        //         [
+        //             'key'     => 'etn_end_date',
+        //             'value'   => date( 'Y-m-d' ),
+        //             'compare' => '<',
+        //             'type' => 'DATE'
+
+        //         ],
+        //         [
+        //             'key'     => 'etn_end_date',
+        //             'value'   => '',
+        //             'compare' => '=',
+
+        //         ],
+        //     ];
+        // }
+
+     
 
         $data = get_posts( $args );
         
@@ -1333,6 +1375,11 @@ class Helper {
 
     }
 
+    /**
+     * Show Invalid Data Page
+     *
+     * @return html
+     */
     public static function show_attendee_pdf_invalid_data_page(){
         wp_head();
         ?>
@@ -1348,4 +1395,128 @@ class Helper {
         wp_footer();
     }
 
+    /**
+     * Check If Zoom Event
+     * 
+     * @since 2.4.1
+     * 
+     * @return bool 
+     * 
+     * check if a provided event id is zoom event
+     */
+    public static function check_if_zoom_event( $event_id ){
+        $is_zoom_event      = get_post_meta( $event_id, 'etn_zoom_event', true );
+        $zoom_meeting_id    = get_post_meta( $event_id, 'etn_zoom_id', true );
+
+        if(isset( $is_zoom_event ) && "on" == $is_zoom_event && !empty( $zoom_meeting_id ) ){
+            return true;
+        }
+        return false;
+    }
+
+    /**
+     * Check If Zoom Details Email Sent Already
+     *
+     * @param [type] $order_id
+     * 
+     * @since 2.4.1
+     * 
+     * @return bool
+     */
+    public static function check_if_zoom_email_sent_for_order( $order_id ){
+
+        $is_email_sent = ( !empty( get_post_meta( $order_id, 'etn_zoom_email_sent', true ) ) && 'yes' === get_post_meta( $order_id, 'etn_zoom_email_sent', true ) )? true : false;
+        return $is_email_sent;
+    }
+
+    /**
+     * Send Email With Zoom Details
+     *
+     * @param [type] $order_id
+     * @param [type] $order
+     * 
+     * @since 2.4.1
+     * 
+     * @return void
+     */
+    public static function send_email_with_zoom_meeting_details( $order_id, $order ){
+
+        $zoom_event_count = 0;
+        $mail_body_content= '';
+
+        foreach ( $order->get_items() as $item_id => $item ) {
+
+            // Get the product name
+            $product_name     = $item->get_name();
+            $product_post     = get_page_by_title( $product_name, OBJECT, 'etn' );
+
+            if ( !empty( $product_post ) ) {
+
+                //this is an Eventin event
+                $event_id           = $product_post->ID;
+                $is_zoom_event      = self::check_if_zoom_event( $event_id );
+
+                if( $is_zoom_event ){
+
+                    $zoom_event_count++;    //zoom event found in this order
+                    $event_name         = get_the_title( $event_id );
+                    $zoom_meeting_id    = get_post_meta( $event_id, 'etn_zoom_id', true );
+                    $zoom_meeting_url   = get_post_meta( $zoom_meeting_id, 'zoom_join_url', true );
+                    $meeting_password   = get_post_meta( $zoom_meeting_id, 'zoom_password', true );
+                
+                    ob_start();
+                    ?>
+                    <div class="etn-invoice-zoom-event">
+                        <span class="etn-invoice-zoom-event-title">
+                            <?php echo esc_html( $event_name ) . esc_html__(" zoom meeting details : ", "eventin"); ?>
+                        </span> 
+                        <div class="etn-invoice-zoom-event-details">
+                            <div class="etn-zoom-meeting-url">
+                                <span><?php echo esc_html__('Meeting URL: ', 'eventin'); ?></span>
+                                <a target="_blank" href="<?php echo esc_url( $zoom_meeting_url ); ?>"> 
+                                    <?php echo esc_html__( 'Click to join Zoom meeting', 'eventin' ); ?>
+                                </a>
+                            </div>
+                            <?php
+                            if(!empty($meeting_password)){
+                                ?>
+                                <div class="etn-zoom-meeting-password">
+                                    <span>
+                                        <?php echo esc_html__('Meeting Password: ', 'eventin') . $meeting_password; ?>
+                                    </span>
+                                </div>
+                                <?php
+                            }
+                            ?>
+                        </div>
+                    </div>
+                    <?php
+                    $zoom_details = ob_get_clean();
+                    $mail_body_content .= $zoom_details;
+                }
+            }
+        }
+
+        if( $zoom_event_count > 0 ){
+            ob_start();
+            ?>
+            <div>
+                <?php echo esc_html__( "Your order no: {$order_id} includes Event(s) which will be hosted on Zoom. Zoom meeting details are as follows. " , 'eventin'); ?>
+            </div>
+            <br><br>
+            <?php
+            $mail_body_header = ob_get_clean();
+            $mail_body  = $mail_body_header . $mail_body_content;
+            $subject    = esc_html__( 'Event zoom meeting details', "eventin" );
+            $from       = self::get_settings()['admin_mail_address'];
+            $from_name  = get_bloginfo( "name" );
+            $to         = !empty( get_post_meta( $order_id, '_billing_email', true ) ) ? get_post_meta( $order_id, '_billing_email', true ) : "";
+
+            self::send_email($to, $subject, $mail_body, $from, $from_name);
+            update_post_meta( $order_id,'etn_zoom_email_sent', 'yes' );
+        }
+
+        return;
+    }
+    
 }

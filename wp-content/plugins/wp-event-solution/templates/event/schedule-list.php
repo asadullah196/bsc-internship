@@ -19,7 +19,7 @@ if ( is_array($etn_event_schedule) && !empty($etn_event_schedule) ) {
     $schedule_query = get_posts($args);
     ?>
     <!-- schedule tab start -->
-    <div class="schedule-tab-wrapper">
+    <div class="schedule-tab-wrapper etn-tab-wrapper">
         <ul class='etn-nav'>
             <?php
             $i = -1;

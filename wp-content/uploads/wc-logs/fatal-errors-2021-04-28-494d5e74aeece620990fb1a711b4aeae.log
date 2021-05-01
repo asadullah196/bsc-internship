@@ -1,0 +1,16 @@
+2021-04-28T20:13:18+00:00 CRITICAL Uncaught Error: Call to undefined function style_four_hook() in C:\xampp\htdocs\wordpressform\wp-content\plugins\eventin-pro-v240\core\speaker\views\template-hooks.php:26
+Stack trace:
+#0 C:\xampp\htdocs\wordpressform\wp-content\plugins\eventin-pro-v240\core\speaker\views\template-hooks.php(5): pro_init_speaker_template()
+#1 C:\xampp\htdocs\wordpressform\wp-content\plugins\eventin-pro-v240\core\core.php(38): include_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wordpressform\wp-content\plugins\eventin-pro-v240\bootstrap.php(109): Etn_Pro\Core\Core->init()
+#3 C:\xampp\htdocs\wordpressform\wp-content\plugins\eventin-pro-v240\eventin-pro.php(28): Etn_Pro\Bootstrap->init()
+#4 C:\xampp\htdocs\wordpressform\wp-includes\class-wp-hook.php(292): {closure}('')
+#5 C:\xampp\htdocs\wordpressform\wp-includes\class-wp-hook.php(316): WP_Hook->apply_filters(NULL, Array)
+#6 C:\xampp\htdocs\wordpressform\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#7 C:\xampp\htdocs\wordpressform\wp-settings.php(423): do_action('plugins_loaded')
+#8 C:\xampp\htdocs\wordpressform\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#9 C:\xampp\htdocs\wordpressform\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#10 C:\xampp\htdocs\wordpressform\wp-admin\admin.php(34): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+  thrown in C:\xampp\htdocs\wordpressform\wp-content\plugins\eventin-pro-v240\core\speaker\views\template-hooks.php on line 26
+
